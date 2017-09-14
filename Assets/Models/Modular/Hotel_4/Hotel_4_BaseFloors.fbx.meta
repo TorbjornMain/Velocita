@@ -1,0 +1,135 @@
+fileFormatVersion: 2
+guid: 9c82479a90b3ee6458261945c2a14de9
+timeCreated: 1504846420
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: Balcony_Small1
+    100002: Door3
+    100004: Door4
+    100006: Doors:Door1
+    100008: Doors:Door2
+    100010: //RootNode
+    100012: Hotel_4_BaseFloors_Level_Base
+    100014: Level_Windows
+    100016: Railing
+    100018: Square_window12
+    100020: Trim_Large
+    400000: Balcony_Small1
+    400002: Door3
+    400004: Door4
+    400006: Doors:Door1
+    400008: Doors:Door2
+    400010: //RootNode
+    400012: Hotel_4_BaseFloors_Level_Base
+    400014: Level_Windows
+    400016: Railing
+    400018: Square_window12
+    400020: Trim_Large
+    2300000: Balcony_Small1
+    2300002: Door3
+    2300004: Door4
+    2300006: Doors:Door1
+    2300008: Doors:Door2
+    2300010: Hotel_4_BaseFloors_Level_Base
+    2300012: Level_Windows
+    2300014: Railing
+    2300016: Square_window12
+    2300018: Trim_Large
+    3300000: Balcony_Small1
+    3300002: Door3
+    3300004: Door4
+    3300006: Doors:Door1
+    3300008: Doors:Door2
+    3300010: Hotel_4_BaseFloors_Level_Base
+    3300012: Level_Windows
+    3300014: Railing
+    3300016: Square_window12
+    3300018: Trim_Large
+    4300000: Doors:Door1
+    4300002: Doors:Door2
+    4300004: Level_Windows
+    4300006: Door3
+    4300008: Door4
+    4300010: Balcony_Small1
+    4300012: Hotel_4_BaseFloors_Level_Base
+    4300014: Railing
+    4300016: Trim_Large
+    4300018: Square_window12
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,704 @@
+fileFormatVersion: 2
+guid: a5c66c9d3a28ff24bb89ed75c99472f4
+timeCreated: 1503639524
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: Crumbs_Beak1_END_001
+    100002: Crumbs_Beak1_JNT_001
+    100004: Crumbs_Beak2_END_001
+    100006: Crumbs_Beak2_JNT_001
+    100008: Crumbs_Head1_JNT_001
+    100010: Crumbs_Head2_END_001
+    100012: Crumbs_Hip_JNT_001
+    100014: Crumbs_Jaw1_JNT_001
+    100016: Crumbs_Left_Ankle_JNT_001
+    100018: Crumbs_Left_BackToe1_JNT_001
+    100020: Crumbs_Left_BackToe2_JNT_001
+    100022: Crumbs_Left_BackToe3_END_001
+    100024: Crumbs_Left_Clavicle_JNT_001
+    100026: Crumbs_Left_Elbow_JNT_001
+    100028: Crumbs_Left_FrontToes_Ball_JNT_001
+    100030: Crumbs_Left_InnerToe1_JNT_001
+    100032: Crumbs_Left_InnerToe2_JNT_001
+    100034: Crumbs_Left_InnerToe3_END_001
+    100036: Crumbs_Left_Knee_JNT_001
+    100038: Crumbs_Left_Middle2_END_001
+    100040: Crumbs_Left_Middle_JNT_001
+    100042: Crumbs_Left_OuterToe1_JNT_001
+    100044: Crumbs_Left_OuterToe2_JNT_001
+    100046: Crumbs_Left_OuterToe3_END_001
+    100048: Crumbs_Left_Pointer1_JNT_001
+    100050: Crumbs_Left_Pointer2_END_001
+    100052: Crumbs_Left_Shoulder_JNT_001
+    100054: Crumbs_Left_Thigh_JNT_001
+    100056: Crumbs_Left_Wrist_JNT_001
+    100058: Crumbs_Low_Geo_OBJ_Quad
+    100060: Crumbs_Neck1_JNT_001
+    100062: Crumbs_Neck2_JNT_001
+    100064: //RootNode
+    100066: Crumbs_Right_Ankle_JNT_001
+    100068: Crumbs_Right_BackToe1_JNT_001
+    100070: Crumbs_Right_BackToe2_JNT_001
+    100072: Crumbs_Right_BackToe3_END_001
+    100074: Crumbs_Right_Clavicle_JNT_001
+    100076: Crumbs_Right_Elbow_JNT_001
+    100078: Crumbs_Right_FrontToes_Ball_JNT_001
+    100080: Crumbs_Right_InnerToe1_JNT_001
+    100082: Crumbs_Right_InnerToe2_JNT_001
+    100084: Crumbs_Right_InnerToe3_END_001
+    100086: Crumbs_Right_Knee_JNT_001
+    100088: Crumbs_Right_Middle2_END_001
+    100090: Crumbs_Right_Middle_JNT_001
+    100092: Crumbs_Right_OuterToe1_JNT_001
+    100094: Crumbs_Right_OuterToe2_JNT_001
+    100096: Crumbs_Right_OuterToe3_END_001
+    100098: Crumbs_Right_Pointer1_JNT_001
+    100100: Crumbs_Right_Pointer2_END_001
+    100102: Crumbs_Right_Shoulder_JNT_001
+    100104: Crumbs_Right_Thigh_JNT_001
+    100106: Crumbs_Right_Wrist_JNT_001
+    100108: Crumbs_Root_JNT_001
+    100110: Crumbs_Spine1_JNT_001
+    100112: Crumbs_Spine2_JNT_001
+    100114: Crumbs_Spine3_JNT_001
+    100116: Crumbs_Tail1_JNT_001
+    100118: Crumbs_Tail2_JNT_001
+    100120: Crumbs_Tail_END_001
+    400000: Crumbs_Beak1_END_001
+    400002: Crumbs_Beak1_JNT_001
+    400004: Crumbs_Beak2_END_001
+    400006: Crumbs_Beak2_JNT_001
+    400008: Crumbs_Head1_JNT_001
+    400010: Crumbs_Head2_END_001
+    400012: Crumbs_Hip_JNT_001
+    400014: Crumbs_Jaw1_JNT_001
+    400016: Crumbs_Left_Ankle_JNT_001
+    400018: Crumbs_Left_BackToe1_JNT_001
+    400020: Crumbs_Left_BackToe2_JNT_001
+    400022: Crumbs_Left_BackToe3_END_001
+    400024: Crumbs_Left_Clavicle_JNT_001
+    400026: Crumbs_Left_Elbow_JNT_001
+    400028: Crumbs_Left_FrontToes_Ball_JNT_001
+    400030: Crumbs_Left_InnerToe1_JNT_001
+    400032: Crumbs_Left_InnerToe2_JNT_001
+    400034: Crumbs_Left_InnerToe3_END_001
+    400036: Crumbs_Left_Knee_JNT_001
+    400038: Crumbs_Left_Middle2_END_001
+    400040: Crumbs_Left_Middle_JNT_001
+    400042: Crumbs_Left_OuterToe1_JNT_001
+    400044: Crumbs_Left_OuterToe2_JNT_001
+    400046: Crumbs_Left_OuterToe3_END_001
+    400048: Crumbs_Left_Pointer1_JNT_001
+    400050: Crumbs_Left_Pointer2_END_001
+    400052: Crumbs_Left_Shoulder_JNT_001
+    400054: Crumbs_Left_Thigh_JNT_001
+    400056: Crumbs_Left_Wrist_JNT_001
+    400058: Crumbs_Low_Geo_OBJ_Quad
+    400060: Crumbs_Neck1_JNT_001
+    400062: Crumbs_Neck2_JNT_001
+    400064: //RootNode
+    400066: Crumbs_Right_Ankle_JNT_001
+    400068: Crumbs_Right_BackToe1_JNT_001
+    400070: Crumbs_Right_BackToe2_JNT_001
+    400072: Crumbs_Right_BackToe3_END_001
+    400074: Crumbs_Right_Clavicle_JNT_001
+    400076: Crumbs_Right_Elbow_JNT_001
+    400078: Crumbs_Right_FrontToes_Ball_JNT_001
+    400080: Crumbs_Right_InnerToe1_JNT_001
+    400082: Crumbs_Right_InnerToe2_JNT_001
+    400084: Crumbs_Right_InnerToe3_END_001
+    400086: Crumbs_Right_Knee_JNT_001
+    400088: Crumbs_Right_Middle2_END_001
+    400090: Crumbs_Right_Middle_JNT_001
+    400092: Crumbs_Right_OuterToe1_JNT_001
+    400094: Crumbs_Right_OuterToe2_JNT_001
+    400096: Crumbs_Right_OuterToe3_END_001
+    400098: Crumbs_Right_Pointer1_JNT_001
+    400100: Crumbs_Right_Pointer2_END_001
+    400102: Crumbs_Right_Shoulder_JNT_001
+    400104: Crumbs_Right_Thigh_JNT_001
+    400106: Crumbs_Right_Wrist_JNT_001
+    400108: Crumbs_Root_JNT_001
+    400110: Crumbs_Spine1_JNT_001
+    400112: Crumbs_Spine2_JNT_001
+    400114: Crumbs_Spine3_JNT_001
+    400116: Crumbs_Tail1_JNT_001
+    400118: Crumbs_Tail2_JNT_001
+    400120: Crumbs_Tail_END_001
+    4300000: Crumbs_Low_Geo_OBJ_Quad
+    9500000: //RootNode
+    13700000: Crumbs_Low_Geo_OBJ_Quad
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human:
+    - boneName: Crumbs_Root_JNT_001
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Crumbs_Left_Thigh_JNT_001
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Crumbs_Right_Thigh_JNT_001
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Crumbs_Left_Knee_JNT_001
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Crumbs_Right_Knee_JNT_001
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Crumbs_Left_Ankle_JNT_001
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Crumbs_Right_Ankle_JNT_001
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Crumbs_Spine1_JNT_001
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Crumbs_Spine2_JNT_001
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Crumbs_Neck1_JNT_001
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Crumbs_Head1_JNT_001
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Crumbs_Left_Clavicle_JNT_001
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Crumbs_Right_Clavicle_JNT_001
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Crumbs_Left_Shoulder_JNT_001
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Crumbs_Right_Shoulder_JNT_001
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Crumbs_Left_Elbow_JNT_001
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Crumbs_Right_Elbow_JNT_001
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Crumbs_Left_Wrist_JNT_001
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Crumbs_Right_Wrist_JNT_001
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Crumbs_Left_FrontToes_Ball_JNT_001
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Crumbs_Right_FrontToes_Ball_JNT_001
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Crumbs_Beak2_JNT_001
+      humanName: LeftEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Crumbs_Beak1_JNT_001
+      humanName: RightEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Crumbs_Spine3_JNT_001
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: Crumbs_Rigged(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Crumbs_Low_Geo_OBJ_Quad
+      parentName: Crumbs_Rigged(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Crumbs_Root_JNT_001
+      parentName: Crumbs_Rigged(Clone)
+      position: {x: 0, y: 0.62954277, z: -0.045479372}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Crumbs_Hip_JNT_001
+      parentName: Crumbs_Root_JNT_001
+      position: {x: -0, y: -0.0044948123, z: -0.09708794}
+      rotation: {x: 0.31009045, y: -0.63548714, z: -0.31009045, w: 0.63548714}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Crumbs_Spine1_JNT_001
+      parentName: Crumbs_Hip_JNT_001
+      position: {x: -0.13001435, y: 3.5527136e-17, z: -2.8868984e-17}
+      rotation: {x: 0, y: -0, z: -0.1732362, w: 0.9848803}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Crumbs_Spine2_JNT_001
+      parentName: Crumbs_Spine1_JNT_001
+      position: {x: -0.15976766, y: 6.217249e-17, z: -2.4267156e-17}
+      rotation: {x: 0.9866571, y: -0.16281235, z: -9.969382e-18, w: 6.0415326e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Crumbs_Spine3_JNT_001
+      parentName: Crumbs_Spine2_JNT_001
+      position: {x: -0.21666673, y: 3.2196467e-17, z: 1.4993805e-17}
+      rotation: {x: 0, y: 0, z: 0.054023292, w: 0.9985397}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Crumbs_Neck1_JNT_001
+      parentName: Crumbs_Spine3_JNT_001
+      position: {x: -0.35134715, y: -1.2434498e-16, z: 9.3409784e-18}
+      rotation: {x: 0, y: 0, z: 0.077362336, w: 0.9970031}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Crumbs_Neck2_JNT_001
+      parentName: Crumbs_Neck1_JNT_001
+      position: {x: -0.17188764, y: -7.105427e-17, z: -5.996621e-18}
+      rotation: {x: 0, y: 0, z: 0.0432049, w: 0.99906623}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Crumbs_Head1_JNT_001
+      parentName: Crumbs_Neck2_JNT_001
+      position: {x: -0.17013444, y: -4.4408918e-17, z: -1.1726534e-17}
+      rotation: {x: 0, y: 0, z: 0.027416293, w: 0.99962413}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Crumbs_Head2_END_001
+      parentName: Crumbs_Head1_JNT_001
+      position: {x: -0.29984137, y: -4.440892e-16, z: -2.706657e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Crumbs_Jaw1_JNT_001
+      parentName: Crumbs_Head1_JNT_001
+      position: {x: -0.11639236, y: -0.16967653, z: -2.2680805e-16}
+      rotation: {x: 0, y: 0, z: 0.3167024, w: 0.94852495}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Crumbs_Beak1_JNT_001
+      parentName: Crumbs_Jaw1_JNT_001
+      position: {x: -0.105040215, y: 0, z: -2.3323613e-17}
+      rotation: {x: 0, y: 0, z: 0.5272945, w: 0.84968257}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Crumbs_Beak1_END_001
+      parentName: Crumbs_Beak1_JNT_001
+      position: {x: -0.1319057, y: 0, z: 3.620708e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Crumbs_Beak2_JNT_001
+      parentName: Crumbs_Jaw1_JNT_001
+      position: {x: -0.029335555, y: -0.07097312, z: 2.3034694e-17}
+      rotation: {x: 0, y: 0, z: 0.20077217, w: 0.979638}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Crumbs_Beak2_END_001
+      parentName: Crumbs_Beak2_JNT_001
+      position: {x: -0.11118825, y: 2.220446e-18, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Crumbs_Left_Clavicle_JNT_001
+      parentName: Crumbs_Spine3_JNT_001
+      position: {x: -0.22614269, y: -0.057200324, z: -0.1112109}
+      rotation: {x: 0.46084228, y: -0.53630626, z: 0.47699574, w: 0.52199143}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Crumbs_Left_Shoulder_JNT_001
+      parentName: Crumbs_Left_Clavicle_JNT_001
+      position: {x: -0.14932728, y: -3.2474023e-16, z: 0}
+      rotation: {x: -0.015647484, y: -0.039812353, z: 0.010822623, w: 0.99902606}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Crumbs_Left_Elbow_JNT_001
+      parentName: Crumbs_Left_Shoulder_JNT_001
+      position: {x: -0.27696112, y: 5.7388004e-17, z: 0.023869678}
+      rotation: {x: -0.010888312, y: -0.016460482, z: 0.01193995, w: 0.9997339}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Crumbs_Left_Wrist_JNT_001
+      parentName: Crumbs_Left_Elbow_JNT_001
+      position: {x: -0.3874283, y: 5.1000204e-17, z: 0.049206674}
+      rotation: {x: 0, y: -0, z: -0.12620042, w: 0.9920048}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Crumbs_Left_Pointer1_JNT_001
+      parentName: Crumbs_Left_Wrist_JNT_001
+      position: {x: -0.050184123, y: 0, z: 0.016666777}
+      rotation: {x: 0, y: 0, z: 0.15392108, w: 0.9880831}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Crumbs_Left_Pointer2_END_001
+      parentName: Crumbs_Left_Pointer1_JNT_001
+      position: {x: -0.18709652, y: -4.000229e-17, z: 0.008730217}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Crumbs_Left_Middle_JNT_001
+      parentName: Crumbs_Left_Wrist_JNT_001
+      position: {x: -0.022712197, y: -0.032955967, z: -0.022656854}
+      rotation: {x: 0, y: 0, z: 0.27542713, w: 0.96132195}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Crumbs_Left_Middle2_END_001
+      parentName: Crumbs_Left_Middle_JNT_001
+      position: {x: -0.17546697, y: 1.7763568e-17, z: -0.027777962}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Crumbs_Right_Clavicle_JNT_001
+      parentName: Crumbs_Spine3_JNT_001
+      position: {x: -0.22614306, y: -0.057200313, z: 0.111211}
+      rotation: {x: 0.53630626, y: 0.46084228, z: 0.52199143, w: -0.47699574}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Crumbs_Right_Shoulder_JNT_001
+      parentName: Crumbs_Right_Clavicle_JNT_001
+      position: {x: 0.14932758, y: 0.0000005035821, z: -3.5527136e-17}
+      rotation: {x: -0.015647676, y: -0.03981291, z: 0.010823262, w: 0.999026}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Crumbs_Right_Elbow_JNT_001
+      parentName: Crumbs_Right_Shoulder_JNT_001
+      position: {x: 0.27696076, y: -0.00000034144813, z: -0.02387}
+      rotation: {x: -0.01088834, y: -0.016459383, z: 0.011938829, w: 0.99973404}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Crumbs_Right_Wrist_JNT_001
+      parentName: Crumbs_Right_Elbow_JNT_001
+      position: {x: 0.38742834, y: 0.00000049994594, z: -0.049206}
+      rotation: {x: 0, y: -0, z: -0.12620042, w: 0.9920048}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Crumbs_Right_Pointer1_JNT_001
+      parentName: Crumbs_Right_Wrist_JNT_001
+      position: {x: 0.05018439, y: -0.00000023611983, z: -0.0166671}
+      rotation: {x: 0, y: 0, z: 0.15392108, w: 0.9880831}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Crumbs_Right_Pointer2_END_001
+      parentName: Crumbs_Right_Pointer1_JNT_001
+      position: {x: 0.1870962, y: -0.000000091346315, z: -0.0087302}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Crumbs_Right_Middle_JNT_001
+      parentName: Crumbs_Right_Wrist_JNT_001
+      position: {x: 0.022712275, y: 0.03295588, z: 0.022657001}
+      rotation: {x: 0, y: 0, z: 0.27542713, w: 0.96132195}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Crumbs_Right_Middle2_END_001
+      parentName: Crumbs_Right_Middle_JNT_001
+      position: {x: 0.17546698, y: 0.0000002441507, z: 0.027777}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Crumbs_Tail1_JNT_001
+      parentName: Crumbs_Spine1_JNT_001
+      position: {x: 0.0013404175, y: -0.068502925, z: -2.6509585e-17}
+      rotation: {x: 0, y: 0, z: 0.9072249, w: 0.42064604}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Crumbs_Tail2_JNT_001
+      parentName: Crumbs_Tail1_JNT_001
+      position: {x: -0.4068925, y: -1.0658141e-16, z: -4.5174143e-17}
+      rotation: {x: 0, y: 0, z: 0.10269798, w: 0.9947126}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Crumbs_Tail_END_001
+      parentName: Crumbs_Tail2_JNT_001
+      position: {x: -0.27157745, y: -8.8817837e-17, z: -2.027488e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Crumbs_Left_Thigh_JNT_001
+      parentName: Crumbs_Hip_JNT_001
+      position: {x: 0.11425558, y: 0.030770464, z: 0.22092938}
+      rotation: {x: 0.24877909, y: 0.9685603, z: 2.7028011e-16, w: 8.639941e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Crumbs_Left_Knee_JNT_001
+      parentName: Crumbs_Left_Thigh_JNT_001
+      position: {x: -0.30000678, y: -3.1332685e-17, z: -0.03325819}
+      rotation: {x: 0.9887173, y: 0.14979337, z: 3.4132966e-16, w: 1.0218713e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Crumbs_Left_Ankle_JNT_001
+      parentName: Crumbs_Left_Knee_JNT_001
+      position: {x: -0.2445515, y: 0, z: -4.38223e-17}
+      rotation: {x: 0.6297242, y: 0.7768188, z: 5.5622663e-16, w: 1.1629577e-16}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Crumbs_Left_BackToe1_JNT_001
+      parentName: Crumbs_Left_Ankle_JNT_001
+      position: {x: 0.0420073, y: 0.0061900327, z: -0.0088897105}
+      rotation: {x: -0.08408741, y: 0.9964584, z: 6.1015476e-17, w: -5.148869e-18}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Crumbs_Left_BackToe2_JNT_001
+      parentName: Crumbs_Left_BackToe1_JNT_001
+      position: {x: -0.057258505, y: 3.652982e-17, z: 0.0016230879}
+      rotation: {x: -2.1243607e-16, y: -5.2680953e-17, z: 0.24069443, w: 0.97060096}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Crumbs_Left_BackToe3_END_001
+      parentName: Crumbs_Left_BackToe2_JNT_001
+      position: {x: -0.04285004, y: -3.803728e-18, z: 0.0073238676}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Crumbs_Left_FrontToes_Ball_JNT_001
+      parentName: Crumbs_Left_Ankle_JNT_001
+      position: {x: -0.034337316, y: -0.001807812, z: -0.000017801114}
+      rotation: {x: 0.023932757, y: -0.7067017, z: 0.023932757, w: 0.7067017}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Crumbs_Left_OuterToe1_JNT_001
+      parentName: Crumbs_Left_FrontToes_Ball_JNT_001
+      position: {x: -0.021821005, y: 0.0024964984, z: 0.010095103}
+      rotation: {x: -0.07073309, y: 0.7035601, z: -0.07073309, w: 0.7035601}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Crumbs_Left_OuterToe2_JNT_001
+      parentName: Crumbs_Left_OuterToe1_JNT_001
+      position: {x: -0.03424462, y: -1.13517205e-17, z: -0.008572103}
+      rotation: {x: -2.0809424e-16, y: -6.600256e-17, z: 0.30233318, w: 0.9532023}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Crumbs_Left_OuterToe3_END_001
+      parentName: Crumbs_Left_OuterToe2_JNT_001
+      position: {x: -0.061281078, y: -9.043211e-17, z: -0.011382464}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Crumbs_Left_InnerToe1_JNT_001
+      parentName: Crumbs_Left_FrontToes_Ball_JNT_001
+      position: {x: 0.011886628, y: 0.0024968246, z: 0.0100951}
+      rotation: {x: 0.7035601, y: 0.07073309, z: 0.7035601, w: 0.07073309}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Crumbs_Left_InnerToe2_JNT_001
+      parentName: Crumbs_Left_InnerToe1_JNT_001
+      position: {x: 0.03424445, y: 0.00000071217517, z: 0.008572}
+      rotation: {x: 1.4700773e-15, y: 4.662705e-16, z: 0.30233318, w: 0.9532023}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Crumbs_Left_InnerToe3_END_001
+      parentName: Crumbs_Left_InnerToe2_JNT_001
+      position: {x: 0.061281085, y: -0.00000011979384, z: 0.0076793223}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Crumbs_Right_Thigh_JNT_001
+      parentName: Crumbs_Hip_JNT_001
+      position: {x: 0.11425524, y: 0.030770715, z: -0.22092898}
+      rotation: {x: 0.000000011930837, y: -0.0000000048534226, z: -0.24877909, w: 0.9685603}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Crumbs_Right_Knee_JNT_001
+      parentName: Crumbs_Right_Thigh_JNT_001
+      position: {x: 0.30000702, y: -0.000000039298424, z: -0.033259}
+      rotation: {x: 1.0064729e-16, y: 6.6432683e-16, z: -0.14979337, w: 0.9887173}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Crumbs_Right_Ankle_JNT_001
+      parentName: Crumbs_Right_Knee_JNT_001
+      position: {x: 0.24455146, y: 0.000000015132244, z: -7.105427e-17}
+      rotation: {x: 0.6297242, y: 0.7768188, z: 0.0000000013688762, w: 0.0000000012344515}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Crumbs_Right_BackToe1_JNT_001
+      parentName: Crumbs_Right_Ankle_JNT_001
+      position: {x: -0.04200736, y: -0.0061901174, z: 0.008889}
+      rotation: {x: -0.08408741, y: 0.9964584, z: -0.0000000032753222, w: 2.7636732e-10}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Crumbs_Right_BackToe2_JNT_001
+      parentName: Crumbs_Right_BackToe1_JNT_001
+      position: {x: 0.057258748, y: 0.00000043214445, z: -0.001623}
+      rotation: {x: -0.0000000026908527, y: -6.6728023e-10, z: 0.24069443, w: 0.97060096}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Crumbs_Right_BackToe3_END_001
+      parentName: Crumbs_Right_BackToe2_JNT_001
+      position: {x: 0.042849544, y: -0.00000016115006, z: -0.007324}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Crumbs_Right_FrontToes_Ball_JNT_001
+      parentName: Crumbs_Right_Ankle_JNT_001
+      position: {x: 0.03433727, y: 0.0018081714, z: 0.000017}
+      rotation: {x: 0.023932757, y: -0.7067017, z: 0.023932757, w: 0.7067017}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Crumbs_Right_OuterToe1_JNT_001
+      parentName: Crumbs_Right_FrontToes_Ball_JNT_001
+      position: {x: 0.021821, y: -0.002497, z: -0.0100951}
+      rotation: {x: -0.07073309, y: 0.7035601, z: -0.07073309, w: 0.7035601}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Crumbs_Right_OuterToe2_JNT_001
+      parentName: Crumbs_Right_OuterToe1_JNT_001
+      position: {x: 0.03424445, y: 0.00000071217517, z: 0.008572}
+      rotation: {x: -0.0000000063847208, y: -0.0000000020250683, z: 0.30233318, w: 0.9532023}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Crumbs_Right_OuterToe3_END_001
+      parentName: Crumbs_Right_OuterToe2_JNT_001
+      position: {x: 0.061281085, y: -0.00000011979384, z: 0.011382999}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Crumbs_Right_InnerToe1_JNT_001
+      parentName: Crumbs_Right_FrontToes_Ball_JNT_001
+      position: {x: -0.011885999, y: -0.002497, z: -0.0100951}
+      rotation: {x: 0.7087698, y: 0.13213612, z: 0.69216496, w: -0.033061646}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Crumbs_Right_InnerToe2_JNT_001
+      parentName: Crumbs_Right_InnerToe1_JNT_001
+      position: {x: -0.03424445, y: -0.00000071217517, z: -0.008572}
+      rotation: {x: -0.32625148, y: -0.03024062, z: 0.24584812, w: 0.9122523}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Crumbs_Right_InnerToe3_END_001
+      parentName: Crumbs_Right_InnerToe2_JNT_001
+      position: {x: -0.061281085, y: 0.00000011959563, z: -0.00768}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

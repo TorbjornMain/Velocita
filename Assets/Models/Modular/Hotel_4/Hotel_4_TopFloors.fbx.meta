@@ -1,0 +1,140 @@
+fileFormatVersion: 2
+guid: 6e6d2a757362e2d4ca0731690a691f4a
+timeCreated: 1504846420
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: Balcony_Round
+    100002: Balcony_Small
+    100004: Door1
+    100006: Door2
+    100008: //RootNode
+    100010: Level_NoWindows
+    100012: Square_window
+    100014: Square_window11
+    100016: Square_window8
+    100018: Square_window9
+    100020: Trim_Roof
+    100022: Trim_Roof1
+    400000: Balcony_Round
+    400002: Balcony_Small
+    400004: Door1
+    400006: Door2
+    400008: //RootNode
+    400010: Level_NoWindows
+    400012: Square_window
+    400014: Square_window11
+    400016: Square_window8
+    400018: Square_window9
+    400020: Trim_Roof
+    400022: Trim_Roof1
+    2300000: Balcony_Round
+    2300002: Balcony_Small
+    2300004: Door1
+    2300006: Door2
+    2300008: Level_NoWindows
+    2300010: Square_window
+    2300012: Square_window11
+    2300014: Square_window8
+    2300016: Square_window9
+    2300018: Trim_Roof
+    2300020: Trim_Roof1
+    3300000: Balcony_Round
+    3300002: Balcony_Small
+    3300004: Door1
+    3300006: Door2
+    3300008: Level_NoWindows
+    3300010: Square_window
+    3300012: Square_window11
+    3300014: Square_window8
+    3300016: Square_window9
+    3300018: Trim_Roof
+    3300020: Trim_Roof1
+    4300000: Balcony_Small
+    4300002: Door2
+    4300004: Door1
+    4300006: Level_NoWindows
+    4300008: Trim_Roof1
+    4300010: Trim_Roof
+    4300012: Balcony_Round
+    4300014: Square_window
+    4300016: Square_window8
+    4300018: Square_window9
+    4300020: Square_window11
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
