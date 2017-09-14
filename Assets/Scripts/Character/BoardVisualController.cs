@@ -16,6 +16,7 @@ public class BoardVisualController : MonoBehaviour {
     public TrailRenderer innerTrail;
     public AnimationCurve boostTrailWidth;
     public Camera cam;
+    RenderScreenEffect rse;
     public float minFOV = 60;
     public float baseFOV = 90;
     public float animLerpSpeed;
@@ -64,6 +65,8 @@ public class BoardVisualController : MonoBehaviour {
         }
         mainModelRenderer.material.color = col;
         outerTrail.startColor = outerTrail.endColor = col;
+        if (cam)
+            rse = cam.GetComponent<RenderScreenEffect>();
     }
 
     void Update()
@@ -89,10 +92,17 @@ public class BoardVisualController : MonoBehaviour {
             }
         }
         if (cam)
-        {
             cam.fieldOfView = Mathf.LerpUnclamped(minFOV, baseFOV, hc.speed / hc.topSpeed);
+            
+        if(rse)
+        {
+            for (int i = 0; i < rse.mat.Length; i++)
+            {
+                rse.mat[i].SetFloat("_Speed", hc.speed / hc.topSpeed);
+                rse.mat[i].SetColor("_RacerColor", col);
+            }
         }
-        Shader.SetGlobalFloat("Speed", hc.speed/hc.topSpeed);
+
     }
 
     void OnCollisionEnter(Collision c)

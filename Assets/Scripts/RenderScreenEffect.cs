@@ -8,11 +8,11 @@ public class RenderScreenEffect : MonoBehaviour {
     public Vector2 targetRes;
     public FilterMode textureFilterMode;
 
-    //private void Start()
-    //{
-    //    for (int i = 0; i < mat.Length; i++)
-    //        mat[i] = new Material(mat[i]);
-    //}
+    private void Start()
+    {
+        for (int i = 0; i < mat.Length; i++)
+            mat[i] = new Material(mat[i]);
+    }
 
     private void OnRenderImage(RenderTexture source, RenderTexture destination)
     {

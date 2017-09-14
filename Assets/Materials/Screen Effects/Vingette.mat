@@ -6,8 +6,8 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Bloom
-  m_Shader: {fileID: 4800000, guid: 73db99676b6eae842a5b3be1208124b3, type: 3}
+  m_Name: Vingette
+  m_Shader: {fileID: 4800000, guid: 5aa24e90f7e41d84192849fbef9ede1f, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -59,17 +59,16 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _FalloffPower: 16
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _Intensity: 0.049
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
+    - _Speed: 0
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1
