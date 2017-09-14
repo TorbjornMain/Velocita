@@ -20,7 +20,7 @@ public class SoundZone : MonoBehaviour {
         foreach (var sound in sounds)
         {
             sound.Value.gameObject.transform.position = transform.position - sound.Key.transform.position;
-            sound.Value.volume = (transform.position - sound.Key.transform.position).magnitude / sound.Value.maxDistance;
+            sound.Value.volume =  1 -((transform.position - sound.Key.transform.position).magnitude / sound.Value.maxDistance);
         }
 	}
 
