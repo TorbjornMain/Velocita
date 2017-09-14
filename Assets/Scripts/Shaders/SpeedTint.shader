@@ -1,10 +1,13 @@
 ﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
 
-Shader "Hidden/SpeedTint"
+Shader "Custom/SpeedTint"
 {
 	Properties
 	{
 		_MainTex ("Texture", 2D) = "white" {}
+		_Speed("Speed", Float) = 0
+		_Intensity("Intensity", Range(0,1)) = 0.8
+		_RacerColor("Racer Color", Color) = (1,1,1,1)
 	}
 	SubShader
 	{
@@ -40,15 +43,17 @@ Shader "Hidden/SpeedTint"
 			}
 			
 			sampler2D _MainTex;
-			uniform float Speed;
+			float _Speed;
+			float _Intensity;
+			fixed4 _RacerColor;
 
 			fixed4 frag (v2f i) : SV_Target
 			{
 				fixed4 col = tex2D(_MainTex, i.uv);
 				float2 tUV = ((i.uv - float2(0.5, 0.5)) * 2);
-				if (length(tUV) > 1.8 - Speed)
+				if (length(tUV) > 1.8 - _Speed)
 				{
-					col *=  (1 + length(tUV) - (1.8 - Speed));
+					col += _RacerColor * ((_Intensity * (length(tUV) - (1.8 - _Speed))));
 					col.a = 1;
 				}
 				return col;
