@@ -20,8 +20,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4602195796317446}
   - component: {fileID: 114121396257659378}
-  - component: {fileID: 81190101714801620}
   - component: {fileID: 114158165559093844}
+  - component: {fileID: 81688913429874484}
   m_Layer: 0
   m_Name: Spawner
   m_TagString: Untagged
@@ -42,13 +42,13 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -60, z: 0}
---- !u!81 &81190101714801620
+--- !u!81 &81688913429874484
 AudioListener:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1269835663914718}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!114 &114121396257659378
 MonoBehaviour:
   m_ObjectHideFlags: 1
