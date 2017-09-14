@@ -3098,7 +3098,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mat:
-  - {fileID: 4800000, guid: 73db99676b6eae842a5b3be1208124b3, type: 3}
+  - {fileID: 2100000, guid: 04775171b85b8e34c94c616a1dc93c11, type: 2}
   targetRes: {x: 0, y: 0}
   textureFilterMode: 2
 --- !u!114 &114090519890545464
@@ -3244,10 +3244,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbe9f53511ce14447b8668094074edf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  active: 1
   cam: {fileID: 20408024484148804}
   hudCam: {fileID: 20378627228624404}
-  active: 1
   colour: 0
+  finished: 0
 --- !u!114 &114771025330949982
 MonoBehaviour:
   m_ObjectHideFlags: 1

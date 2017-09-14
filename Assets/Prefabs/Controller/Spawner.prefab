@@ -69,7 +69,7 @@ MonoBehaviour:
   - {x: 15, y: 0, z: -10}
   - {x: -5, y: 0, z: -10}
   - {x: -15, y: 0, z: -10}
-  playerPrefab: {fileID: 114394676340649608, guid: 8a48b335216acbb4c8813ffa42959e19,
+  playerPrefab: {fileID: 114706794255668244, guid: 2ac6f545a60bbd149ab110e69b3193ff,
     type: 2}
   aiPrefab: {fileID: 114968011317280492, guid: 2674895ea26b9254db1361a9116f2d11, type: 2}
   HUDPrefab: {fileID: 114371160398304120, guid: f6a868bc815f78d4596edbf1823f8118,

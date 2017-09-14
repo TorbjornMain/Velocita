@@ -4,9 +4,15 @@ using UnityEngine;
 
 public class RenderScreenEffect : MonoBehaviour {
 
-    public Shader[] mat;
+    public Material[] mat;
     public Vector2 targetRes;
     public FilterMode textureFilterMode;
+
+    //private void Start()
+    //{
+    //    for (int i = 0; i < mat.Length; i++)
+    //        mat[i] = new Material(mat[i]);
+    //}
 
     private void OnRenderImage(RenderTexture source, RenderTexture destination)
     {
@@ -30,7 +36,7 @@ public class RenderScreenEffect : MonoBehaviour {
                 drt = RenderTexture.GetTemporary(source.width, source.height);
                 drt.filterMode = textureFilterMode;
                 Graphics.SetRenderTarget(drt);
-                Graphics.Blit(srt, new Material(mat[i]));
+                Graphics.Blit(srt, mat[i]);
                 if (i > 0)
                 {
                     srt.Release();
@@ -39,7 +45,7 @@ public class RenderScreenEffect : MonoBehaviour {
             }
 
             Graphics.SetRenderTarget(destination);
-            Graphics.Blit(srt, new Material(mat[mat.Length - 1]));
+            Graphics.Blit(srt, mat[mat.Length - 1]);
             srt.Release();
         }
         else

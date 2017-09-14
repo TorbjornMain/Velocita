@@ -1,8 +1,9 @@
-﻿Shader "Hidden/BasicBloom"
+﻿Shader "Custom/BasicBloom"
 {
 	Properties
 	{
 		_MainTex ("Texture", 2D) = "white" {}
+		_Intensity("Bloom Intensity", Range(0, 1)) = 0.1
 	}
 	SubShader
 	{
@@ -38,21 +39,19 @@
 			}
 			
 			sampler2D _MainTex;
+			float _Intensity;
 			uniform float4 _MainTex_TexelSize;
-			uniform float Speed;
 
 			fixed4 frag (v2f i) : SV_Target
 			{
 				fixed4 color = tex2D(_MainTex, i.uv);
 				float2 texel = _MainTex_TexelSize.xy;
-				[unroll(18)]
-				for (int dx = -9; dx < 9; dx++)
+				for (int dx = -6; dx < 6; dx++)
 				{
-					[unroll(18)]
-					for (int dy = -9; dy < 9; dy++)
+					for (int dy = -6; dy < 6; dy++)
 					{
 						fixed4 col = tex2D(_MainTex, i.uv + float2(dx*texel.x, dy*texel.y));
-						color += (1.0 / (1.0 + 0.1*(pow(dx, 8) + pow(dy, 8))) * fixed4(pow(col, fixed4(10, 10, 10, 10))));
+						color += col * _Intensity/(10.0f * (1 + pow(dx/3, 8) + pow(dy/3, 8)));
 					}
 				}
 				return color;
