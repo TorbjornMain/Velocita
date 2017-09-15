@@ -48,7 +48,7 @@ AudioListener:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1269835663914718}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!114 &114121396257659378
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -69,7 +69,7 @@ MonoBehaviour:
   - {x: 15, y: 0, z: -10}
   - {x: -5, y: 0, z: -10}
   - {x: -15, y: 0, z: -10}
-  playerPrefab: {fileID: 114706794255668244, guid: 2ac6f545a60bbd149ab110e69b3193ff,
+  playerPrefab: {fileID: 114701812290214834, guid: c0a66026e3616084c90d9d700aef9bb2,
     type: 2}
   aiPrefab: {fileID: 114968011317280492, guid: 2674895ea26b9254db1361a9116f2d11, type: 2}
   HUDPrefab: {fileID: 114371160398304120, guid: f6a868bc815f78d4596edbf1823f8118,
