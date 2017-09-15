@@ -87,7 +87,7 @@ public class HoverboardController : MonoBehaviour
             for (int i = 0; i < baseOffsets.Length; i++)
             {
                 RaycastHit rc = new RaycastHit();
-                if (Physics.Raycast(transform.TransformPoint(baseOffsets[i]), -transform.up, out rc, desiredHeight, ~LayerMask.NameToLayer("Player")))
+                if (Physics.Raycast(transform.TransformPoint(baseOffsets[i]), -transform.up, out rc, desiredHeight, 1<<LayerMask.NameToLayer("Terrain")))
                 {
                     r.AddForceAtPosition(transform.up * (1 - rc.distance / (desiredHeight)) * floatStrength / baseOffsets.Length, transform.TransformPoint(baseOffsets[i]), ForceMode.Acceleration);
                     isGrounded = true;
