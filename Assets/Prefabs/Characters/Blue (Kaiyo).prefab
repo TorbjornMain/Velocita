@@ -150,6 +150,7 @@ GameObject:
   - component: {fileID: 114856679338115170}
   - component: {fileID: 114390258543489766}
   - component: {fileID: 114014908520045446}
+  - component: {fileID: 114775767168015126}
   m_Layer: 8
   m_Name: Blue (Kaiyo)
   m_TagString: Player
@@ -3307,6 +3308,19 @@ MonoBehaviour:
   scrapeSoundPrefab: {fileID: 114137354118615038, guid: d0839b26962a0454f80e839236251c40,
     type: 2}
   collideSoundPrefab: {fileID: 114137354118615038, guid: 6410e0a5679f79b45b1070150e272be4,
+    type: 2}
+--- !u!114 &114775767168015126
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1066739690494042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a148b6b452ee6664083cbe93a70b7893, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundEffectPrefab: {fileID: 82958477640306452, guid: 70e6da6c00e2cc24ab828a470d4d9e17,
     type: 2}
 --- !u!114 &114856679338115170
 MonoBehaviour:

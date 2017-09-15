@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4265879613484832}
   - component: {fileID: 114048428208422790}
+  - component: {fileID: 114021874106020718}
   m_Layer: 0
   m_Name: MatchMine
   m_TagString: Untagged
@@ -40,6 +41,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114021874106020718
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1652804880373222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a148b6b452ee6664083cbe93a70b7893, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundEffectPrefab: {fileID: 82958477640306452, guid: 60ac9cdbd6377ef4e87dca6cd63f418d,
+    type: 2}
 --- !u!114 &114048428208422790
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52,6 +66,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   width: 40
-  minePrefab: {fileID: 114046989415568878, guid: 323fccfe6d3ce714a84ebee6b49c87ee,
+  minePrefab: {fileID: 114046989415568878, guid: 873edcd33f9ca8f43a1825efb2f69510,
     type: 2}
   mineFloatHeight: 5
