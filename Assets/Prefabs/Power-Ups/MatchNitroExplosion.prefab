@@ -128,7 +128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slowFactor: 0.5
-  radius: 30
+  radius: 120
   angle: 40
   expTime: 0.5
   hitTargets:
@@ -216,7 +216,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -1297318465
+  randomSeed: 1345824183
   InitialModule:
     serializedVersion: 3
     enabled: 1
