@@ -26,6 +26,9 @@ public class BoardVisualController : MonoBehaviour {
     Color col;
     Vector3 animIn = Vector3.zero;
     IKController ik;
+    public SoundZone scrapeSoundPrefab;
+    public SoundZone collideSoundPrefab;
+    SoundZone scrapeSoundInstance;
 
     void Start()
     {
@@ -107,23 +110,30 @@ public class BoardVisualController : MonoBehaviour {
 
     void OnCollisionEnter(Collision c)
     {
+        SoundZone s = Instantiate(collideSoundPrefab);
+        s.transform.position = transform.position;
+        Destroy(s.gameObject, 5);
+        if(scrapeSoundInstance == null)
+            scrapeSoundInstance = Instantiate(scrapeSoundPrefab);
         if (sparkInstance == null)
-        {
             sparkInstance = Instantiate<ParticleSystem>(sparkParticles);
-        }
+
         sparkInstance.transform.position = transform.position;//c.contacts[0].point+(c.contacts[0].normal * 0.3f);
     }
 
     void OnCollisionStay(Collision c)
     {
+        if (scrapeSoundInstance == null)
+            scrapeSoundInstance.transform.position = transform.position;
+
         if(sparkInstance != null)
-        {
             sparkInstance.transform.position = transform.position;//c.contacts[0].point + (c.contacts[0].normal * 0.3f);
-        }
     }
 
     void OnCollisionExit(Collision c)
     {
+        if (scrapeSoundInstance != null)
+            Destroy(scrapeSoundInstance.gameObject);
         if (sparkInstance != null)
             Destroy(sparkInstance.gameObject);
     }

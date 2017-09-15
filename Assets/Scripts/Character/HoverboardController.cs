@@ -38,6 +38,10 @@ public class HoverboardController : MonoBehaviour
     public bool rollingStart = false;
     public float rollingStartVel = 100;
     public float speedCap = 400;
+    public AudioSource driftSoundPrefab;
+    AudioSource driftSoundInstance;
+    public AudioSource boostSoundPrefab;
+
     public float speed
     {
         get
@@ -215,12 +219,15 @@ public class HoverboardController : MonoBehaviour
 
     void StartDrift()
     {
+        driftSoundInstance = Instantiate(driftSoundPrefab);
+        driftSoundInstance.transform.position = Vector3.zero;
         preDriftSpeed = r.velocity.magnitude;
         preDriftDirection = transform.forward;
     }
 
     void EndDrift()
     {
+        Destroy(driftSoundInstance.gameObject);
         float speedDif = preDriftSpeed - r.velocity.magnitude;
         Vector3 f = transform.forward;
         preDriftDirection.y = f.y = 0;
@@ -250,6 +257,10 @@ public class HoverboardController : MonoBehaviour
     }
     public IEnumerator Boost(float speedDifference, float dirFactor)
     {
+        AudioSource s = Instantiate(boostSoundPrefab);
+        s.transform.position = Vector3.zero;
+        Destroy(s.gameObject, 5);
+
         if(controller as PlayerController != null)
         {
             if((controller as PlayerController).active)
