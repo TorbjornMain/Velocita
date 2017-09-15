@@ -14,7 +14,7 @@ public class ShieldManager : MonoBehaviour {
 
     bool _shielded = false;
     public Renderer sphereRenderer;
-
+    public AudioSource shieldOffSound;
     
     void Update()
     {
@@ -24,6 +24,9 @@ public class ShieldManager : MonoBehaviour {
     public IEnumerator reset(float time)
     {
         yield return new WaitForSeconds(time);
+        AudioSource a = Instantiate(shieldOffSound);
+        a.transform.position = Vector3.zero;
+        Destroy(a.gameObject,5);
         _shielded = false;
     }
 }
