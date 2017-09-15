@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4656370110674394}
   - component: {fileID: 114602132619139530}
+  - component: {fileID: 114473011873091452}
   m_Layer: 0
   m_Name: MatchShield
   m_TagString: Untagged
@@ -40,6 +41,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114473011873091452
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1365243875654482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a148b6b452ee6664083cbe93a70b7893, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundEffectPrefab: {fileID: 82958477640306452, guid: d6561733f2ff59245a446bbb25790896,
+    type: 2}
 --- !u!114 &114602132619139530
 MonoBehaviour:
   m_ObjectHideFlags: 1

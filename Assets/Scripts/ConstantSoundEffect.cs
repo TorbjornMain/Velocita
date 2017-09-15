@@ -10,4 +10,8 @@ public class ConstantSoundEffect : MonoBehaviour {
         soundEffectInstance = Instantiate(soundEffectPrefab);
         soundEffectInstance.transform.position = new Vector3(0, 0, 0);
 	}
+    void OnDestroy()
+    {
+        Destroy(soundEffectInstance.gameObject);
+    }
 }

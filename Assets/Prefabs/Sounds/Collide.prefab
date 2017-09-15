@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4003071378698650}
   - component: {fileID: 82958477640306452}
   m_Layer: 0
-  m_Name: TestSound
+  m_Name: Collide
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -49,7 +49,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 25f904a1cce884c48984b6307ea5fae5, type: 3}
+  m_audioClip: {fileID: 8300000, guid: eea8a2f23cd3b3f4bb8983255e74ed45, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1

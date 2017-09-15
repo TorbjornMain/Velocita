@@ -3086,6 +3086,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphereRenderer: {fileID: 23225692754339732}
+  shieldOffSound: {fileID: 82958477640306452, guid: c0de453f47cb6f04eb97c2b3a5c3d33d,
+    type: 2}
 --- !u!114 &114040739272947736
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3197,6 +3199,8 @@ MonoBehaviour:
   rollingStart: 0
   rollingStartVel: 100
   speedCap: 400
+  driftSoundPrefab: {fileID: 0}
+  boostSoundPrefab: {fileID: 0}
 --- !u!114 &114390258543489766
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3298,6 +3302,8 @@ MonoBehaviour:
   minFOV: 60
   baseFOV: 90
   animLerpSpeed: 5
+  scrapeSoundPrefab: {fileID: 0}
+  collideSoundPrefab: {fileID: 0}
 --- !u!114 &114856679338115170
 MonoBehaviour:
   m_ObjectHideFlags: 1
