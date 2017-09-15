@@ -3199,8 +3199,10 @@ MonoBehaviour:
   rollingStart: 0
   rollingStartVel: 100
   speedCap: 400
-  driftSoundPrefab: {fileID: 0}
-  boostSoundPrefab: {fileID: 0}
+  driftSoundPrefab: {fileID: 82958477640306452, guid: d1cdd1dbce8ebe341b6f4323bfc1481a,
+    type: 2}
+  boostSoundPrefab: {fileID: 82958477640306452, guid: b7942167260f66f42aaf10e4abbf86d6,
+    type: 2}
 --- !u!114 &114390258543489766
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3302,8 +3304,10 @@ MonoBehaviour:
   minFOV: 60
   baseFOV: 90
   animLerpSpeed: 5
-  scrapeSoundPrefab: {fileID: 0}
-  collideSoundPrefab: {fileID: 0}
+  scrapeSoundPrefab: {fileID: 114137354118615038, guid: d0839b26962a0454f80e839236251c40,
+    type: 2}
+  collideSoundPrefab: {fileID: 114137354118615038, guid: 6410e0a5679f79b45b1070150e272be4,
+    type: 2}
 --- !u!114 &114856679338115170
 MonoBehaviour:
   m_ObjectHideFlags: 1

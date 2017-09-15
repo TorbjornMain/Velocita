@@ -70,11 +70,6 @@ public class MatchMissile : PowerupEntity {
         Instantiate(explosion).transform.position = transform.position;
         Destroy(gameObject);
     }
-    void OnCollisionEnter(Collision other)
-    {
-        Instantiate(explosion).transform.position = transform.position;
-        Destroy(gameObject);
-    }
 
 
     IEnumerator ActivateCollider()

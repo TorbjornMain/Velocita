@@ -34,4 +34,12 @@ public class SoundZone : MonoBehaviour {
         Destroy(sounds[other.gameObject].gameObject);
         sounds.Remove(other.gameObject);
     }
+
+    void OnDestroy()
+    {
+        foreach (var sound in sounds)
+        {
+            Destroy(sound.Value.gameObject);
+        }
+    }
 }

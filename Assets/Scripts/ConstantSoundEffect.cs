@@ -12,6 +12,6 @@ public class ConstantSoundEffect : MonoBehaviour {
 	}
     void OnDestroy()
     {
-        Destroy(soundEffectInstance.gameObject);
+        if (soundEffectInstance != null) Destroy(soundEffectInstance.gameObject);
     }
 }

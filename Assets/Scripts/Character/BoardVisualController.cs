@@ -123,7 +123,7 @@ public class BoardVisualController : MonoBehaviour {
 
     void OnCollisionStay(Collision c)
     {
-        if (scrapeSoundInstance == null)
+        if (scrapeSoundInstance != null)
             scrapeSoundInstance.transform.position = transform.position;
 
         if(sparkInstance != null)
@@ -134,6 +134,7 @@ public class BoardVisualController : MonoBehaviour {
     {
         if (scrapeSoundInstance != null)
             Destroy(scrapeSoundInstance.gameObject);
+
         if (sparkInstance != null)
             Destroy(sparkInstance.gameObject);
     }

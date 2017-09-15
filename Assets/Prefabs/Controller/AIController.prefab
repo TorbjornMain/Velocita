@@ -1591,7 +1591,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1690452117043888}
-  m_LocalRotation: {x: 0.70876986, y: 0.13213614, z: 0.692165, w: -0.03306165}
+  m_LocalRotation: {x: 0.7087698, y: 0.13213612, z: 0.69216496, w: -0.033061646}
   m_LocalPosition: {x: -0.011885999, y: -0.002497, z: -0.0100951}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -2413,6 +2413,10 @@ MonoBehaviour:
   rollingStart: 0
   rollingStartVel: 100
   speedCap: 400
+  driftSoundPrefab: {fileID: 82958477640306452, guid: d1cdd1dbce8ebe341b6f4323bfc1481a,
+    type: 2}
+  boostSoundPrefab: {fileID: 82958477640306452, guid: b7942167260f66f42aaf10e4abbf86d6,
+    type: 2}
 --- !u!114 &114547542391431614
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2476,6 +2480,10 @@ MonoBehaviour:
   minFOV: 60
   baseFOV: 90
   animLerpSpeed: 5
+  scrapeSoundPrefab: {fileID: 114137354118615038, guid: 6410e0a5679f79b45b1070150e272be4,
+    type: 2}
+  collideSoundPrefab: {fileID: 114137354118615038, guid: 6410e0a5679f79b45b1070150e272be4,
+    type: 2}
 --- !u!114 &114696943073119988
 MonoBehaviour:
   m_ObjectHideFlags: 1

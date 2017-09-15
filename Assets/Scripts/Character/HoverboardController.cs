@@ -41,6 +41,7 @@ public class HoverboardController : MonoBehaviour
     public AudioSource driftSoundPrefab;
     AudioSource driftSoundInstance;
     public AudioSource boostSoundPrefab;
+    bool drifting = false;
 
     public float speed
     {
@@ -118,11 +119,14 @@ public class HoverboardController : MonoBehaviour
             if (c.DriftPressed)
             {
                 StartDrift();
+                drifting = true;
             }
 
             if (c.DriftReleased)
             {
-                EndDrift();
+                if(drifting)
+                    EndDrift();
+                drifting = false;
             }
 
             if (c.DriftHeld)
@@ -227,7 +231,7 @@ public class HoverboardController : MonoBehaviour
 
     void EndDrift()
     {
-        Destroy(driftSoundInstance.gameObject);
+        if(driftSoundInstance != null) Destroy(driftSoundInstance.gameObject);
         float speedDif = preDriftSpeed - r.velocity.magnitude;
         Vector3 f = transform.forward;
         preDriftDirection.y = f.y = 0;
