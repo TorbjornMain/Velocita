@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4003071378698650}
   - component: {fileID: 82958477640306452}
   m_Layer: 0
-  m_Name: TestSound
+  m_Name: Crowd Cheer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

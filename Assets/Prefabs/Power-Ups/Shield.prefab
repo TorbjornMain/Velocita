@@ -20,6 +20,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4756884835032470}
   - component: {fileID: 114168299280629622}
+  - component: {fileID: 135093495164931174}
+  - component: {fileID: 114905378843312064}
   m_Layer: 0
   m_Name: Shield
   m_TagString: Untagged
@@ -52,3 +54,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   duration: 10
+--- !u!114 &114905378843312064
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1338143659353538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a148b6b452ee6664083cbe93a70b7893, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundEffectPrefab: {fileID: 82958477640306452, guid: d6561733f2ff59245a446bbb25790896,
+    type: 2}
+--- !u!135 &135093495164931174
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1338143659353538}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
