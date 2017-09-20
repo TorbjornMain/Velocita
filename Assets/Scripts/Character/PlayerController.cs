@@ -4,7 +4,7 @@ using UnityEngine;
 using InControl;
 
 public enum RacerColor
-{ Red = 0, Blue = 1, Green = 2, Yellow = 3 }
+{ Red = 0, Blue = 1, Green = 2, Yellow = 3, White = 4 }
 
 public class PlayerController : Controller {
 

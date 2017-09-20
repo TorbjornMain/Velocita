@@ -45,6 +45,7 @@ public class PlayerSpawner : MonoBehaviour {
                 playerHUDs.Add(h);
                 playerLaps.Add(h.playerLapGateUser = players[players.Count - 1].GetComponent<LapGateUser>());
                 playerLaps[playerLaps.Count - 1].data.name = devices[i].col.ToString();
+                playerLaps[playerLaps.Count - 1].data.racerCol = devices[i].col;
                 if (rollingStart)
                 {
                     iTween.MoveTo(players[players.Count - 1].gameObject, iTween.Hash("speed", 100, "position", rs.transform.TransformPoint(rs.playerStartPositions[i]), "easetype", iTween.EaseType.linear, "oncomplete", "FinishRollingStart", "onupdatetarget", players[players.Count - 1].gameObject, "oncompleteparams", h));
@@ -58,7 +59,8 @@ public class PlayerSpawner : MonoBehaviour {
             for (int i = devices.Count; i < spawnLocations.Length; i++)
             {
                 LapGateUser lgu = Instantiate<AIController>(aiPrefab).GetComponent<LapGateUser>();
-                lgu.name = "AI " + i.ToString();
+                lgu.name = lgu.data.name = "AI " + i.ToString();
+                lgu.data.racerCol = RacerColor.White;
                 lgu.transform.position = transform.TransformPoint(spawnLocations[i]);
                 lgu.transform.rotation = transform.rotation;
                 playerLaps.Add(lgu);

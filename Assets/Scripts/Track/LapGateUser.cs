@@ -5,9 +5,9 @@ using UnityEngine;
 
 public struct LapGateUserData
 {
-
     public string name;
     public List<float> lapTimes;
+    public RacerColor racerCol;
 }
 
 public class LapGateUser : MonoBehaviour, System.IComparable {

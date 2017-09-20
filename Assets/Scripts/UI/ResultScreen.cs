@@ -6,21 +6,23 @@ using UnityEngine.UI;
 public class ResultScreen : MonoBehaviour {
 
     public Vector2 startList;
+    public ResultCard scoreObjectPrefab;
     public float yOffset;
     public float spawnOffset;
     public float timeDelay = 1;
     public float listItemDelay = 0.7f;
     public string menuScene;
-    public Font f;
+    public Color AICardColour = Color.white;
+    public Color RedCardColour = Color.red;
+    public Color BlueCardColour = Color.blue;
+    public Color YellowCardColor = Color.yellow;
+    public Color GreenCardColor = Color.magenta;
 
-    Text resultEntryGen(int position, LapGateUserData data)
+    void resultEntryGen(int position, LapGateUserData data)
     {
-        Text t = new GameObject().AddComponent<Text>();
-        t.alignment = TextAnchor.MiddleCenter;
-        t.font = f;
-        t.color = Color.black;
-        t.rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, 300);
-        t.rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, 30);
+        ResultCard scoreObjectInstance = Instantiate(scoreObjectPrefab);
+        Color col = (data.racerCol == RacerColor.White) ? AICardColour : ((data.racerCol == RacerColor.Red) ? RedCardColour : ((data.racerCol == RacerColor.Blue) ? BlueCardColour: ((data.racerCol == RacerColor.Green) ? GreenCardColor : (YellowCardColor))));
+        scoreObjectInstance.GetComponent<Image>().color = col;
         float time = 0;
         for(int i = 0; i < data.lapTimes.Count; i++)
         {
@@ -63,11 +65,11 @@ public class ResultScreen : MonoBehaviour {
             minuteString = "0" + minutes.ToString();
         }
 
-        t.text = (position + 1).ToString() + ": " + data.name + " Time: " + minuteString + ":" + secondString;
-        t.rectTransform.SetParent(transform);
-        t.transform.localPosition = new Vector3(startList.x - spawnOffset, startList.y - yOffset * position, 0);
-        iTween.MoveTo(t.gameObject, iTween.Hash( "position", transform.TransformPoint(new Vector3(startList.x, startList.y - yOffset * position, 0)), "time", timeDelay, "easeType", iTween.EaseType.easeOutElastic));
-        return t;
+        scoreObjectInstance.nameText.text = data.name;
+        scoreObjectInstance.timeText.text = minuteString + ":" + secondString;
+        scoreObjectInstance.transform.SetParent(transform);
+        scoreObjectInstance.transform.localPosition = new Vector3(startList.x - spawnOffset, startList.y - yOffset * position, 0);
+        iTween.MoveTo(scoreObjectInstance.gameObject, iTween.Hash( "position", transform.TransformPoint(new Vector3(startList.x, startList.y - yOffset * position, 0)), "time", timeDelay, "easeType", iTween.EaseType.easeOutExpo));
        
     }
 

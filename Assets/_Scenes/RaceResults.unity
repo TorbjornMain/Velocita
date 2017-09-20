@@ -539,12 +539,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startList: {x: 0, y: 204}
+  scoreObjectPrefab: {fileID: 114486783467622570, guid: c7b5e62d747160542ba7318aecfd74dd,
+    type: 2}
   yOffset: 40
   spawnOffset: 500
   timeDelay: 3
   listItemDelay: 2
   menuScene: MainMenuTest
-  f: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  AICardColour: {r: 1, g: 1, b: 1, a: 1}
+  RedCardColour: {r: 1, g: 0, b: 0, a: 1}
+  BlueCardColour: {r: 0, g: 0, b: 1, a: 1}
+  YellowCardColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  GreenCardColor: {r: 1, g: 0, b: 1, a: 1}
 --- !u!1 &2047062785
 GameObject:
   m_ObjectHideFlags: 0
