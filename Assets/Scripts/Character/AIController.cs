@@ -35,10 +35,11 @@ public class AIController : Controller {
             Vector3 fwd = transform.forward;
             fwd.y = 0;
             fwd.Normalize();
-            Physics.Raycast(transform.position, Quaternion.Euler(new Vector3(0, -30, 0)) * fwd, out rc, rayRange, 1 << LayerMask.NameToLayer("Wall"));
-            float leftDist = rc.distance > 0 ? rc.distance / rayRange : 1;
-            Physics.Raycast(transform.position, Quaternion.Euler(new Vector3(0, 30, 0)) * fwd, out rc, rayRange, 1 << LayerMask.NameToLayer("Wall"));
-            float rightDist = rc.distance > 0 ? rc.distance / rayRange : 1;
+            
+            float leftDist = Physics.Raycast(transform.position, Quaternion.Euler(new Vector3(0, -30, 0)) * fwd, out rc, rayRange, 1 << LayerMask.NameToLayer("Wall")) ? Mathf.Abs(rc.distance / rayRange) : 1;
+            float rightDist = Physics.Raycast(transform.position, Quaternion.Euler(new Vector3(0, 30, 0)) * fwd, out rc, rayRange, 1 << LayerMask.NameToLayer("Wall")) ? Mathf.Abs(rc.distance / rayRange) : 1;
+
+            print("LeftDistance " + leftDist.ToString() + " RightDistance " + rightDist.ToString() + " " + (rightDist - leftDist).ToString());
 
             if (time <= 0)
             {
