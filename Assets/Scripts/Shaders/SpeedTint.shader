@@ -5,6 +5,7 @@ Shader "Custom/SpeedTint"
 	Properties
 	{
 		_MainTex ("Texture", 2D) = "white" {}
+		_VingetteTexture("Vingette Template", 2D) = "white" {}
 		_Speed("Speed", Float) = 0
 		_Intensity("Intensity", Range(0,1)) = 0.8
 		_RacerColor("Racer Color", Color) = (1,1,1,1)
@@ -43,6 +44,7 @@ Shader "Custom/SpeedTint"
 			}
 			
 			sampler2D _MainTex;
+			sampler2D _VingetteTexture;
 			float _Speed;
 			float _Intensity;
 			fixed4 _RacerColor;
@@ -56,7 +58,7 @@ Shader "Custom/SpeedTint"
 					col += _RacerColor * ((_Intensity * (length(tUV) - (1.8 - _Speed))));
 					col.a = 1;
 				}
-				return col;
+				return col * tex2D(_VingetteTexture, i.uv);
 			}
 			ENDCG
 		}

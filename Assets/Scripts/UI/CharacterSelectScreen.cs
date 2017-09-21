@@ -33,7 +33,7 @@ public class CharacterSelectScreen : MonoBehaviour {
         {
             if (!selectorInstances[i].hasSelected)
             {
-                if (cm.players[i].ind.Action1)
+                if (cm.players[i].ind.Action1.WasPressed)
                 {
                     if (!selected[selectorInstances[i].hoveredIndex])
                     {
