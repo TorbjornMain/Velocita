@@ -26,7 +26,7 @@ public class ConeExplosion : MonoBehaviour {
             Collider[] objs = Physics.OverlapSphere(transform.position, cRad, hitTargets.value);
             foreach (Collider item in objs)
             {
-                if (Mathf.Acos(Vector3.Dot((item.transform.position - transform.position).normalized, transform.forward)) < angle)
+                if (Mathf.Acos(Vector3.Dot((item.transform.position - transform.position).normalized, -transform.forward)) < angle)
                 {
                     onHit(item);
                 }

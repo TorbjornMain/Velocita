@@ -133,7 +133,7 @@ MonoBehaviour:
   expTime: 0.5
   hitTargets:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 4352
 --- !u!114 &114667748418280080
 MonoBehaviour:
   m_ObjectHideFlags: 1
