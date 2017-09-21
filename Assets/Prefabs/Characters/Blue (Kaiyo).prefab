@@ -151,6 +151,7 @@ GameObject:
   - component: {fileID: 114390258543489766}
   - component: {fileID: 114014908520045446}
   - component: {fileID: 114775767168015126}
+  - component: {fileID: 114505583434996482}
   m_Layer: 8
   m_Name: Blue (Kaiyo)
   m_TagString: Player
@@ -3226,6 +3227,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7701343f028145a44b9e6c5eb464f787, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114505583434996482
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1066739690494042}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f80173d36bff730468b3fca33d9bebc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  active: 1
+  rayRange: 40
+  steerWeight: 10
+  accelWeight: 1
+  accelChangeTime: 10
+  speedVariance: 0.05
 --- !u!114 &114633356377784272
 MonoBehaviour:
   m_ObjectHideFlags: 1

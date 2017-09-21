@@ -86,6 +86,8 @@ public class HoverboardController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (c == null)
+            c = GetComponent<Controller>();
         if (!rollingStart)
         {
             bool isGrounded = false;

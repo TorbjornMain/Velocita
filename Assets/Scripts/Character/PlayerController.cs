@@ -65,7 +65,7 @@ public class PlayerController : Controller {
 
     void FinishRace()
     {
-        Deactivate();
-        finished = true;
+        GetComponent<AIController>().enabled = true;
+        Destroy(this);
     }
 }
