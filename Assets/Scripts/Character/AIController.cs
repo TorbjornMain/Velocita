@@ -39,7 +39,6 @@ public class AIController : Controller {
             float leftDist = Physics.Raycast(transform.position, Quaternion.Euler(new Vector3(0, -30, 0)) * fwd, out rc, rayRange, 1 << LayerMask.NameToLayer("Wall")) ? Mathf.Abs(rc.distance / rayRange) : 1;
             float rightDist = Physics.Raycast(transform.position, Quaternion.Euler(new Vector3(0, 30, 0)) * fwd, out rc, rayRange, 1 << LayerMask.NameToLayer("Wall")) ? Mathf.Abs(rc.distance / rayRange) : 1;
 
-            print("LeftDistance " + leftDist.ToString() + " RightDistance " + rightDist.ToString() + " " + (rightDist - leftDist).ToString());
 
             if (time <= 0)
             {

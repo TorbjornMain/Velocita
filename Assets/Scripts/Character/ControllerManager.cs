@@ -14,7 +14,7 @@ public class ControllerManager : MonoBehaviour {
     public string mainGameScene;
     public List<PControlData> players = new List<PControlData>();
     private static ControllerManager refer;
-
+    InGameGlobalUIManager igguim;
     
 
 	// Use this for initialization
@@ -62,10 +62,17 @@ public class ControllerManager : MonoBehaviour {
                 }
             } 
         }
+        else
+        {
+            if (InputManager.ActiveDevice.MenuWasPressed && igguim != null)
+                igguim.SendMessage("TogglePause");
+                
+        }
 	}
     void OnLevelWasLoaded()
     {
         PlayerSpawner p = FindObjectOfType<PlayerSpawner>();
+        igguim = FindObjectOfType<InGameGlobalUIManager>();
         if (p != null)
         {
             p.SpawnPlayers(players);
