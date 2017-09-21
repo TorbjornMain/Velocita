@@ -546,11 +546,11 @@ MonoBehaviour:
   timeDelay: 3
   listItemDelay: 2
   menuScene: MainMenuTest
-  AICardColour: {r: 1, g: 1, b: 1, a: 1}
-  RedCardColour: {r: 1, g: 0, b: 0, a: 1}
-  BlueCardColour: {r: 0, g: 0, b: 1, a: 1}
-  YellowCardColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  GreenCardColor: {r: 1, g: 0, b: 1, a: 1}
+  AICardColour: {r: 1, g: 1, b: 1, a: 0.39215687}
+  RedCardColour: {r: 1, g: 0, b: 0, a: 0.39215687}
+  BlueCardColour: {r: 0, g: 0, b: 1, a: 0.39215687}
+  YellowCardColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 0.39215687}
+  GreenCardColor: {r: 0.11724138, g: 1, b: 0, a: 0.39215687}
 --- !u!1 &2047062785
 GameObject:
   m_ObjectHideFlags: 0
