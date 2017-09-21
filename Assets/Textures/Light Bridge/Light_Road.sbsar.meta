@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 828db1f251b81f04891ad17aacad8ede
-timeCreated: 1505450386
+timeCreated: 1505950167
 licenseType: Pro
 SubstanceImporter:
   serializedVersion: 5
@@ -16,7 +16,7 @@ SubstanceImporter:
     inputs:
     - name: $randomseed
       value:
-        scalar[0]: 0
+        scalar[0]: 99
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
