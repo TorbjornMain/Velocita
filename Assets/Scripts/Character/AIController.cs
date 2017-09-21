@@ -58,4 +58,14 @@ public class AIController : Controller {
             }
         }
 	}
+
+    void OnDrawGizmos()
+    {
+        Vector3 fwd = transform.forward;
+        fwd.y = 0;
+        fwd.Normalize();
+        Gizmos.color = Color.green;
+        Gizmos.DrawLine(transform.position, transform.position + Quaternion.Euler(new Vector3(0, -30, 0)) * fwd * rayRange);
+        Gizmos.DrawLine(transform.position, transform.position + Quaternion.Euler(new Vector3(0, 30, 0)) * fwd * rayRange);
+    }
 }
