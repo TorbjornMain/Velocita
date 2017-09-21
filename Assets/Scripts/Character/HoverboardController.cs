@@ -88,7 +88,7 @@ public class HoverboardController : MonoBehaviour
     {
         if (c == null)
             c = GetComponent<Controller>();
-        if (!rollingStart)
+        if (!rollingStart && Time.timeScale > 0)
         {
             bool isGrounded = false;
             for (int i = 0; i < baseOffsets.Length; i++)
