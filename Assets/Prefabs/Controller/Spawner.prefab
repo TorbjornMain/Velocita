@@ -74,7 +74,7 @@ MonoBehaviour:
   aiPrefab: {fileID: 114968011317280492, guid: 2674895ea26b9254db1361a9116f2d11, type: 2}
   HUDPrefab: {fileID: 114371160398304120, guid: f6a868bc815f78d4596edbf1823f8118,
     type: 2}
-  laps: 5
+  laps: 1
   AI: 1
   endRaceScene: RaceResults
   rollingStart: 1
