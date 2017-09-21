@@ -1591,7 +1591,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1690452117043888}
-  m_LocalRotation: {x: 0.70876986, y: 0.13213614, z: 0.692165, w: -0.03306165}
+  m_LocalRotation: {x: 0.7087698, y: 0.13213612, z: 0.69216496, w: -0.033061646}
   m_LocalPosition: {x: -0.011885999, y: -0.002497, z: -0.0100951}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -2513,7 +2513,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 1
   rayRange: 60
-  steerWeight: 10
+  steerWeight: 7
   accelWeight: 1
   accelChangeTime: 10
   speedVariance: 0.05
