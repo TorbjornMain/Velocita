@@ -439,7 +439,32 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1878808008795746, guid: 7d228f24401f08f43aecc2faa7f4823a, type: 2}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114512224413950644, guid: 7d228f24401f08f43aecc2faa7f4823a,
+        type: 2}
+      propertyPath: radius
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 198764854031250178, guid: 7d228f24401f08f43aecc2faa7f4823a,
+        type: 2}
+      propertyPath: randomSeed
+      value: -577235174
+      objectReference: {fileID: 0}
+    - target: {fileID: 198764854031250178, guid: 7d228f24401f08f43aecc2faa7f4823a,
+        type: 2}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 198764854031250178, guid: 7d228f24401f08f43aecc2faa7f4823a,
+        type: 2}
+      propertyPath: InitialModule.size3D
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198764854031250178, guid: 7d228f24401f08f43aecc2faa7f4823a,
+        type: 2}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 240
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7d228f24401f08f43aecc2faa7f4823a, type: 2}
