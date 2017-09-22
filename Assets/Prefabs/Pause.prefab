@@ -313,7 +313,7 @@ MonoBehaviour:
   startList: {x: 0, y: 50}
   scoreObjectPrefab: {fileID: 114486783467622570, guid: c7b5e62d747160542ba7318aecfd74dd,
     type: 2}
-  yOffset: 40
+  yOffset: 53
   spawnOffset: 500
   timeDelay: 3
   listItemDelay: 2
