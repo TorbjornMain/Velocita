@@ -129,7 +129,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slowFactor: 0.5
   radius: 120
-  angle: 40
+  angle: 20
   expTime: 0.5
   hitTargets:
     serializedVersion: 2
@@ -216,7 +216,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 1345824183
+  randomSeed: -577235174
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -264,7 +264,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 60
+      scalar: 240
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -306,7 +306,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 1, b: 1, a: 1}
+      maxColor: {r: 0.018328305, g: 0.8308824, b: 0.12480101, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
