@@ -80,7 +80,7 @@ public class ResultScreen : MonoBehaviour {
     }
 
 	// Use this for initialization
-	void Start () {
+	void OnEnable () {
         PlayerStandings ps = FindObjectOfType<PlayerStandings>();
 	    for(int i = 0; i < ps.standings.Count; i++)
         {

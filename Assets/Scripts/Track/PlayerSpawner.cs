@@ -132,7 +132,7 @@ public class PlayerSpawner : MonoBehaviour {
         }
         if (fin == players.Count)
         {
-            UnityEngine.SceneManagement.SceneManager.LoadScene(endRaceScene);
+            FindObjectOfType<InGameGlobalUIManager>().SendMessage("DisplayResults");
         }
         playerLaps.Sort();
         //lg.Sort();

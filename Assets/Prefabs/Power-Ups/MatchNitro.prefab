@@ -68,4 +68,4 @@ MonoBehaviour:
   boostFactor: 0.7
   boostCone: {fileID: 114512224413950644, guid: 7d228f24401f08f43aecc2faa7f4823a,
     type: 2}
-  offset: -2.5
+  offset: -20

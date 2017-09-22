@@ -86,87 +86,90 @@ public class HoverboardController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (c == null)
-            c = GetComponent<Controller>();
-        if (!rollingStart && Time.timeScale > 0)
+        if (c.enabled == false)
+            c = GetComponent<AIController>();
+        if (!rollingStart)
         {
-            bool isGrounded = false;
-            for (int i = 0; i < baseOffsets.Length; i++)
+            if (Time.timeScale > 0)
             {
-                RaycastHit rc = new RaycastHit();
-                if (Physics.Raycast(transform.TransformPoint(baseOffsets[i]), -transform.up, out rc, desiredHeight, 1<<LayerMask.NameToLayer("Terrain")))
+                bool isGrounded = false;
+                for (int i = 0; i < baseOffsets.Length; i++)
                 {
-                    r.AddForceAtPosition(transform.up * (1 - rc.distance / (desiredHeight)) * floatStrength / baseOffsets.Length, transform.TransformPoint(baseOffsets[i]), ForceMode.Acceleration);
-                    isGrounded = true;
+                    RaycastHit rc = new RaycastHit();
+                    if (Physics.Raycast(transform.TransformPoint(baseOffsets[i]), -transform.up, out rc, desiredHeight, 1 << LayerMask.NameToLayer("Terrain")))
+                    {
+                        r.AddForceAtPosition(transform.up * (1 - rc.distance / (desiredHeight)) * floatStrength / baseOffsets.Length, transform.TransformPoint(baseOffsets[i]), ForceMode.Acceleration);
+                        isGrounded = true;
+                    }
                 }
-            }
 
 
-            if (!isGrounded)
-            {
-                r.AddForce(groundingForce * new Vector3(0, -1, 0) * (r.velocity.y > 0 ? 3 : 1));
-            }
-            //float forwardInput = Input.GetAxis("Vertical");
-
-            Vector3 controlInput = c.SteerInput;
-            controlInput.z *= -1;
-            float pitch = ((transform.eulerAngles.x + 180) % 360 - 180);
-            float roll = ((transform.eulerAngles.z + 180) % 360 - 180);
-
-            if (c.HopPressed)
-            {
-                Jump();
-            }
-
-            if (c.DriftPressed)
-            {
-                StartDrift();
-                drifting = true;
-            }
-
-            if (c.DriftReleased)
-            {
-                if(drifting)
-                    EndDrift();
-                drifting = false;
-            }
-
-            if (c.DriftHeld)
-            {
-                Drift(controlInput);
-            }
-            else if (c.AccelInput > 0.5f)
-            {
-                Accelerate(controlInput);
-            }
-            else
-            {
-                Neutral(controlInput);
-            }
-
-            r.MoveRotation(Quaternion.Euler(Mathf.Clamp(pitch, -maxDeflection.x, maxDeflection.x), transform.eulerAngles.y, Mathf.Clamp(roll, -maxDeflection.z, maxDeflection.z)));
-
-
-            RaycastHit ray = new RaycastHit();
-            if (!Physics.Raycast(transform.position, new Vector3(0, -1, 0), out ray, maxHeight))
-            {
-                if (Mathf.Sign(r.velocity.y) == 1)
+                if (!isGrounded)
                 {
-                    r.velocity = new Vector3(r.velocity.x, 0, r.velocity.z);
+                    r.AddForce(groundingForce * new Vector3(0, -1, 0) * (r.velocity.y > 0 ? 3 : 1));
                 }
-            }
-            else if (Mathf.Sign(r.velocity.y) == -1)
-            {
-                r.velocity = new Vector3(r.velocity.x, r.velocity.y * 0.9f, r.velocity.z);
-            }
+                //float forwardInput = Input.GetAxis("Vertical");
 
-            if (speed > topSpeed && !boosting)
-            {
-                r.AddForce((1 - speedDamping) * -r.velocity, ForceMode.Acceleration);
-            }
-            if (velocity.magnitude > speedCap)
-            {
-                r.velocity = Vector3.Max(velocity.normalized * speedCap, velocity);
+                Vector3 controlInput = c.SteerInput;
+                controlInput.z *= -1;
+                float pitch = ((transform.eulerAngles.x + 180) % 360 - 180);
+                float roll = ((transform.eulerAngles.z + 180) % 360 - 180);
+
+                if (c.HopPressed)
+                {
+                    Jump();
+                }
+
+                if (c.DriftPressed)
+                {
+                    StartDrift();
+                    drifting = true;
+                }
+
+                if (c.DriftReleased)
+                {
+                    if (drifting)
+                        EndDrift();
+                    drifting = false;
+                }
+
+                if (c.DriftHeld)
+                {
+                    Drift(controlInput);
+                }
+                else if (c.AccelInput > 0.5f)
+                {
+                    Accelerate(controlInput);
+                }
+                else
+                {
+                    Neutral(controlInput);
+                }
+
+                r.MoveRotation(Quaternion.Euler(Mathf.Clamp(pitch, -maxDeflection.x, maxDeflection.x), transform.eulerAngles.y, Mathf.Clamp(roll, -maxDeflection.z, maxDeflection.z)));
+
+
+                RaycastHit ray = new RaycastHit();
+                if (!Physics.Raycast(transform.position, new Vector3(0, -1, 0), out ray, maxHeight))
+                {
+                    if (Mathf.Sign(r.velocity.y) == 1)
+                    {
+                        r.velocity = new Vector3(r.velocity.x, 0, r.velocity.z);
+                    }
+                }
+                else if (Mathf.Sign(r.velocity.y) == -1)
+                {
+                    r.velocity = new Vector3(r.velocity.x, r.velocity.y * 0.9f, r.velocity.z);
+                }
+
+                if (speed > topSpeed && !boosting)
+                {
+                    r.AddForce((1 - speedDamping) * -r.velocity, ForceMode.Acceleration);
+                }
+                if (velocity.magnitude > speedCap)
+                {
+                    r.velocity = Vector3.Max(velocity.normalized * speedCap, velocity);
+                }
             }
         }
         else
