@@ -78,7 +78,7 @@ public class CharacterSelectScreen : MonoBehaviour {
             }
         }
         if (allSelected)
-            UnityEngine.SceneManagement.SceneManager.LoadScene(gameScene);
+            SceneNames.LoadScene(gameScene);
 
 	}
 

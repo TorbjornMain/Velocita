@@ -82,6 +82,7 @@ public class ResultScreen : MonoBehaviour {
 	// Use this for initialization
 	void OnEnable () {
         PlayerStandings ps = FindObjectOfType<PlayerStandings>();
+        ps.standings.Sort();
 	    for(int i = 0; i < ps.standings.Count; i++)
         {
                 StartCoroutine(delaySpawn(i, ps.standings[i]));
@@ -93,7 +94,7 @@ public class ResultScreen : MonoBehaviour {
     {
         if(InControl.InputManager.ActiveDevice.Action1.WasPressed)
         {
-            UnityEngine.SceneManagement.SceneManager.LoadScene(menuScene);
+            SceneNames.LoadScene(SceneNames.MainMenu);
         }
     }
 }

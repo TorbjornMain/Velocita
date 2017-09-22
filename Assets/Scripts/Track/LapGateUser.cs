@@ -3,11 +3,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public struct LapGateUserData
+public struct LapGateUserData : System.IComparable
 {
     public string name;
     public List<float> lapTimes;
     public RacerColor racerCol;
+
+    public int CompareTo(object obj)
+    {
+        LapGateUserData other = (LapGateUserData)obj;
+        float totalTime = 0;
+        float otherTotalTime = 0;
+        for(int i = 0; i < lapTimes.Count; i++)
+        {
+            totalTime += lapTimes[i];
+        }
+
+        for (int i = 0; i < other.lapTimes.Count; i++)
+        {
+            otherTotalTime += other.lapTimes[i];
+        }
+
+        return (int)Mathf.Sign(totalTime - otherTotalTime);
+    }
 }
 
 public class LapGateUser : MonoBehaviour, System.IComparable {

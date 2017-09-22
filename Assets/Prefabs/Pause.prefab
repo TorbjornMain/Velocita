@@ -174,6 +174,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 224290881400427954}
+  - component: {fileID: 114092175912601368}
   m_Layer: 5
   m_Name: PauseContainer
   m_TagString: Untagged
@@ -299,6 +300,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
+--- !u!114 &114092175912601368
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1523283041686884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3352b343df21b7408e95159e67548be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonImages:
+  - {fileID: 114810370815023552}
+  - {fileID: 114740883878452210}
+  - {fileID: 114886470778930686}
+  buttonSelectedScale: {x: 1, y: 1.2, z: 1}
 --- !u!114 &114215772165741738
 MonoBehaviour:
   m_ObjectHideFlags: 1

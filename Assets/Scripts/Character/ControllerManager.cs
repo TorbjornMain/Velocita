@@ -11,7 +11,6 @@ public struct PControlData
 public class ControllerManager : MonoBehaviour {
 
     public bool AcquirePlayers = false;
-    public string mainGameScene;
     public List<PControlData> players = new List<PControlData>();
     private static ControllerManager refer;
     InGameGlobalUIManager igguim;
@@ -58,7 +57,7 @@ public class ControllerManager : MonoBehaviour {
                 else
                 {
                     AcquirePlayers = false;
-                    UnityEngine.SceneManagement.SceneManager.LoadScene(mainGameScene);
+                    SceneNames.LoadScene(SceneNames.CharacterSelect);
                 }
             } 
         }

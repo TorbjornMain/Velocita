@@ -44,7 +44,7 @@ public class PlayerSpawner : MonoBehaviour {
                 h.ps = this;
                 playerHUDs.Add(h);
                 playerLaps.Add(h.playerLapGateUser = players[players.Count - 1].GetComponent<LapGateUser>());
-                playerLaps[playerLaps.Count - 1].data.name = devices[i].col.ToString();
+                playerLaps[playerLaps.Count - 1].data.name = (devices[i].col == RacerColor.White) ? "NULL" : ((devices[i].col == RacerColor.Red) ? "Leo" : ((devices[i].col == RacerColor.Blue) ? "Kaiyō" : ((devices[i].col == RacerColor.Green) ? "Twitch" : ("Nika"))));
                 playerLaps[playerLaps.Count - 1].data.racerCol = devices[i].col;
                 if (rollingStart)
                 {
@@ -59,7 +59,7 @@ public class PlayerSpawner : MonoBehaviour {
             for (int i = devices.Count; i < spawnLocations.Length; i++)
             {
                 LapGateUser lgu = Instantiate<AIController>(aiPrefab).GetComponent<LapGateUser>();
-                lgu.name = lgu.data.name = "AI " + i.ToString();
+                lgu.name = lgu.data.name = "AI " + (i - (devices.Count - 1)).ToString();
                 lgu.data.racerCol = RacerColor.White;
                 lgu.transform.position = transform.TransformPoint(spawnLocations[i]);
                 lgu.transform.rotation = transform.rotation;
