@@ -13,9 +13,14 @@ public class CharacterSelectScreen : MonoBehaviour {
     bool[] selected;
     public float playerXOffset = 40;
     public string gameScene;
+    AudioSource audioSource;
+    public AudioClip navigateSound;
+    public AudioClip selectSound;
+    public AudioClip invalidChoiceSound;
 
 	// Use this for initialization
 	void Start () {
+        audioSource = GetComponent<AudioSource>();
         cm = FindObjectOfType<ControllerManager>();
         selected = new bool[selectorNodes.Count];
         for(int i = 0; i < cm.players.Count; i++)
@@ -42,17 +47,28 @@ public class CharacterSelectScreen : MonoBehaviour {
                         playerData.col = ((RacerColor)selectorInstances[i].hoveredIndex);
                         cm.players[i] = playerData;
                         selectorInstances[i].hasSelected = true;
+                        audioSource.clip = selectSound;
+                        audioSource.Play();
+                    }
+                    else
+                    {
+                        audioSource.clip = invalidChoiceSound;
+                        audioSource.Play();
                     }
                 }
 
                 if(cm.players[i].ind.LeftStick.Left.WasPressed)
                 {
                     selectorInstances[i].hoveredIndex = selectorInstances[i].hoveredIndex - 1 < 0 ? 3 : selectorInstances[i].hoveredIndex - 1;
+                    audioSource.clip = navigateSound;
+                    audioSource.Play();
                 }
 
                 if (cm.players[i].ind.LeftStick.Right.WasPressed)
                 {
                     selectorInstances[i].hoveredIndex = selectorInstances[i].hoveredIndex + 1 > 3 ? 0 : selectorInstances[i].hoveredIndex + 1;
+                    audioSource.clip = navigateSound;
+                    audioSource.Play();
                 }
             }
         }
