@@ -398,10 +398,10 @@ MonoBehaviour:
   - {fileID: 114886470778930686}
   buttonSelectedScale: {x: 1, y: 1.2, z: 1}
   audioSourceReference: {fileID: 82620135073131050}
-  openSound: {fileID: 0}
-  closeSound: {fileID: 0}
-  navigateSound: {fileID: 0}
-  choiceSound: {fileID: 0}
+  openSound: {fileID: 8300000, guid: c4900f41ef9fc72498a770aaccbeedf5, type: 3}
+  closeSound: {fileID: 8300000, guid: b739468b56bc5f846a3574589afdcbc5, type: 3}
+  navigateSound: {fileID: 8300000, guid: 04f743b6a5f6a0649b3a042d7a573f47, type: 3}
+  choiceSound: {fileID: 8300000, guid: d978472df2a529246a58338f61995376, type: 3}
 --- !u!114 &114215772165741738
 MonoBehaviour:
   m_ObjectHideFlags: 1

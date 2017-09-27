@@ -1017,9 +1017,9 @@ MonoBehaviour:
   - {fileID: 1128029244}
   playerXOffset: 40
   gameScene: Jess Test
-  navigateSound: {fileID: 0}
-  selectSound: {fileID: 0}
-  invalidChoiceSound: {fileID: 0}
+  navigateSound: {fileID: 8300000, guid: 04f743b6a5f6a0649b3a042d7a573f47, type: 3}
+  selectSound: {fileID: 8300000, guid: d978472df2a529246a58338f61995376, type: 3}
+  invalidChoiceSound: {fileID: 8300000, guid: eea8a2f23cd3b3f4bb8983255e74ed45, type: 3}
 --- !u!82 &398384069
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4443,7 +4443,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.09166194, y: 0.2751872}
   m_AnchorMax: {x: 0.26700002, y: 0.90000004}
-  m_AnchoredPosition: {x: 0.1000061, y: -0.10000038}
+  m_AnchoredPosition: {x: 0.10003662, y: -0.10000038}
   m_SizeDelta: {x: 59, y: -37.169983}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1762319629
