@@ -39,7 +39,7 @@ public class SoundZone : MonoBehaviour {
     {
         foreach (var sound in sounds)
         {
-            Destroy(sound.Value.gameObject);
+            if(sound.Value != null) Destroy(sound.Value.gameObject);
         }
     }
 }

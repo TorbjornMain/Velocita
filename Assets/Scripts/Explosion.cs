@@ -37,16 +37,22 @@ public class Explosion : MonoBehaviour {
             else
             {
                 Rigidbody cr = col.GetComponent<Rigidbody>();
-                cr.AddExplosionForce(force, transform.position, radius);
-                cr.AddTorque(0, force * 10, 0);
+                if (cr != null)
+                {
+                    cr.AddExplosionForce(force, transform.position, radius);
+                    cr.AddTorque(0, force * 10, 0);
+                }
             }
         }
         else
         {
             Rigidbody cr = col.GetComponent<Rigidbody>();
-            if(!turnOnly)
-                cr.AddExplosionForce(force, transform.position, radius, 0, ForceMode.Impulse);
-            cr.AddTorque(0, force, 0, ForceMode.Impulse);
+            if (cr != null)
+            {
+                if (!turnOnly)
+                    cr.AddExplosionForce(force, transform.position, radius, 0, ForceMode.Impulse);
+                cr.AddTorque(0, force, 0, ForceMode.Impulse);
+            }
         }
         col.SendMessage("Explode", SendMessageOptions.DontRequireReceiver);
     }
