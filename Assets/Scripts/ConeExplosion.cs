@@ -7,7 +7,8 @@ public class ConeExplosion : MonoBehaviour {
     [Range(0, 1)]
     public float slowFactor = 0.5f;
     public float radius = 30;
-    public float angle = 20;
+    [Range(0, 90)]
+    public float halfAngle = 20;
     public float expTime = 0.5f;
     float time = 0;
     public LayerMask hitTargets;
@@ -26,7 +27,8 @@ public class ConeExplosion : MonoBehaviour {
             Collider[] objs = Physics.OverlapSphere(transform.position, cRad, hitTargets.value);
             foreach (Collider item in objs)
             {
-                if (Mathf.Acos(Vector3.Dot((item.transform.position - transform.position).normalized, -transform.forward)) < angle)
+                float dot = Vector3.Dot((item.transform.position - transform.position).normalized, transform.forward);
+                if (Mathf.Acos(dot) < halfAngle && dot > 0)
                 {
                     onHit(item);
                 }
