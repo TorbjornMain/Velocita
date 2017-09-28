@@ -46,12 +46,12 @@
 			{
 				fixed4 color = tex2D(_MainTex, i.uv);
 				float2 texel = _MainTex_TexelSize.xy;
-				for (int dx = -6; dx < 6; dx++)
+				for (int dx = -3; dx < 3; dx++)
 				{
-					for (int dy = -6; dy < 6; dy++)
+					for (int dy = -3; dy < 3; dy++)
 					{
 						fixed4 col = tex2D(_MainTex, i.uv + float2(dx*texel.x, dy*texel.y));
-						color += col * _Intensity/(10.0f * (1 + pow(dx/3, 8) + pow(dy/3, 8)));
+						color += col * _Intensity/(10.0f * (1 + pow(dx/3, 6) + pow(dy/3, 6)));
 					}
 				}
 				return color;
