@@ -119,7 +119,7 @@ public class PlayerSpawner : MonoBehaviour {
                 if (!found)
                 {
                     ps.standings.Add(playerLaps[i].data);
-                    playerLaps[i].gameObject.SendMessage("FinishRace");
+                    playerLaps[i].gameObject.SendMessage("FinishRace", SendMessageOptions.DontRequireReceiver);
                     playerHUDs[players.IndexOf(playerLaps[i].GetComponent<PlayerController>())].SendMessage("FinishRace");
                 }
             }
