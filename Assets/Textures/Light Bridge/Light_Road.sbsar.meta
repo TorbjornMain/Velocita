@@ -1,10 +1,6 @@
 fileFormatVersion: 2
 guid: 828db1f251b81f04891ad17aacad8ede
-<<<<<<< HEAD
-timeCreated: 1506571821
-=======
-timeCreated: 1506571863
->>>>>>> c2ff09c962a045897b1995fc2bd5010bdfc35eab
+timeCreated: 1506575660
 licenseType: Pro
 SubstanceImporter:
   serializedVersion: 5
@@ -61,17 +57,13 @@ SubstanceImporter:
       - _Parallax: 0.02
       - _SmoothnessTextureChannel: 0
       - _SpecularHighlights: 1
-      - _Speed: 3
+      - _Speed: 5
       - _SrcBlend: 5
       - _UVSec: 0
       - _WaveFrequency: 10
       - _ZWrite: 0
       colors:
-<<<<<<< HEAD
       - _Color: {r: 0, g: 0.95862055, b: 1, a: 1}
-=======
-      - _Color: {r: 0, g: 0.95686275, b: 1, a: 1}
->>>>>>> c2ff09c962a045897b1995fc2bd5010bdfc35eab
       - _EmissionColor: {r: 0, g: 0.8758621, b: 1, a: 1}
     textureParameters:
     - name: New_Graph_basecolor
