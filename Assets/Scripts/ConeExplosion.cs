@@ -52,13 +52,15 @@ public class ConeExplosion : MonoBehaviour {
             else
             {
                 Rigidbody cr = col.GetComponent<Rigidbody>();
-                cr.velocity = cr.velocity * slowFactor;
+                if (cr != null)
+                    cr.velocity = cr.velocity * slowFactor;
             }
         }
         else
         {
             Rigidbody cr = col.GetComponent<Rigidbody>();
-            cr.velocity = cr.velocity * slowFactor;
+            if (cr != null)
+                cr.velocity = cr.velocity * slowFactor;
         }
         col.SendMessage("Explode", SendMessageOptions.DontRequireReceiver);
     }

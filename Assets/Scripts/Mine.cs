@@ -40,7 +40,7 @@ public class Mine : PowerupEntity {
             {
                 crb.velocity = Vector3.zero;
             }
-            other.SendMessage("Explode");
+            other.SendMessage("Explode",SendMessageOptions.DontRequireReceiver);
         }
         Instantiate(exp).transform.position = transform.position - transform.up * 4;
         Destroy(gameObject);
