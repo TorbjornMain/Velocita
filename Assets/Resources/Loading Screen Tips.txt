@@ -3,10 +3,9 @@ Red Missiles fire forwards and explodes on impact. Aim wisely!
 Blue Shields can protect you for a short while.
 Green Nitros give you a nifty boost of speed.
 Yellow Mines are thrown backwards. Careful not to hit one!
-Hold 'X' to accelerate... But you knew that right?
 You can only store one power-up at a time.
 Sling-Boosts work like a slingshot. Slow down, turn, release, BOOST! 
-Don't forge to Sling-Boost around those sharp corners.
+Don't forget to Sling-Boost around those sharp corners.
 Timing your Sling-Boosts is the key to success!
 Corporate Billionare Nero Black owns New Velo City.
 Nero Black currently holds the title of "Velocita".
@@ -22,7 +21,4 @@ Apparently Nero's brother is in that Hot-Dog Suit.
 Have you seen the backside of that Velocita Blimp?
 Are you sick of reading these tips yet?
 Velocitaaaaaaaaaaaaaaa.... Let's go away!
-Those sweet SFX were made by Casey!
-Jess forgot to buy doughnuts...again!
-Man I could really go for some Fruchocs - James 2017
-Why am I not on fire? - Zach 20XX
+This tip will self-destruct momentarily...
