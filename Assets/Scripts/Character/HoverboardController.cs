@@ -42,7 +42,6 @@ public class HoverboardController : MonoBehaviour
     AudioSource driftSoundInstance;
     public AudioSource boostSoundPrefab;
     bool drifting = false;
-    LapGateUser lg;
 
     public float speed
     {
@@ -82,7 +81,6 @@ public class HoverboardController : MonoBehaviour
     {
         r = GetComponent<Rigidbody>();
         c = GetComponent<Controller>();
-        lg = GetComponent<LapGateUser>();
     }
 
     // Update is called once per frame
@@ -108,14 +106,14 @@ public class HoverboardController : MonoBehaviour
 
                 if (!isGrounded)
                 {
-                    r.AddForce(groundingForce * -lg.upDir * (r.velocity.y > 0 ? 3 : 1));
+                    r.AddForce(groundingForce * new Vector3(0, -1, 0) * (r.velocity.y > 0 ? 3 : 1));
                 }
                 //float forwardInput = Input.GetAxis("Vertical");
 
                 Vector3 controlInput = c.SteerInput;
                 controlInput.z *= -1;
-                float pitch = (((transform.eulerAngles.x - lg.trackAngle.x) + 180) % 360 - 180);
-                float roll = (((transform.eulerAngles.z - lg.trackAngle.z) + 180) % 360 - 180);
+                float pitch = ((transform.eulerAngles.x + 180) % 360 - 180);
+                float roll = ((transform.eulerAngles.z + 180) % 360 - 180);
 
                 if (c.HopPressed)
                 {
@@ -148,23 +146,21 @@ public class HoverboardController : MonoBehaviour
                     Neutral(controlInput);
                 }
 
-                Vector3 jeremy = lg.trackAngle;
-                jeremy.y = 0;
-                r.MoveRotation(Quaternion.Euler(jeremy + new Vector3(Mathf.Clamp(pitch, -maxDeflection.x, maxDeflection.x), transform.eulerAngles.y, Mathf.Clamp(roll, -maxDeflection.z, maxDeflection.z))));
+                r.MoveRotation(Quaternion.Euler(Mathf.Clamp(pitch, -maxDeflection.x, maxDeflection.x), transform.eulerAngles.y, Mathf.Clamp(roll, -maxDeflection.z, maxDeflection.z)));
 
 
                 RaycastHit ray = new RaycastHit();
-                //if (!Physics.Raycast(transform.position, -lg.upDir, out ray, maxHeight))
-                //{
-                //    if (Mathf.Sign(r.velocity.y) == 1)
-                //    {
-                //        r.velocity = new Vector3(r.velocity.x, 0, r.velocity.z);
-                //    }
-                //}
-                //else if (Mathf.Sign(r.velocity.y) == -1)
-                //{
-                //    r.velocity = new Vector3(r.velocity.x, r.velocity.y * 0.9f, r.velocity.z);
-                //}
+                if (!Physics.Raycast(transform.position, new Vector3(0, -1, 0), out ray, maxHeight))
+                {
+                    if (Mathf.Sign(r.velocity.y) == 1)
+                    {
+                        r.velocity = new Vector3(r.velocity.x, 0, r.velocity.z);
+                    }
+                }
+                else if (Mathf.Sign(r.velocity.y) == -1)
+                {
+                    r.velocity = new Vector3(r.velocity.x, r.velocity.y * 0.9f, r.velocity.z);
+                }
 
                 if (speed > topSpeed && !boosting)
                 {
@@ -174,7 +170,6 @@ public class HoverboardController : MonoBehaviour
                 {
                     r.velocity = Vector3.Max(velocity.normalized * speedCap, velocity);
                 }
-                r.AddForce(-lg.upDir * 9.81f, ForceMode.Acceleration);
             }
         }
         else
@@ -202,23 +197,23 @@ public class HoverboardController : MonoBehaviour
 
     void Drift(Vector3 controlInput)
     {
-        float pitch = (((transform.eulerAngles.x - lg.trackAngle.x) + 180) % 360 - 180);
-        float roll = (((transform.eulerAngles.z - lg.trackAngle.z) + 180) % 360 - 180);
+        float pitch = ((transform.eulerAngles.x + 180) % 360 - 180);
+        float roll = ((transform.eulerAngles.z + 180) % 360 - 180);
         r.AddTorque(Time.deltaTime * angularControl * transform.TransformDirection(new Vector3(-4 * (1 - (Mathf.Abs(pitch) / maxControlledDeflection.x)), -driftRate * controlInput.z, controlInput.z * (1 - (Mathf.Abs(roll) / maxControlledDeflection.z)))));
         float velDot = Vector3.Dot(transform.right, r.velocity);
         Vector3 turnBrakeForce = -velDot * transform.right * driftBrakeFactor;
         turnBrakeForce.y = 0;
         r.AddForce(turnBrakeForce);
         if (c.AccelInput > 0.5f)
-            r.AddForce(Time.deltaTime * (transform.forward * driftAcceleration + driftDownforce * -lg.upDir), ForceMode.Acceleration);
+            r.AddForce(Time.deltaTime * (transform.forward * driftAcceleration + driftDownforce * new Vector3(0, -1, 0)), ForceMode.Acceleration);
         
     }
 
     void Accelerate(Vector3 controlInput)
     {
-        float pitch = (((transform.eulerAngles.x - lg.trackAngle.x) + 180) % 360 - 180);
-        float roll = (((transform.eulerAngles.z - lg.trackAngle.z) + 180) % 360 - 180);
-        r.AddForce(Time.deltaTime * (new Vector3(transform.forward.x, 0, transform.forward.z) * acceleration + accelerationDownforce * -lg.upDir), ForceMode.Acceleration);
+        float pitch = ((transform.eulerAngles.x + 180) % 360 - 180);
+        float roll = ((transform.eulerAngles.z + 180) % 360 - 180);
+        r.AddForce(Time.deltaTime * (new Vector3(transform.forward.x, 0, transform.forward.z) * acceleration + accelerationDownforce * new Vector3(0, -1, 0)), ForceMode.Acceleration);
         r.AddForce(new Vector3(transform.right.x, 0, transform.right.z).normalized * -controlInput.z * Mathf.Lerp(0, accelStrafeSpeed, r.velocity.magnitude/topSpeed), ForceMode.Acceleration);
         r.AddTorque(Time.deltaTime * angularControl * transform.TransformDirection(new Vector3(controlInput.x * (1 - (Mathf.Abs(pitch) / maxAccelerationDeflection.x)), -accelTurnRate * controlInput.z, controlInput.z * (1 - (Mathf.Abs(roll) / maxAccelerationDeflection.z)))));
 
@@ -226,8 +221,8 @@ public class HoverboardController : MonoBehaviour
 
     void Neutral(Vector3 controlInput)
     {
-        float pitch = (((transform.eulerAngles.x - lg.trackAngle.x) + 180) % 360 - 180);
-        float roll = (((transform.eulerAngles.z - lg.trackAngle.z) + 180) % 360 - 180);
+        float pitch = ((transform.eulerAngles.x + 180) % 360 - 180);
+        float roll = ((transform.eulerAngles.z + 180) % 360 - 180);
         r.AddTorque(Time.deltaTime * angularControl * transform.TransformDirection(new Vector3(controlInput.x * (1 - (Mathf.Abs(pitch) / maxControlledDeflection.x)), -turnRate * controlInput.z, controlInput.z * (1 - (Mathf.Abs(roll) / maxControlledDeflection.z)))));
     }
 
@@ -282,7 +277,7 @@ public class HoverboardController : MonoBehaviour
                 float boostTime = 0;
                 while (boostTime < boostLength)
                 {
-                    r.AddForce(Time.deltaTime * (transform.forward * acceleration * boostAccelFalloff.Evaluate(boostTime / boostLength) * driftBoostFactor * dirFactor + -lg.upDir * boostDownforce), ForceMode.Acceleration);
+                    r.AddForce(Time.deltaTime * (transform.forward * acceleration * boostAccelFalloff.Evaluate(boostTime / boostLength) * driftBoostFactor * dirFactor + new Vector3(0, -1, 0) * boostDownforce), ForceMode.Acceleration);
                     r.AddForce(Time.deltaTime * -Vector3.Dot(r.velocity, transform.right) * transform.right * boostSlideCancel, ForceMode.Acceleration);
                     boostTime += Time.deltaTime;
                     yield return null;

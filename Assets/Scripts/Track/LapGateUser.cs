@@ -32,7 +32,7 @@ public class LapGateUser : MonoBehaviour, System.IComparable {
     public int gateNum;
     public LapGate lastGate;
     public LapGateUserData data;
-    public Vector3 trackDir, upDir, trackAngle, lastGatePos;
+    public Vector3 trackDir, lastGatePos;
     float lapTime;
     public int lap
     {
