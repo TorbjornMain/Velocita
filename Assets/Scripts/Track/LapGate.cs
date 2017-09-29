@@ -21,6 +21,8 @@ public class LapGate : MonoBehaviour, System.IComparable
                     lg.lap++;
                 }
                 lg.trackDir = transform.forward;
+                lg.trackAngle = transform.eulerAngles;
+                lg.upDir = transform.up;
                 lg.lastGatePos = transform.position;
                 lg.gateNum = gateNum;
                 lg.lastGate = this;
