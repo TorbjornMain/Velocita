@@ -34,3 +34,6 @@ sysinfo.txt
 *.unitypackage
 Assets/ShaderForge/
 Assets/ShaderForge.meta
+Assets/Models/Characters/Materials/lambert3.mat.meta
+Assets/Models/Characters/Materials/lambert3.mat
+Assets/Models/Characters/Materials.meta
