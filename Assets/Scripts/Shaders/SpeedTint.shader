@@ -55,10 +55,10 @@ Shader "Custom/SpeedTint"
 				float2 tUV = ((i.uv - float2(0.5, 0.5)) * 2);
 				if (length(tUV) > 1.8 - _Speed)
 				{
-					col += _RacerColor * ((_Intensity * (length(tUV) - (1.8 - _Speed))));
+					col += _RacerColor * ((_Intensity * (length(tUV) - (1.8 - _Speed)))) * tex2D(_VingetteTexture, i.uv);
 					col.a = 1;
 				}
-				return col * tex2D(_VingetteTexture, i.uv);
+				return col ;
 			}
 			ENDCG
 		}
