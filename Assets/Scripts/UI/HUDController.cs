@@ -7,6 +7,7 @@ public class HUDController : MonoBehaviour {
 
     public Text speedText;
     public Text lapText;
+    public Text maxLapText;
     public Image placeImage;
     public Image wrongWayImage;
     public Image fadeToBlack;
@@ -35,7 +36,8 @@ public class HUDController : MonoBehaviour {
         if (racing)
         {
             speedText.text = "Speed: " + Mathf.RoundToInt(player.speed * 3.6f).ToString() + "km/h";
-            lapText.text = "Lap: " + playerLapGateUser.lap.ToString() + "/" + numLaps.ToString();
+            lapText.text = playerLapGateUser.lap.ToString();
+            maxLapText.text = numLaps.ToString();
             int position = 0;
             wrongWayImage.enabled = Vector3.Dot(player.velocity, playerLapGateUser.trackDir) < 0 && player.velocity.magnitude > 10;
             if(wrongWayImage.enabled && ((PlayerController)player.controller).active)
