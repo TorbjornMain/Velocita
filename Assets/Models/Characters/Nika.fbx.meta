@@ -100,6 +100,14 @@ ModelImporter:
     100184: YellowShorts_low
     100186: YellowTails_low
     100188: YellowThighStrap_low
+    100190: ikHandle10
+    100192: ikHandle11
+    100194: ikHandle12
+    100196: ikHandle13
+    100198: ikHandle14
+    100200: ikHandle15
+    100202: Left_Foot_CTRL
+    100204: Right_Foot_CTRL
     400000: Back_JNT_1
     400002: Back_JNT_2
     400004: Back_JNT_3
@@ -195,6 +203,14 @@ ModelImporter:
     400184: YellowShorts_low
     400186: YellowTails_low
     400188: YellowThighStrap_low
+    400190: ikHandle10
+    400192: ikHandle11
+    400194: ikHandle12
+    400196: ikHandle13
+    400198: ikHandle14
+    400200: ikHandle15
+    400202: Left_Foot_CTRL
+    400204: Right_Foot_CTRL
     4300000: YellowHairPiece_low
     4300002: YellowGlasses_low
     4300004: YellowLashes_low
