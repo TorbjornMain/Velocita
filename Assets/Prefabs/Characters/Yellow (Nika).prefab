@@ -3782,10 +3782,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 541977ad81470d4498ca571bde210080, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 20676540597289600}
+  cam: {fileID: 20408024484148804, guid: 2ac6f545a60bbd149ab110e69b3193ff, type: 2}
   camOffset: {x: 0, y: 2.8, z: -5.5}
   turnSpeed: 5
   directionWeight: 0.7
+  hitTargets:
+    serializedVersion: 2
+    m_Bits: 16640
+  warningDistance: 50
 --- !u!114 &114910757267705476
 MonoBehaviour:
   m_ObjectHideFlags: 1

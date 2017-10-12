@@ -714,6 +714,8 @@ MonoBehaviour:
   playerLapGateUser: {fileID: 0}
   numLaps: 0
   resetTime: 0.5
+  playerCloseImagePrefab: {fileID: 114910659053557480, guid: 240e7d891f96c4b4a884505ed3fb9347,
+    type: 2}
 --- !u!114 &114449822051062076
 MonoBehaviour:
   m_ObjectHideFlags: 1

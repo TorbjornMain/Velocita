@@ -18,6 +18,7 @@ public class HUDController : MonoBehaviour {
     public Sprite[] placeIcons;
     bool racing = false;
     public HoverboardController player;
+    CameraController cam;
     [System.NonSerialized()]
     public PlayerSpawner ps;
     public LapGateUser playerLapGateUser;
@@ -25,16 +26,59 @@ public class HUDController : MonoBehaviour {
     public int numLaps; 
     public float resetTime = 2;
     PowerupManager pum;
+    public Image playerCloseImagePrefab;
+    Image[] playerPosImages;
     // Update is called once per frame
     void Start()
     {
         pum = player.GetComponent<PowerupManager>();
+        cam = player.GetComponent<CameraController>();
         if (pum == null)
             powerUpImage.color = new Color(0, 0, 0, 0);
+        playerPosImages = new Image[4];
+        for (int i = 0; i < cam.racerOffsets.Length; i++)
+        {
+            playerPosImages[i] = Instantiate(playerCloseImagePrefab);
+            playerPosImages[i].rectTransform.SetParent(transform);
+            playerPosImages[i].transform.localScale = new Vector3(1, 1, 1);
+            switch ((RacerColor)i)
+            {
+                case RacerColor.Red:
+                    playerPosImages[i].color = Color.red;
+                    break;
+                case RacerColor.Blue:
+                    playerPosImages[i].color = Color.blue;
+                    break;
+                case RacerColor.Green:
+                    playerPosImages[i].color = Color.green;
+                    break;
+                case RacerColor.Yellow:
+                    playerPosImages[i].color = Color.yellow;
+                    break;
+                case RacerColor.White:
+                    break;
+                default:
+                    break;
+            }
+
+        }
     }
     void Update () {
         if (racing)
         {
+            for(int i = 0; i < playerPosImages.Length; i++)
+            {
+                if(cam.racerOffsets[i].dist > 0)
+                {
+                    playerPosImages[i].enabled = true;
+                    playerPosImages[i].rectTransform.localPosition = new Vector3(1000 * cam.racerOffsets[i].leftRight, -50, 0);
+                    playerPosImages[i].transform.localScale = Vector3.one *  (1-cam.racerOffsets[i].dist);
+                }
+                else
+                {
+                    playerPosImages[i].enabled = false;
+                }
+            }
             speedText.text = "Speed: " + Mathf.RoundToInt(player.speed * 3.6f).ToString() + "km/h";
             lapText.text = playerLapGateUser.lap.ToString();
             maxLapText.text = numLaps.ToString();
