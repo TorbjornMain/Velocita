@@ -1,0 +1,130 @@
+fileFormatVersion: 2
+guid: 760642d545a753c4c8cd9cf268477fdf
+timeCreated: 1507772757
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: Circle_Barrier_Outer
+    100002: Circle_Barrier_Outer1
+    100004: Circle_Barrier_Outer2
+    100006: Circle_Barrier_Outer3
+    100008: Circle_Barrier_Outer4
+    100010: Circle_Barrier_Outer5
+    100012: Cirlce_Barrier_Inner
+    100014: //RootNode
+    100016: Sam_Barrier
+    100018: Sam_Barrier1
+    400000: Circle_Barrier_Outer
+    400002: Circle_Barrier_Outer1
+    400004: Circle_Barrier_Outer2
+    400006: Circle_Barrier_Outer3
+    400008: Circle_Barrier_Outer4
+    400010: Circle_Barrier_Outer5
+    400012: Cirlce_Barrier_Inner
+    400014: //RootNode
+    400016: Sam_Barrier
+    400018: Sam_Barrier1
+    2300000: Circle_Barrier_Outer
+    2300002: Circle_Barrier_Outer1
+    2300004: Circle_Barrier_Outer2
+    2300006: Circle_Barrier_Outer3
+    2300008: Circle_Barrier_Outer4
+    2300010: Circle_Barrier_Outer5
+    2300012: Cirlce_Barrier_Inner
+    2300014: Sam_Barrier
+    2300016: Sam_Barrier1
+    3300000: Circle_Barrier_Outer
+    3300002: Circle_Barrier_Outer1
+    3300004: Circle_Barrier_Outer2
+    3300006: Circle_Barrier_Outer3
+    3300008: Circle_Barrier_Outer4
+    3300010: Circle_Barrier_Outer5
+    3300012: Cirlce_Barrier_Inner
+    3300014: Sam_Barrier
+    3300016: Sam_Barrier1
+    4300000: Cirlce_Barrier_Inner
+    4300002: Circle_Barrier_Outer
+    4300004: Sam_Barrier
+    4300006: Circle_Barrier_Outer1
+    4300008: Circle_Barrier_Outer2
+    4300010: Circle_Barrier_Outer3
+    4300012: Circle_Barrier_Outer4
+    4300014: Circle_Barrier_Outer5
+    4300016: Sam_Barrier1
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
