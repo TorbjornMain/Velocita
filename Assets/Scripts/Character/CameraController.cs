@@ -2,6 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+public struct RacerOffset
+{
+    public RacerColor rc;
+    public float dist, leftRight;
+}
+
 [RequireComponent(typeof(Rigidbody))]
 public class CameraController : MonoBehaviour {
     public Camera cam;
@@ -12,10 +19,21 @@ public class CameraController : MonoBehaviour {
     public float turnSpeed = 0.5f;
     [Range(0, 1)]
     public float directionWeight = 0.5f;
+
+    public LayerMask hitTargets;
+
+    public float warningDistance = 50;
+
+    public RacerOffset[] racerOffsets;
 	// Use this for initialization
 	void Start () {
         rb = GetComponent<Rigidbody>();
         cam.transform.parent = null;
+        racerOffsets = new RacerOffset[4];
+        for(int i = 0; i < racerOffsets.Length; i++)
+        {
+            racerOffsets[i].rc = (RacerColor)i;
+        }
 	}
 	
 	// Update is called once per frame
@@ -25,5 +43,31 @@ public class CameraController : MonoBehaviour {
         rotationDelta = Quaternion.Euler(rotationDelta.eulerAngles.x, rotationDelta.eulerAngles.y, 0);
         cam.transform.position = transform.position + (rotationDelta * camOffset);
         cam.transform.rotation = rotationDelta;
-	}
+
+        for (int i = 0; i < racerOffsets.Length; i++)
+        {
+            racerOffsets[i].dist = 0;
+        }
+        Collider[] objs = Physics.OverlapSphere(transform.position, warningDistance, hitTargets);
+        foreach (Collider item in objs)
+        {
+            float dot = Vector3.Dot((item.transform.position - transform.position).normalized, rotationDelta * new Vector3(0,0,-1));
+            if (dot > 0)
+            {
+                onHit(item, (Quaternion.Inverse(rotationDelta) * Vector3.Project(item.transform.position - transform.position, rotationDelta * new Vector3(1, 0, 0))).x);
+            }
+        }
+
+
+    }
+
+    void onHit(Collider col, float leftRight)
+    {
+        PlayerController bvc = col.GetComponent<PlayerController>();
+        if(bvc != null)
+        {
+            racerOffsets[(int)(bvc.colour)].leftRight = leftRight/warningDistance;
+            racerOffsets[(int)(bvc.colour)].dist = (transform.position - col.transform.position).magnitude/warningDistance;
+        }    
+    }
 }

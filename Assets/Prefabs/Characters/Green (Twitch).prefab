@@ -1969,7 +1969,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1654738430397866}
-  m_LocalRotation: {x: -0.5402669, y: 0.021576207, z: 0.84054697, w: 0.03356826}
+  m_LocalRotation: {x: -0.54026693, y: 0.021576209, z: 0.8405471, w: 0.033568263}
   m_LocalPosition: {x: -0.012540509, y: 0.003603242, z: -0.06735779}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -3741,10 +3741,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 541977ad81470d4498ca571bde210080, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 20257360644912788}
+  cam: {fileID: 20408024484148804, guid: 2ac6f545a60bbd149ab110e69b3193ff, type: 2}
   camOffset: {x: 0, y: 2.8, z: -5.5}
   turnSpeed: 5
   directionWeight: 0.7
+  hitTargets:
+    serializedVersion: 2
+    m_Bits: 16640
+  warningDistance: 50
 --- !u!114 &114860041395517516
 MonoBehaviour:
   m_ObjectHideFlags: 1
