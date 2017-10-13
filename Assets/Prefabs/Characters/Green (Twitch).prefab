@@ -2445,7 +2445,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1660124534458050}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.5, z: 0}
+  m_LocalPosition: {x: -0, y: -0.73, z: -0.196}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4697418023016886}
@@ -3564,8 +3564,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 755d6f1e857a08244a95320ff3f6d930, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  backFoot: {x: 0, y: 0.2, z: 0.6}
-  frontFoot: {x: -0.1, y: 0.2, z: -0.4}
+  backFoot: {x: 0.1, y: 0.26, z: 0.6}
+  frontFoot: {x: 0.12, y: 0.26, z: -0.4}
   board: {fileID: 4632934107736624}
   backFootAngle: {x: 0, y: 0, z: 0}
   frontFootAngle: {x: 0, y: 0, z: 0}
@@ -3722,8 +3722,8 @@ MonoBehaviour:
     type: 2}
   driftParticles: {fileID: 198891423667566310, guid: 38c78d7b61b1dcb429e0760aac2effa1,
     type: 2}
-  anim: {fileID: 0}
-  mainModelRenderer: {fileID: 0}
+  anim: {fileID: 95353496336183344}
+  mainModelRenderer: {fileID: 137942328703446654}
   outerTrail: {fileID: 96586132045338326}
   innerTrail: {fileID: 96648436110909260}
   boostTrailWidth:
