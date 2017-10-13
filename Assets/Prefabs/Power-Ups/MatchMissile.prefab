@@ -387,6 +387,8 @@ MonoBehaviour:
   airTime: 2
   aimOffset: 40
   collisionTime: 0.1
+  targetReticule: {fileID: 1276296854549774, guid: 82887d46943c1174ba9179a7e4724e43,
+    type: 2}
   explosion: {fileID: 1283853045684240, guid: 0a280e41b51b1f04d9bbaf98cf72f48e, type: 2}
 --- !u!135 &135394373135971366
 SphereCollider:

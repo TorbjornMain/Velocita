@@ -819,6 +819,11 @@ MonoBehaviour:
   resetTime: 0.5
   playerCloseImagePrefab: {fileID: 114910659053557480, guid: 240e7d891f96c4b4a884505ed3fb9347,
     type: 2}
+  playerPips:
+  - {fileID: 21300000, guid: 2ae79f3391f15694b91b878316041a33, type: 3}
+  - {fileID: 21300000, guid: eca57e3f5b75c9c42bbcf6f6af1503da, type: 3}
+  - {fileID: 21300000, guid: 28ec6b6e08dc21444a5b12db2f308f2c, type: 3}
+  - {fileID: 21300000, guid: 6284ee03a8ebe434b85e9aec9423260a, type: 3}
 --- !u!114 &114449822051062076
 MonoBehaviour:
   m_ObjectHideFlags: 1
