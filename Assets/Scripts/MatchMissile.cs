@@ -15,7 +15,10 @@ public class MatchMissile : PowerupEntity {
     public float aimOffset = 20;
     public float collisionTime = 0.1f;
 
+    public GameObject targetReticule;
     public GameObject explosion;
+
+    GameObject reticuleInstance;
 
     float curTime = 0;
 
@@ -32,6 +35,7 @@ public class MatchMissile : PowerupEntity {
         startPos = transform.position;
         rb = GetComponent<Rigidbody>();
         List<LapGateUser> lg = FindObjectOfType<PlayerSpawner>().playerLaps;
+        reticuleInstance = Instantiate(targetReticule);
         int index = lg.IndexOf(p.GetComponent<LapGateUser>()) - 1;
         if (index < 0)
         {
@@ -48,6 +52,7 @@ public class MatchMissile : PowerupEntity {
 	
 	// Update is called once per frame
 	void Update () {
+        reticuleInstance.transform.position = targ.transform.position;
         curTime += Time.deltaTime;
         rb.MovePosition(arcInterp(startPos, targ.transform.position+targ.transform.forward * aimOffset, curTime/airTime));
         transform.forward = (rb.transform.position - prevPos).normalized;
@@ -68,6 +73,7 @@ public class MatchMissile : PowerupEntity {
     void Explode()
     {
         Instantiate(explosion).transform.position = transform.position;
+        Destroy(reticuleInstance);
         Destroy(gameObject);
     }
 

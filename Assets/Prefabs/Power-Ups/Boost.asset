@@ -17,4 +17,4 @@ MonoBehaviour:
     type: 2}
   matchColor: 2
   powerupImage: {fileID: 21300000, guid: f65b463a42fad5b4484c242421586abe, type: 3}
-  matchBonusImage: {fileID: 21300000, guid: f65b463a42fad5b4484c242421586abe, type: 3}
+  matchBonusImage: {fileID: 21300000, guid: cf63b1f0c061f2a46bd2b756b5e3648e, type: 3}

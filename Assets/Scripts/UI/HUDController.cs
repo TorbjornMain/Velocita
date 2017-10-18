@@ -28,6 +28,7 @@ public class HUDController : MonoBehaviour {
     PowerupManager pum;
     public Image playerCloseImagePrefab;
     Image[] playerPosImages;
+    public Sprite[] playerPips;
     // Update is called once per frame
     void Start()
     {
@@ -41,25 +42,26 @@ public class HUDController : MonoBehaviour {
             playerPosImages[i] = Instantiate(playerCloseImagePrefab);
             playerPosImages[i].rectTransform.SetParent(transform);
             playerPosImages[i].transform.localScale = new Vector3(1, 1, 1);
-            switch ((RacerColor)i)
-            {
-                case RacerColor.Red:
-                    playerPosImages[i].color = Color.red;
-                    break;
-                case RacerColor.Blue:
-                    playerPosImages[i].color = Color.blue;
-                    break;
-                case RacerColor.Green:
-                    playerPosImages[i].color = Color.green;
-                    break;
-                case RacerColor.Yellow:
-                    playerPosImages[i].color = Color.yellow;
-                    break;
-                case RacerColor.White:
-                    break;
-                default:
-                    break;
-            }
+            playerPosImages[i].sprite = playerPips[i];
+            //switch ((RacerColor)i)
+            //{
+            //    case RacerColor.Red:
+            //        playerPosImages[i].color = Color.red;
+            //        break;
+            //    case RacerColor.Blue:
+            //        playerPosImages[i].color = Color.blue;
+            //        break;
+            //    case RacerColor.Green:
+            //        playerPosImages[i].color = Color.green;
+            //        break;
+            //    case RacerColor.Yellow:
+            //        playerPosImages[i].color = Color.yellow;
+            //        break;
+            //    case RacerColor.White:
+            //        break;
+            //    default:
+            //        break;
+            //}
 
         }
     }
