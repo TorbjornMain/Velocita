@@ -27,8 +27,9 @@ public class HUDController : MonoBehaviour {
     public float resetTime = 2;
     PowerupManager pum;
     public Image playerCloseImagePrefab;
+    public Image playerCloseBarImage;
+    public float playerCloseLeftRight = 500;
     Image[] playerPosImages;
-    public Sprite[] playerPips;
     // Update is called once per frame
     void Start()
     {
@@ -40,28 +41,28 @@ public class HUDController : MonoBehaviour {
         for (int i = 0; i < cam.racerOffsets.Length; i++)
         {
             playerPosImages[i] = Instantiate(playerCloseImagePrefab);
-            playerPosImages[i].rectTransform.SetParent(transform);
+            playerPosImages[i].rectTransform.SetParent(playerCloseBarImage.transform);
             playerPosImages[i].transform.localScale = new Vector3(1, 1, 1);
-            playerPosImages[i].sprite = playerPips[i];
-            //switch ((RacerColor)i)
-            //{
-            //    case RacerColor.Red:
-            //        playerPosImages[i].color = Color.red;
-            //        break;
-            //    case RacerColor.Blue:
-            //        playerPosImages[i].color = Color.blue;
-            //        break;
-            //    case RacerColor.Green:
-            //        playerPosImages[i].color = Color.green;
-            //        break;
-            //    case RacerColor.Yellow:
-            //        playerPosImages[i].color = Color.yellow;
-            //        break;
-            //    case RacerColor.White:
-            //        break;
-            //    default:
-            //        break;
-            //}
+
+            switch ((RacerColor)i)
+            {
+                case RacerColor.Red:
+                    playerPosImages[i].color = Color.red;
+                    break;
+                case RacerColor.Blue:
+                    playerPosImages[i].color = Color.blue;
+                    break;
+                case RacerColor.Green:
+                    playerPosImages[i].color = Color.green;
+                    break;
+                case RacerColor.Yellow:
+                    playerPosImages[i].color = Color.yellow;
+                    break;
+                case RacerColor.White:
+                    break;
+                default:
+                    break;
+            }
 
         }
     }
@@ -73,8 +74,8 @@ public class HUDController : MonoBehaviour {
                 if(cam.racerOffsets[i].dist > 0)
                 {
                     playerPosImages[i].enabled = true;
-                    playerPosImages[i].rectTransform.localPosition = new Vector3(1000 * cam.racerOffsets[i].leftRight, -50, 0);
-                    playerPosImages[i].transform.localScale = Vector3.one *  (1-cam.racerOffsets[i].dist);
+                    playerPosImages[i].rectTransform.localPosition = new Vector3(playerCloseLeftRight * cam.racerOffsets[i].leftRight, 0, 0);
+                    playerPosImages[i].transform.localScale = new Vector3(0.1f, (1-cam.racerOffsets[i].dist), 0.1f);
                 }
                 else
                 {
