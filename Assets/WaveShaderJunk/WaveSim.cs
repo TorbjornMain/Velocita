@@ -9,6 +9,8 @@ public class WaveSim : MonoBehaviour
     public Texture2D waveThing, otherWaveThing;
     public float decayFactor = 0.99f;
     public float timeScale = 1;
+    public int steps = 40;
+    public Color perturbCol;
     int flipIndex = 0;
     // Use this for initialization
     void Start()
@@ -56,17 +58,24 @@ public class WaveSim : MonoBehaviour
 
     IEnumerator perturbation()
     {
-        yield return new WaitForSeconds(0.4f);
+        yield return new WaitForSeconds(Random.value * 0.5f);
+        StartCoroutine(spawnPerturb());        
+        StartCoroutine(perturbation());
+    }
+
+    IEnumerator spawnPerturb()
+    {
         Graphics.SetRenderTarget(magBuffer[0]);
         float x = Random.value;
         float y = Random.value;
         //perturb.SetVector("_Position", new Vector4(x-0.5f, 0.25f * y + 0.6f, 0, 0));
-        perturb.SetVector("_Position", new Vector4(x, 0.25f * y + 0.6f, 0, 0));
-        for (int i = 0; i < 10; i++)
+        perturb.SetVector("_Position", new Vector4((x - 0.5f) / 2, 0.6f * y + 0.4f, 0, 0));
+        perturb.color = perturbCol / steps;
+
+        for (int i = 0; i < steps; i++)
         {
             yield return null;
             Graphics.Blit(waveThing, perturb);
         }
-        StartCoroutine(perturbation());
     }
 }
