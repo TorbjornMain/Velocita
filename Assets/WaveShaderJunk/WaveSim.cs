@@ -34,6 +34,7 @@ public class WaveSim : MonoBehaviour
     {
         Shader.SetGlobalFloat("deltaTime", Time.deltaTime);
         Shader.SetGlobalFloat("timeScale", timeScale);
+        Shader.SetGlobalFloat("decayFactor", decayFactor);
 
         vel.SetTexture("_PrevVelTex", velBuffer[1]);
         Graphics.SetRenderTarget(velBuffer[0]);
@@ -55,11 +56,12 @@ public class WaveSim : MonoBehaviour
 
     IEnumerator perturbation()
     {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(0.4f);
         Graphics.SetRenderTarget(magBuffer[0]);
         float x = Random.value;
         float y = Random.value;
-        perturb.SetVector("_Position", new Vector4(x, y, 0, 0));
+        //perturb.SetVector("_Position", new Vector4(x-0.5f, 0.25f * y + 0.6f, 0, 0));
+        perturb.SetVector("_Position", new Vector4(x, 0.25f * y + 0.6f, 0, 0));
         for (int i = 0; i < 10; i++)
         {
             yield return null;

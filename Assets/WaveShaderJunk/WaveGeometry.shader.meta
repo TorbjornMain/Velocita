@@ -1,9 +1,10 @@
 fileFormatVersion: 2
 guid: 2a19b7d7ce1efaf47a54715f6901c5f0
-timeCreated: 1508307110
+timeCreated: 1508393777
 licenseType: Pro
 ShaderImporter:
-  defaultTextures: []
+  defaultTextures:
+  - _WaveTexture: {fileID: 8400000, guid: 732a774bd1404054fbb8e00841c7d3b9, type: 2}
   userData: 
   assetBundleName: 
   assetBundleVariant: 

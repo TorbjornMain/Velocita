@@ -1,0 +1,91 @@
+﻿Shader "Custom/VelTransferConductiveHQShader"
+{
+	Properties
+	{
+		_MainTex ("Texture", 2D) = "white" {}
+		_ConductiveTex("Conductivity Texture", 2D) = "white" {}
+		_PrevVelTex("Velocity Texture", 2D) = "white" {}
+		_SampleResolution("SampleResolution", Int) = 256
+	}
+	SubShader
+	{
+		// No culling or depth
+		Cull Off ZWrite Off ZTest Always
+
+		Pass
+		{
+			CGPROGRAM
+			#pragma vertex vert
+			#pragma fragment frag
+			
+			#include "UnityCG.cginc"
+
+			struct appdata
+			{
+				float4 vertex : POSITION;
+				float2 uv : TEXCOORD0;
+			};
+
+			struct v2f
+			{
+				float2 uv : TEXCOORD0;
+				float4 vertex : SV_POSITION;
+			};
+
+			v2f vert (appdata v)
+			{
+				v2f o;
+				o.vertex = UnityObjectToClipPos(v.vertex);
+				o.uv = v.uv;
+				return o;
+			}
+			
+			sampler2D _MainTex;
+			sampler2D _ConductiveTex;
+			sampler2D _PrevVelTex;
+			int _SampleResolution;
+			float deltaTime;
+			float timeScale;
+
+
+			fixed4 uncompress(fixed4 other)
+			{
+				fixed4 o = (other * 2) - 1;
+				o.xyz *= other.a;
+				o.a = 1;
+				return o;
+			}
+
+			fixed4 compress(fixed4 other)
+			{
+				return (other + 1) / 2;
+			}
+
+
+			fixed4 frag (v2f i) : SV_Target
+			{
+				//fixed4 accelX = (((tex2D(_ConductiveTex, i.uv) + tex2D(_ConductiveTex, i.uv + float2(1.00 / _SampleResolution, 0)))/2) * (tex2D(_MainTex, i.uv + float2(1.00 / _SampleResolution, 0)) - tex2D(_MainTex, i.uv))) - (((tex2D(_ConductiveTex, i.uv - float2(1.00 / _SampleResolution, 0)) + tex2D(_ConductiveTex, i.uv)) / 2) * (tex2D(_MainTex, i.uv ) - tex2D(_MainTex, i.uv - float2(1.00 / _SampleResolution, 0))));
+				//fixed4 accelY = (((tex2D(_ConductiveTex, i.uv) + tex2D(_ConductiveTex, i.uv + float2(0 , 1.00 / _SampleResolution))) / 2) * (tex2D(_MainTex, i.uv + float2(0, 1.00 / _SampleResolution)) - tex2D(_MainTex, i.uv))) - (((tex2D(_ConductiveTex, i.uv - float2(0, 1.00 / _SampleResolution)) + tex2D(_ConductiveTex, i.uv)) / 2) * (tex2D(_MainTex, i.uv) - tex2D(_MainTex, i.uv - float2(0, 1.00 / _SampleResolution))));
+				//fixed3 accel = accelX.xyz + accelY.xyz;
+				fixed4 conductiveX1 = (tex2D(_ConductiveTex, i.uv) + tex2D(_ConductiveTex, i.uv + float2(1.00 / _SampleResolution, 0))) / 2;
+				fixed4 conductiveX2 = (tex2D(_ConductiveTex, i.uv) + tex2D(_ConductiveTex, i.uv - float2(1.00 / _SampleResolution, 0))) / 2;
+				fixed4 conductiveY1 = (tex2D(_ConductiveTex, i.uv) + tex2D(_ConductiveTex, i.uv + float2(0, 1.00 / _SampleResolution))) / 2;
+				fixed4 conductiveY2 = (tex2D(_ConductiveTex, i.uv) + tex2D(_ConductiveTex, i.uv - float2(0, 1.00 / _SampleResolution))) / 2;
+				//--
+				fixed4 conductiveXY1 = (tex2D(_ConductiveTex, i.uv) + tex2D(_ConductiveTex, i.uv + float2(-1.00 / _SampleResolution, -1.00 / _SampleResolution))) / 2;
+				//+-
+				fixed4 conductiveXY2 = (tex2D(_ConductiveTex, i.uv) + tex2D(_ConductiveTex, i.uv + float2(1.00 / _SampleResolution, -1.00 / _SampleResolution))) / 2;
+				//-+
+				fixed4 conductiveXY3 = (tex2D(_ConductiveTex, i.uv) + tex2D(_ConductiveTex, i.uv + float2(-1.00 / _SampleResolution, 1.00 / _SampleResolution))) / 2;
+				//++
+				fixed4 conductiveXY4 = (tex2D(_ConductiveTex, i.uv) + tex2D(_ConductiveTex, i.uv + float2(1.00 / _SampleResolution, 1.00 / _SampleResolution))) / 2;
+
+				fixed4 accel = conductiveXY4 * uncompress(tex2D(_MainTex, i.uv + float2(1.00 / _SampleResolution, 1.00 / _SampleResolution))) + conductiveXY3 * uncompress(tex2D(_MainTex, i.uv + float2(-1.00 / _SampleResolution, +1.00 / _SampleResolution))) + conductiveXY2 * uncompress(tex2D(_MainTex, i.uv + float2(1.00 / _SampleResolution, -1.00 / _SampleResolution))) +  conductiveXY1 * uncompress(tex2D(_MainTex, i.uv + float2(-1.00 / _SampleResolution, -1.00 / _SampleResolution))) + conductiveX2 * uncompress(tex2D(_MainTex, i.uv - float2(1.00 / _SampleResolution, 0))) + conductiveX1 * uncompress(tex2D(_MainTex, i.uv + float2(1.00 / _SampleResolution, 0))) + conductiveY2 * uncompress(tex2D(_MainTex, i.uv - float2(0, 1.00 / _SampleResolution))) + conductiveY1 * uncompress(tex2D(_MainTex, i.uv + float2(0, 1.00 / _SampleResolution))) - (conductiveX1 + conductiveX2 + conductiveY1 + conductiveY2 + conductiveXY1 + conductiveXY2 + conductiveXY3 + conductiveXY4) * uncompress(tex2D(_MainTex, i.uv));
+				accel.a = 1;
+				float3 prevVel = uncompress(tex2D(_PrevVelTex, i.uv));
+				return compress(fixed4((prevVel + timeScale * deltaTime * accel) * 0.99, 1));//((fixed4(prevVel + (accel * deltaTime * timeScale), 1)) + 1)/2 ;//tex2D(_PrevVelTex, i.uv) + fixed4(1,1,1,accel);// * deltaTime;// *deltaTime;//fixed4(1,1,1, (tex2D(_PrevVelTex, i.uv).a + (accel * deltaTime)));
+			}
+			ENDCG
+		}
+	}
+}
