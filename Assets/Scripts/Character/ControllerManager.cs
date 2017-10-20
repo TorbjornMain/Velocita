@@ -54,12 +54,18 @@ public class ControllerManager : MonoBehaviour {
                         players.Add(p);
                     }
                 }
-                else
-                {
-                    AcquirePlayers = false;
-                    SceneNames.LoadScene(SceneNames.CharacterSelect);
-                }
             } 
+            //if(InputManager.ActiveDevice.Action4.WasPressed)
+            //{
+            //    for(int i = 0; i < players.Count; i++)
+            //    {
+            //        if(players[i].ind == InputManager.ActiveDevice)
+            //        {
+            //            players.RemoveAt(i);
+            //            break;
+            //        }
+            //    }
+            //}
         }
         else
         {
