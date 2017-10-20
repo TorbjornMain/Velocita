@@ -2,13 +2,16 @@
 using System.Collections;
 
 
-public class WaveSim : MonoBehaviour
+public class OceanWaveSim : MonoBehaviour
 {
-    public Material mag, vel, startClear;
+    public Material mag, vel, startClear, perturb;
     public RenderTexture[] velBuffer, magBuffer;
+    public Texture2D waveThing, otherWaveThing;
     public float decayFactor = 0.99f;
     public float timeScale = 1;
-
+    public int steps = 40;
+    public Color perturbCol;
+    int flipIndex = 0;
     // Use this for initialization
     void Start()
     {
@@ -23,6 +26,9 @@ public class WaveSim : MonoBehaviour
             Graphics.Blit(tex, startClear);
 
         }
+        Graphics.Blit(waveThing, magBuffer[0]);
+        StartCoroutine(perturbation());
+
     }
 
     // Update is called once per frame
@@ -48,5 +54,28 @@ public class WaveSim : MonoBehaviour
         Graphics.SetRenderTarget(magBuffer[0]);
         Graphics.Blit(velBuffer[1], mag);
 
+    }
+
+    IEnumerator perturbation()
+    {
+        yield return new WaitForSeconds(Random.value * 0.5f);
+        StartCoroutine(spawnPerturb());        
+        StartCoroutine(perturbation());
+    }
+
+    IEnumerator spawnPerturb()
+    {
+        Graphics.SetRenderTarget(magBuffer[0]);
+        float x = Random.value;
+        float y = Random.value;
+        //perturb.SetVector("_Position", new Vector4(x-0.5f, 0.25f * y + 0.6f, 0, 0));
+        perturb.SetVector("_Position", new Vector4((x - 0.5f) / 2, 0.6f * y + 0.4f, 0, 0));
+        perturb.color = perturbCol / steps;
+
+        for (int i = 0; i < steps; i++)
+        {
+            yield return null;
+            Graphics.Blit(waveThing, perturb);
+        }
     }
 }
