@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33728629974031990}
   - component: {fileID: 23122853825192012}
   - component: {fileID: 95365130218945998}
+  - component: {fileID: 114918577161254394}
   m_Layer: 0
   m_Name: Mine Model
   m_TagString: Untagged
@@ -145,7 +146,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1798051814683916}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_MotionVectors: 1
@@ -290,6 +291,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soundEffectPrefab: {fileID: 82958477640306452, guid: 34d8e0186d1e6be4aa39d4080e626e33,
     type: 2}
+--- !u!114 &114918577161254394
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1213264041108358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1259624ef2e02a349b0bc75a96d51032, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!135 &135187487948601526
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -300,5 +312,5 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 5.9
   m_Center: {x: 0, y: 0, z: 0}
