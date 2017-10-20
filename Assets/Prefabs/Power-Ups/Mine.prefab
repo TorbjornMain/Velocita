@@ -278,6 +278,7 @@ MonoBehaviour:
   exp: {fileID: 114290803247024268, guid: 4dac1f80f1ecea94c8546dd0d76f41fa, type: 2}
   collisionTime: 0.7
   dissapearTime: 30
+  mineFloatHeight: 5
 --- !u!114 &114660194396587774
 MonoBehaviour:
   m_ObjectHideFlags: 1
