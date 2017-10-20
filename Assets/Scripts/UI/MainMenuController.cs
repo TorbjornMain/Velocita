@@ -65,9 +65,7 @@ public class MainMenuController : MonoBehaviour {
                 switch (selectedOption)
                 {
                     case MenuOptions.Multiplayer:
-                        mainMenuContainer.SetActive(false);
-                        controllerAllocationContainer.SetActive(true);
-                        FindObjectOfType<ControllerManager>().AcquirePlayers = true;
+                        SceneNames.LoadScene(SceneNames.CharacterSelect);
                         break;
                     case MenuOptions.Quit:
                         Application.Quit();

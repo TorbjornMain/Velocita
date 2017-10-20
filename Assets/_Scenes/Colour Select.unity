@@ -605,9 +605,36 @@ MonoBehaviour:
     type: 2}
   selectorNodes:
   - {fileID: 116182164}
+  - {fileID: 7847924}
+  - {fileID: 1813772260}
+  - {fileID: 1196420551}
   - {fileID: 989712075}
+  - {fileID: 1861099840}
+  - {fileID: 454655224}
+  - {fileID: 1514111246}
   - {fileID: 1512432888}
+  - {fileID: 384491965}
+  - {fileID: 648961497}
+  - {fileID: 907823319}
   - {fileID: 694807734}
+  - {fileID: 1425129197}
+  - {fileID: 1564847350}
+  - {fileID: 1749194574}
+  playerZones:
+  - {fileID: 1546937197}
+  - {fileID: 485230451}
+  - {fileID: 246111647}
+  - {fileID: 1441656364}
+  playerColors:
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 0, g: 0.006896496, b: 1, a: 1}
+  - {r: 0, g: 1, b: 0.17241383, a: 1}
+  - {r: 1, g: 1, b: 0, a: 1}
+  playerJoinText:
+  - {fileID: 1874930734}
+  - {fileID: 1053313317}
+  - {fileID: 1231571281}
+  - {fileID: 990669677}
   playerXOffset: 40
   gameScene: Jess Test
   navigateSound: {fileID: 8300000, guid: 04f743b6a5f6a0649b3a042d7a573f47, type: 3}
