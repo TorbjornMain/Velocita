@@ -79,4 +79,8 @@ Material:
     m_Colors:
     - _Color: {r: 0.015196079, g: 0.015196079, b: 0.015196079, a: 0.025}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+<<<<<<< HEAD
     - _Position: {r: 0.19211715, g: 0.46947303, b: 0, a: 0}
+=======
+    - _Position: {r: -0.11034517, g: 0.45893937, b: 0, a: 0}
+>>>>>>> ac97ba47dbdb6cbd880cf26ed7924d5d21f4179a
