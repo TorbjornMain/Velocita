@@ -9,6 +9,8 @@ public class PowerupItem : MonoBehaviour {
     bool active = true;
     int index = 0;
     Light l;
+    public ParticleSystem beacon;
+    public Color[] beaconColours;
     public Image powerupImage;
 
     void Start()
@@ -28,6 +30,7 @@ public class PowerupItem : MonoBehaviour {
                 {
                     p.currentPowerup = powerups[index];
                     active = false;
+                    beacon.gameObject.SetActive(false);
                     l.color = powerupImage.color = new Color(0, 0, 0, 0);
                     StartCoroutine(resetPickup(respawnTime));
                 }
@@ -42,7 +45,10 @@ public class PowerupItem : MonoBehaviour {
         index = Mathf.RoundToInt(Random.value * (powerups.Length - 1));
         powerupImage.sprite = powerups[index].powerupImage;
         powerupImage.color = Color.white;
-        switch(powerups[index].matchColor)
+        beacon.gameObject.SetActive(true);
+        ParticleSystem.MainModule m = beacon.main;
+        m.startColor = beaconColours[(int)powerups[index].matchColor];
+        switch (powerups[index].matchColor)
         {
             case RacerColor.Red:
                 l.color = Color.red;
