@@ -44,10 +44,13 @@ public class CharacterSelectScreen : MonoBehaviour {
 		for(int i = 0; i < cm.players.Count; i++)
         {
             if (!selectorInstances[i].gameObject.activeInHierarchy)
+            {
                 selectorInstances[i].gameObject.SetActive(true);
+                playerJoinText[i].text = "P" + (i + 1).ToString();
+            }
             else
             {
-                selectorInstances[i].transform.position = selectorNodes[selectorInstances[i].hoveredIndex*4 + i].position;
+                selectorInstances[i].transform.position = selectorNodes[selectorInstances[i].hoveredIndex * 4 + i].position;
                 if (!selectorInstances[i].hasSelected)
                 {
                     if (cm.players[i].ind.Action1.WasPressed)
@@ -58,7 +61,7 @@ public class CharacterSelectScreen : MonoBehaviour {
                             PControlData playerData = cm.players[i];
                             playerData.col = ((RacerColor)selectorInstances[i].hoveredIndex);
                             playerZones[i].color = playerColors[selectorInstances[i].hoveredIndex];
-                            playerJoinText[i].text = "P" + (i + 1).ToString();
+
                             cm.players[i] = playerData;
                             selectorInstances[i].hasSelected = true;
                             audioSource.clip = selectSound;
