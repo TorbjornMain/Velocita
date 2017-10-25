@@ -205,6 +205,12 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 7c45692bb276d50439cd0230eb704522, type: 2}
   - {fileID: 11400000, guid: 6a840178683dcb64bb45124e2d56be09, type: 2}
   respawnTime: 3
+  beacon: {fileID: 198243343121343302}
+  beaconColours:
+  - {r: 0.88235295, g: 0.1882353, b: 0.1882353, a: 1}
+  - {r: 0.21568628, g: 0.26666668, b: 0.7882353, a: 1}
+  - {r: 0.043137256, g: 0.7294118, b: 0.047058824, a: 1}
+  - {r: 1, g: 0.972549, b: 0, a: 1}
   powerupImage: {fileID: 114466187969894974}
 --- !u!114 &114254350729044390
 MonoBehaviour:
