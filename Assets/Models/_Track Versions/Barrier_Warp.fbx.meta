@@ -10,23 +10,39 @@ ModelImporter:
     100004: InvisiBarrier
     100006: Light_Road_InvisiBarrier
     100008: Outer_Wall
+    100010: Barrier_Warp_Collision
+    100012: Inner_Barrier
+    100014: Outer_Barrier
     400000: //RootNode
     400002: Inner_Wall
     400004: InvisiBarrier
     400006: Light_Road_InvisiBarrier
     400008: Outer_Wall
+    400010: Barrier_Warp_Collision
+    400012: Inner_Barrier
+    400014: Outer_Barrier
     2300000: Inner_Wall
     2300002: InvisiBarrier
     2300004: Light_Road_InvisiBarrier
     2300006: Outer_Wall
+    2300008: Inner_Barrier
+    2300010: Outer_Barrier
     3300000: Inner_Wall
     3300002: InvisiBarrier
     3300004: Light_Road_InvisiBarrier
     3300006: Outer_Wall
+    3300008: Inner_Barrier
+    3300010: Outer_Barrier
     4300000: InvisiBarrier
     4300002: Outer_Wall
     4300004: Inner_Wall
     4300006: Light_Road_InvisiBarrier
+    4300008: Inner_Barrier
+    4300010: Outer_Barrier
+    6400000: Inner_Barrier
+    6400002: InvisiBarrier
+    6400004: Light_Road_InvisiBarrier
+    6400006: Outer_Barrier
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -57,7 +73,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
