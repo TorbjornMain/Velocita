@@ -36,8 +36,11 @@ public class ResultScreen : MonoBehaviour {
         float milliseconds = (Mathf.Round(seconds * 100));
         if (seconds < 10)
         {
-
-            if(milliseconds % 10 == 0)
+            if(milliseconds % 100 == 0)
+            {
+                secondString = "0" + (milliseconds / 100).ToString() + ".00";
+            }
+            else if(milliseconds % 10 == 0)
             {
                 secondString = "0" + (milliseconds/100).ToString() + "0";
             }
@@ -48,7 +51,11 @@ public class ResultScreen : MonoBehaviour {
         }
         else
         {
-            if (milliseconds % 10 == 0)
+            if (milliseconds % 100 == 0)
+            {
+                secondString = (milliseconds / 100).ToString() + ".00";
+            }
+            else if (milliseconds % 10 == 0)
             {
                 secondString = (milliseconds / 100).ToString() + "0";
             }
