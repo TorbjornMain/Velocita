@@ -4,12 +4,11 @@ using System.Collections;
 
 public class WaveSim : MonoBehaviour
 {
-    public Material mag, vel, startClear, perturb;
+    public Material mag, vel, startClear;
     public RenderTexture[] velBuffer, magBuffer;
-    public Texture2D waveThing, otherWaveThing;
     public float decayFactor = 0.99f;
     public float timeScale = 1;
-    int flipIndex = 0;
+
     // Use this for initialization
     void Start()
     {
@@ -24,9 +23,6 @@ public class WaveSim : MonoBehaviour
             Graphics.Blit(tex, startClear);
 
         }
-        Graphics.Blit(waveThing, magBuffer[0]);
-        StartCoroutine(perturbation());
-
     }
 
     // Update is called once per frame
@@ -34,6 +30,7 @@ public class WaveSim : MonoBehaviour
     {
         Shader.SetGlobalFloat("deltaTime", Time.deltaTime);
         Shader.SetGlobalFloat("timeScale", timeScale);
+        Shader.SetGlobalFloat("decayFactor", decayFactor);
 
         vel.SetTexture("_PrevVelTex", velBuffer[1]);
         Graphics.SetRenderTarget(velBuffer[0]);
@@ -51,20 +48,5 @@ public class WaveSim : MonoBehaviour
         Graphics.SetRenderTarget(magBuffer[0]);
         Graphics.Blit(velBuffer[1], mag);
 
-    }
-
-    IEnumerator perturbation()
-    {
-        yield return new WaitForSeconds(5f);
-        Graphics.SetRenderTarget(magBuffer[0]);
-        float x = Random.value;
-        float y = Random.value;
-        perturb.SetVector("_Position", new Vector4(x, y, 0, 0));
-        for (int i = 0; i < 10; i++)
-        {
-            yield return null;
-            Graphics.Blit(waveThing, perturb);
-        }
-        StartCoroutine(perturbation());
     }
 }

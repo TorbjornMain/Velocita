@@ -42,6 +42,8 @@
 			sampler2D _MainTex;
 			sampler2D _PrevMagTex;
 			float deltaTime;
+			float timeScale;
+			float decayFactor;
 
 			fixed4 uncompress(fixed4 other)
 			{
@@ -63,7 +65,7 @@
 
 				fixed4 vel = uncompress(tex2D(_MainTex, i.uv));
 				
-				col = compress((prevCol + vel * deltaTime) * 0.99);
+				col = compress((prevCol + vel * deltaTime) * decayFactor);
 
 				col.a = 1;
 					

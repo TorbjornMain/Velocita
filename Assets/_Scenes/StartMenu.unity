@@ -120,7 +120,7 @@ GameObject:
   - component: {fileID: 129354281}
   - component: {fileID: 129354283}
   m_Layer: 5
-  m_Name: Logo
+  m_Name: Velocita Logo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -137,7 +137,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2086673527}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.6465477, y: 0.5058423}
   m_AnchorMax: {x: 0.86366713, y: 0.9006057}
@@ -206,7 +206,7 @@ GameObject:
   - component: {fileID: 527630298}
   - component: {fileID: 527630300}
   m_Layer: 5
-  m_Name: Multi
+  m_Name: Multiplayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -223,7 +223,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2086673527}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.42400002}
   m_AnchorMax: {x: 1, y: 0.48700002}
@@ -292,7 +292,7 @@ GameObject:
   - component: {fileID: 568667442}
   - component: {fileID: 568667444}
   m_Layer: 5
-  m_Name: TimeTrail
+  m_Name: Time Trial
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -309,11 +309,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2086673527}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.33531544}
   m_AnchorMax: {x: 1, y: 0.40147427}
-  m_AnchoredPosition: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 0, y: -10.699997}
   m_SizeDelta: {x: 0, y: 2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &568667442
@@ -467,7 +467,7 @@ GameObject:
   - component: {fileID: 932585218}
   - component: {fileID: 932585220}
   m_Layer: 5
-  m_Name: MultiWord
+  m_Name: Multiplayer (Word)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -484,7 +484,7 @@ RectTransform:
   m_LocalScale: {x: 0.96819997, y: 0.96819985, z: 0.96819985}
   m_Children: []
   m_Father: {fileID: 2086673527}
-  m_RootOrder: 8
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.01119058, y: 0.42400002}
   m_AnchorMax: {x: 0.18400002, y: 0.48700002}
@@ -553,7 +553,7 @@ GameObject:
   - component: {fileID: 1020081952}
   - component: {fileID: 1020081954}
   m_Layer: 5
-  m_Name: Brack
+  m_Name: Black Banner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -639,7 +639,7 @@ GameObject:
   - component: {fileID: 1140260690}
   - component: {fileID: 1140260692}
   m_Layer: 5
-  m_Name: SettingsWord
+  m_Name: 'Settings (Word) '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -656,11 +656,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2086673527}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.01119058, y: 0.25500003}
   m_AnchorMax: {x: 0.14445236, y: 0.31500003}
-  m_AnchoredPosition: {x: 2.4867554, y: 0.306427}
+  m_AnchoredPosition: {x: 2.4867554, y: -20.2}
   m_SizeDelta: {x: -0.10153198, y: 2.8183975}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1140260690
@@ -786,7 +786,7 @@ GameObject:
   - component: {fileID: 1364002611}
   - component: {fileID: 1364002610}
   m_Layer: 5
-  m_Name: BackGround
+  m_Name: White Backdrop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -855,7 +855,7 @@ GameObject:
   - component: {fileID: 1435558763}
   - component: {fileID: 1435558765}
   m_Layer: 5
-  m_Name: QuitWord
+  m_Name: Quit (Word)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -876,7 +876,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.01119058, y: 0.17673713}
   m_AnchorMax: {x: 0.079, y: 0.22423662}
-  m_AnchoredPosition: {x: 3.1703491, y: 1.7000122}
+  m_AnchoredPosition: {x: 3.1703491, y: -29.999985}
   m_SizeDelta: {x: -0.72444916, y: 2.4929123}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1435558763
@@ -1106,7 +1106,7 @@ GameObject:
   - component: {fileID: 1537264391}
   - component: {fileID: 1537264393}
   m_Layer: 5
-  m_Name: TimeWord
+  m_Name: Time Trial (Word)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1123,11 +1123,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2086673527}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.009309966, y: 0.344}
   m_AnchorMax: {x: 0.17030889, y: 0.40147427}
-  m_AnchoredPosition: {x: -0.13439941, y: -6.700001}
+  m_AnchoredPosition: {x: -0.13439941, y: -13}
   m_SizeDelta: {x: 0.26879883, y: -7.2786255}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1537264391
@@ -1209,11 +1209,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2086673527}
-  m_RootOrder: 6
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.16700001}
   m_AnchorMax: {x: 1, y: 0.23300001}
-  m_AnchoredPosition: {x: 0, y: 2.3631592}
+  m_AnchoredPosition: {x: 0, y: -29.336823}
   m_SizeDelta: {x: 0, y: 2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1570389757
@@ -1295,11 +1295,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2086673527}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25065726}
   m_AnchorMax: {x: 1, y: 0.31973606}
-  m_AnchoredPosition: {x: -1, y: 0.5}
+  m_AnchoredPosition: {x: -1, y: -20.006424}
   m_SizeDelta: {x: 0.024902, y: -1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1694242173
@@ -1345,57 +1345,6 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: c42fa418c7dc3574fb22e2d8dfe0a705, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
---- !u!1 &1712631848
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1712631849}
-  - component: {fileID: 1712631850}
-  m_Layer: 5
-  m_Name: Words
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1712631849
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1712631848}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2086673527}
-  m_RootOrder: 11
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.009309966, y: 0.16700001}
-  m_AnchorMax: {x: 0.18900001, y: 0.48700002}
-  m_AnchoredPosition: {x: 733.5, y: 177.5}
-  m_SizeDelta: {x: -227, y: -229}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!95 &1712631850
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1712631848}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e756a24bf76fe1f458ed4ff2236c40b0, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1491,15 +1440,14 @@ RectTransform:
   - {fileID: 1364002609}
   - {fileID: 1498001407}
   - {fileID: 1020081951}
-  - {fileID: 568667441}
   - {fileID: 527630297}
-  - {fileID: 1694242172}
-  - {fileID: 1570389756}
-  - {fileID: 1537264390}
   - {fileID: 932585217}
+  - {fileID: 568667441}
+  - {fileID: 1537264390}
+  - {fileID: 1694242172}
   - {fileID: 1140260689}
+  - {fileID: 1570389756}
   - {fileID: 1435558762}
-  - {fileID: 1712631849}
   - {fileID: 129354280}
   m_Father: {fileID: 0}
   m_RootOrder: 2

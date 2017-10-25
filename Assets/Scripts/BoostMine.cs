@@ -10,9 +10,8 @@ public class BoostMine : PowerupEntity {
 	// Use this for initialization
 	void Start () {
         RaycastHit rc = new RaycastHit();
-        if(Physics.Raycast(transform.position, new Vector3(0, -1, 0), out rc, 1000))
+        if(Physics.Raycast(transform.position, new Vector3(0, -1, 0), out rc, 1000, 1 << LayerMask.NameToLayer("Terrain")))
         {
-            print("BLERP");
             Vector3 minePos = rc.point + new Vector3(0, mineFloatHeight, 0);
             PowerupEntity po = null;
             Vector3 mineAxis = Vector3.Cross(rc.normal, transform.forward);
@@ -21,7 +20,6 @@ public class BoostMine : PowerupEntity {
                 rc = new RaycastHit();
                 if(!Physics.Raycast(minePos, mineAxis.normalized * i, out rc, width/2))
                 { 
-                    print("Bleep");
                     if (rc.distance == 0)
                     {
                         po = Instantiate(minePrefab);
