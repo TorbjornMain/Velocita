@@ -83,7 +83,7 @@ Material:
     m_Colors:
     - _CloseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _DistantColor: {r: 0, g: 0.44444442, b: 1, a: 0.044}
+    - _DistantColor: {r: 0, g: 0.44444442, b: 1, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _ShieldTone: {r: 0, g: 0, b: 1, a: 0.053}
+    - _ShieldTone: {r: 0, g: 0, b: 1, a: 0}
     - _WaveColor: {r: 0, g: 1, b: 1, a: 1}
