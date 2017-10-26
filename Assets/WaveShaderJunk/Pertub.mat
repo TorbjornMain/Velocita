@@ -71,9 +71,11 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
+    - _XScale: 100
+    - _YScale: 1
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 0, g: 0.95862055, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _Position: {r: 0, g: 0, b: 0, a: 0}
+    - _Position: {r: 0.5805783, g: 0.080130234, b: 0, a: 0}
     - _TintColor: {r: 0.09558821, g: 0.09558821, b: 0.09558821, a: 0.122}
