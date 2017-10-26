@@ -21,6 +21,7 @@ public class CharacterSelectScreen : MonoBehaviour {
     AudioSource audioSource;
     public AudioClip navigateSound;
     public AudioClip selectSound;
+    public AudioClip cancelSound;
     public AudioClip invalidChoiceSound;
 
 	// Use this for initialization
@@ -70,6 +71,25 @@ public class CharacterSelectScreen : MonoBehaviour {
                         else
                         {
                             audioSource.clip = invalidChoiceSound;
+                            audioSource.Play();
+                        }
+                    }
+                    
+                    if(cm.players[i].ind.Action4.WasPressed)
+                    {
+                        if(!selected[selectorInstances[i].hoveredIndex])
+                        {
+                            SceneNames.LoadScene(SceneNames.MainMenu);
+                        }
+                        else
+                        {
+                            PControlData playerData = cm.players[i];
+                            playerData.col = RacerColor.White;
+                            playerZones[i].color = Color.white;
+
+                            cm.players[i] = playerData;
+                            selectorInstances[i].hasSelected = false;
+                            audioSource.clip = cancelSound;
                             audioSource.Play();
                         }
                     }
