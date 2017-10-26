@@ -1003,6 +1003,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseUIContainer: {fileID: 1523283041686884}
   resultsUIContainer: {fileID: 1884310441021636}
+  pausedMusicVolume: 0.4
+  playMusicVolume: 1
 --- !u!114 &114951172922235518
 MonoBehaviour:
   m_ObjectHideFlags: 1

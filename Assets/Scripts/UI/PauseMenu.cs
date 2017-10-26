@@ -74,5 +74,9 @@ public class PauseMenu : MonoBehaviour {
             }
 
         }
+        if(InputManager.ActiveDevice.Action4.WasPressed)
+        {
+            transform.parent.SendMessage("TogglePause");
+        }
     }
 }

@@ -1126,6 +1126,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4398647660288258}
   - component: {fileID: 95366267778428018}
+  - component: {fileID: 114038893696934250}
   m_Layer: 0
   m_Name: Nika
   m_TagString: Untagged
@@ -2448,7 +2449,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1653903724059534}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.73, z: -0.155}
+  m_LocalPosition: {x: -0.397, y: -0.81, z: -0.155}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4230293099892052}
@@ -2905,7 +2906,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1017755139275196}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -15.76}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4136551346470342}
@@ -3460,7 +3461,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 509f1066aedfcf641b43ca1291ae7d8c, type: 2}
+  - {fileID: 2100000, guid: 429e2583dcc49284292ca786e7e74ad4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3538,7 +3539,7 @@ Animator:
   m_GameObject: {fileID: 1653903724059534}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: c6484a86a5616b54f956a8a0227eb0f0, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fb802b64091df6743bd846dcab4da6a1, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -3768,6 +3769,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44960ae452d575345b5abe215df7dfc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114038893696934250
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1653903724059534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 755d6f1e857a08244a95320ff3f6d930, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  backFoot: {x: 0.3, y: 0.2, z: 0}
+  frontFoot: {x: -0.65, y: 0.2, z: 0}
+  board: {fileID: 4703191929934242}
+  backFootAngle: {x: 0, y: 0, z: 0}
+  frontFootAngle: {x: 0, y: 0, z: 0}
 --- !u!114 &114115192401116158
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3916,7 +3933,7 @@ MonoBehaviour:
     type: 2}
   driftParticles: {fileID: 198891423667566310, guid: 38c78d7b61b1dcb429e0760aac2effa1,
     type: 2}
-  anim: {fileID: 0}
+  anim: {fileID: 95366267778428018}
   mainModelRenderer: {fileID: 137251374170197242}
   outerTrail: {fileID: 96890701567802762}
   innerTrail: {fileID: 96892240982712620}
