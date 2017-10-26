@@ -30,7 +30,7 @@ Shader "Shader Forge/PerturbShader" {
             #define UNITY_PASS_FORWARDBASE
             #include "UnityCG.cginc"
             #pragma multi_compile_fwdbase_fullshadows
-            #pragma only_renderers d3d9 d3d11 glcore gles 
+            #pragma only_renderers d3d9 d3d11 glcore gles ps4 
             #pragma target 3.0
             uniform float4 _Color;
             uniform float4 _Position;
@@ -51,9 +51,8 @@ Shader "Shader Forge/PerturbShader" {
                 return o;
             }
             float4 frag(VertexOutput i) : COLOR {
-                float2 node_5054 = float2(_XScale,_YScale);
-                float node_1514_if_leA = step(length(((_Position.rgb-float3(i.uv0,0.0))*float3(node_5054,0.0))),0.05);
-                float node_1514_if_leB = step(0.05,length(((_Position.rgb-float3(i.uv0,0.0))*float3(node_5054,0.0))));
+                float node_1514_if_leA = step(length(((_Position.rgb-float3(i.uv0,0.0))*float3(float2(_XScale,_YScale),0.0))),0.05);
+                float node_1514_if_leB = step(0.05,length(((_Position.rgb-float3(i.uv0,0.0))*float3(float2(_XScale,_YScale),0.0))));
                 float node_9880 = 0.0;
                 clip((_Color.a*lerp((node_1514_if_leA*1.0)+(node_1514_if_leB*node_9880),node_9880,node_1514_if_leA*node_1514_if_leB)) - 0.5);
 ////// Lighting:
@@ -80,7 +79,7 @@ Shader "Shader Forge/PerturbShader" {
             #include "Lighting.cginc"
             #pragma fragmentoption ARB_precision_hint_fastest
             #pragma multi_compile_shadowcaster
-            #pragma only_renderers d3d9 d3d11 glcore gles 
+            #pragma only_renderers d3d9 d3d11 glcore gles ps4 
             #pragma target 3.0
             uniform float4 _Color;
             uniform float4 _Position;
@@ -102,9 +101,8 @@ Shader "Shader Forge/PerturbShader" {
                 return o;
             }
             float4 frag(VertexOutput i) : COLOR {
-                float2 node_5054 = float2(_XScale,_YScale);
-                float node_1514_if_leA = step(length(((_Position.rgb-float3(i.uv0,0.0))*float3(node_5054,0.0))),0.05);
-                float node_1514_if_leB = step(0.05,length(((_Position.rgb-float3(i.uv0,0.0))*float3(node_5054,0.0))));
+                float node_1514_if_leA = step(length(((_Position.rgb-float3(i.uv0,0.0))*float3(float2(_XScale,_YScale),0.0))),0.05);
+                float node_1514_if_leB = step(0.05,length(((_Position.rgb-float3(i.uv0,0.0))*float3(float2(_XScale,_YScale),0.0))));
                 float node_9880 = 0.0;
                 clip((_Color.a*lerp((node_1514_if_leA*1.0)+(node_1514_if_leB*node_9880),node_9880,node_1514_if_leA*node_1514_if_leB)) - 0.5);
                 SHADOW_CASTER_FRAGMENT(i)

@@ -12,7 +12,7 @@ Shader "Shader Forge/MinimapPlayerShader" {
         Tags {
             "Queue"="AlphaTest"
             "RenderType"="TransparentCutout"
-			"Track"="True"
+            "Track"="True"
         }
         Pass {
             Name "FORWARD"
@@ -28,7 +28,7 @@ Shader "Shader Forge/MinimapPlayerShader" {
             #define UNITY_PASS_FORWARDBASE
             #include "UnityCG.cginc"
             #pragma multi_compile_fwdbase_fullshadows
-            #pragma only_renderers d3d9 d3d11 glcore gles 
+            #pragma only_renderers d3d9 d3d11 glcore gles ps4 
             #pragma target 3.0
             uniform float4 _MinimapColor;
             struct VertexInput {
@@ -68,7 +68,7 @@ Shader "Shader Forge/MinimapPlayerShader" {
             #include "Lighting.cginc"
             #pragma fragmentoption ARB_precision_hint_fastest
             #pragma multi_compile_shadowcaster
-            #pragma only_renderers d3d9 d3d11 glcore gles 
+            #pragma only_renderers d3d9 d3d11 glcore gles ps4 
             #pragma target 3.0
             struct VertexInput {
                 float4 vertex : POSITION;
