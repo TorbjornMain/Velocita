@@ -674,6 +674,35 @@ Prefab:
       propertyPath: m_RootOrder
       value: 16
       objectReference: {fileID: 0}
+    - target: {fileID: 1884310441021636, guid: 50e8682ae25fc0641ae04657ce6059bc, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114215772165741738, guid: 50e8682ae25fc0641ae04657ce6059bc,
+        type: 2}
+      propertyPath: AICardColour.a
+      value: 0.50980395
+      objectReference: {fileID: 0}
+    - target: {fileID: 114215772165741738, guid: 50e8682ae25fc0641ae04657ce6059bc,
+        type: 2}
+      propertyPath: RedCardColour.a
+      value: 0.50980395
+      objectReference: {fileID: 0}
+    - target: {fileID: 114215772165741738, guid: 50e8682ae25fc0641ae04657ce6059bc,
+        type: 2}
+      propertyPath: BlueCardColour.a
+      value: 0.50980395
+      objectReference: {fileID: 0}
+    - target: {fileID: 114215772165741738, guid: 50e8682ae25fc0641ae04657ce6059bc,
+        type: 2}
+      propertyPath: YellowCardColor.a
+      value: 0.50980395
+      objectReference: {fileID: 0}
+    - target: {fileID: 114215772165741738, guid: 50e8682ae25fc0641ae04657ce6059bc,
+        type: 2}
+      propertyPath: GreenCardColor.a
+      value: 0.50980395
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 50e8682ae25fc0641ae04657ce6059bc, type: 2}
   m_IsPrefabParent: 0
