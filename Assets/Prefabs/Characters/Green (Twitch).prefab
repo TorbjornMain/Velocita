@@ -3775,7 +3775,7 @@ MonoBehaviour:
   active: 1
   cam: {fileID: 20408024484148804}
   hudCam: {fileID: 20378627228624404}
-  colour: 0
+  colour: 2
   finished: 0
 --- !u!114 &114771025330949982
 MonoBehaviour:
