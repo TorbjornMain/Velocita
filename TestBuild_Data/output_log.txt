@@ -7,25 +7,25 @@ Direct3D:
     VRAM:     3072 MB
     Driver:   21.21.13.7633
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\s171558\Documents\Velocita\Velocita\TestBuild_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\s171558\Documents\Velocita\Velocita\TestBuild_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\s171558\Documents\Velocita\Velocita\TestBuild_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
-Loading C:\Users\s171558\Documents\Velocita\Velocita\TestBuild_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
-Platform assembly: C:\Users\s171558\Documents\Velocita\Velocita\TestBuild_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\s171558\Documents\Velocita\Velocita\TestBuild_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\s171558\Documents\Velocita\Velocita\TestBuild_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
-Loading C:\Users\s171558\Documents\Velocita\Velocita\TestBuild_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
-Platform assembly: C:\Users\s171558\Documents\Velocita\Velocita\TestBuild_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\Users\s171558\Documents\Velocita\Velocita\TestBuild_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: C:\Users\s171558\Documents\Velocita\Velocita\TestBuild_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading C:\Users\s171558\Documents\Velocita\Velocita\TestBuild_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: C:\Users\s171558\Documents\Velocita\Velocita\TestBuild_Data\Managed\UnityEngine.Timeline.dll (this message is harmless)
-Loading C:\Users\s171558\Documents\Velocita\Velocita\TestBuild_Data\Managed\UnityEngine.Timeline.dll into Unity Child Domain
-Platform assembly: C:\Users\s171558\Documents\Velocita\Velocita\TestBuild_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
-Loading C:\Users\s171558\Documents\Velocita\Velocita\TestBuild_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-Platform assembly: C:\Users\s171558\Documents\Velocita\Velocita\TestBuild_Data\Managed\System.dll (this message is harmless)
-Platform assembly: C:\Users\s171558\Documents\Velocita\Velocita\TestBuild_Data\Managed\System.Core.dll (this message is harmless)
-- Completed reload, in  0.250 seconds
+Platform assembly: C:\Users\s171558\Documents\Velocita\TestBuild_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\s171558\Documents\Velocita\TestBuild_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\s171558\Documents\Velocita\TestBuild_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\s171558\Documents\Velocita\TestBuild_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\s171558\Documents\Velocita\TestBuild_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\s171558\Documents\Velocita\TestBuild_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\s171558\Documents\Velocita\TestBuild_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading C:\Users\s171558\Documents\Velocita\TestBuild_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+Platform assembly: C:\Users\s171558\Documents\Velocita\TestBuild_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\s171558\Documents\Velocita\TestBuild_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\s171558\Documents\Velocita\TestBuild_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\s171558\Documents\Velocita\TestBuild_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\s171558\Documents\Velocita\TestBuild_Data\Managed\UnityEngine.Timeline.dll (this message is harmless)
+Loading C:\Users\s171558\Documents\Velocita\TestBuild_Data\Managed\UnityEngine.Timeline.dll into Unity Child Domain
+Platform assembly: C:\Users\s171558\Documents\Velocita\TestBuild_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\s171558\Documents\Velocita\TestBuild_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+Platform assembly: C:\Users\s171558\Documents\Velocita\TestBuild_Data\Managed\System.dll (this message is harmless)
+Platform assembly: C:\Users\s171558\Documents\Velocita\TestBuild_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.017 seconds
 OnLevelWasLoaded was found on ControllerManager
 This message has been deprecated and will be removed in a later version of Unity.
 Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
@@ -34,70 +34,3 @@ Add a delegate to SceneManager.sceneLoaded instead to get notifications after sc
 
 <RI> Initializing input.
 <RI> Input initialized.
-<RI> Initialized touch support.
-UnloadTime: 1.536840 ms
-Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-Setting up 4 worker threads for Enlighten.
-  Thread -> id: 2af8 -> priority: 1 
-  Thread -> id: 29bc -> priority: 1 
-  Thread -> id: 1838 -> priority: 1 
-  Thread -> id: 1ce0 -> priority: 1 
-UnloadTime: 1.549924 ms
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 468.
-Total: 0.309757 ms (FindLiveObjects: 0.032426 ms CreateObjectMapping: 0.014506 ms MarkObjects: 0.252869 ms  DeleteObjects: 0.009671 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 3.252879 ms
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 452.
-Total: 0.371196 ms (FindLiveObjects: 0.024462 ms CreateObjectMapping: 0.027306 ms MarkObjects: 0.308050 ms  DeleteObjects: 0.010808 ms)
-
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.274771 ms
-
-Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 3694.
-Total: 0.979334 ms (FindLiveObjects: 0.164691 ms CreateObjectMapping: 0.063146 ms MarkObjects: 0.737558 ms  DeleteObjects: 0.013084 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 2.538930 ms
-
-Unloading 21797 unused Assets to reduce memory usage. Loaded Objects now: 434.
-Total: 29.225003 ms (FindLiveObjects: 0.959707 ms CreateObjectMapping: 1.260647 ms MarkObjects: 0.326255 ms  DeleteObjects: 26.678108 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.293259 ms
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 477.
-Total: 0.385987 ms (FindLiveObjects: 0.045510 ms CreateObjectMapping: 0.013653 ms MarkObjects: 0.323695 ms  DeleteObjects: 0.002844 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.256851 ms
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 456.
-Total: 0.407605 ms (FindLiveObjects: 0.046932 ms CreateObjectMapping: 0.014222 ms MarkObjects: 0.318290 ms  DeleteObjects: 0.027875 ms)
-
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.305775 ms
-
-Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 3695.
-Total: 1.241020 ms (FindLiveObjects: 0.239215 ms CreateObjectMapping: 0.067128 ms MarkObjects: 0.904241 ms  DeleteObjects: 0.029866 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 2.272407 ms
-
-Unloading 15481 unused Assets to reduce memory usage. Loaded Objects now: 434.
-Total: 19.649544 ms (FindLiveObjects: 0.593630 ms CreateObjectMapping: 0.839673 ms MarkObjects: 0.295535 ms  DeleteObjects: 17.919852 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.279037 ms
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 477.
-Total: 0.396512 ms (FindLiveObjects: 0.035839 ms CreateObjectMapping: 0.014506 ms MarkObjects: 0.343037 ms  DeleteObjects: 0.002844 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.257704 ms
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 456.
-Total: 0.422396 ms (FindLiveObjects: 0.048924 ms CreateObjectMapping: 0.024746 ms MarkObjects: 0.318859 ms  DeleteObjects: 0.029297 ms)
-
