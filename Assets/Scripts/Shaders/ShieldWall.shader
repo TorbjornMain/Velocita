@@ -32,7 +32,7 @@ Shader "Shader Forge/ShieldWall" {
             #define UNITY_PASS_FORWARDBASE
             #include "UnityCG.cginc"
             #pragma multi_compile_fwdbase
-            #pragma only_renderers d3d9 d3d11 glcore gles 
+            #pragma only_renderers d3d9 d3d11 glcore gles ps4 
             #pragma target 3.0
             uniform float4 _DistantColor;
             uniform sampler2D _ShieldPatternMask; uniform float4 _ShieldPatternMask_ST;
@@ -82,7 +82,7 @@ Shader "Shader Forge/ShieldWall" {
             #include "Lighting.cginc"
             #pragma fragmentoption ARB_precision_hint_fastest
             #pragma multi_compile_shadowcaster
-            #pragma only_renderers d3d9 d3d11 glcore gles 
+            #pragma only_renderers d3d9 d3d11 glcore gles ps4 
             #pragma target 3.0
             struct VertexInput {
                 float4 vertex : POSITION;
