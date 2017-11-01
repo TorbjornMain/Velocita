@@ -65,7 +65,7 @@ public class OceanWaveSim : MonoBehaviour
 
     IEnumerator spawnPerturb()
     {
-        Graphics.SetRenderTarget(magBuffer[0]);
+        
         float x = Random.value;
         float y = Random.value;
         //perturb.SetVector("_Position", new Vector4(x-0.5f, 0.25f * y + 0.6f, 0, 0));
@@ -75,6 +75,7 @@ public class OceanWaveSim : MonoBehaviour
         for (int i = 0; i < steps; i++)
         {
             yield return null;
+            Graphics.SetRenderTarget(magBuffer[0]);
             Graphics.Blit(waveThing, perturb);
         }
     }
