@@ -23,6 +23,7 @@ public class CharacterSelectScreen : MonoBehaviour {
     public AudioClip selectSound;
     public AudioClip cancelSound;
     public AudioClip invalidChoiceSound;
+    public GameObject selectedBar;
 
 	// Use this for initialization
 	void Start () {
@@ -42,7 +43,28 @@ public class CharacterSelectScreen : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		for(int i = 0; i < cm.players.Count; i++)
+
+
+        bool allSelected = cm.players.Count > 0;
+        for (int i = 0; i < cm.players.Count; i++)
+        {
+            if (!selectorInstances[i].hasSelected)
+            {
+                allSelected = false;
+                break;
+            }
+        }
+        if (allSelected)
+        {
+            if (InControl.InputManager.ActiveDevice.Action1.WasPressed)
+            {
+                FindObjectOfType<ControllerManager>().AcquirePlayers = false;
+                SceneNames.LoadScene(gameScene);
+            }
+        }
+        selectedBar.SetActive(allSelected);
+
+        for (int i = 0; i < cm.players.Count; i++)
         {
             if (!selectorInstances[i].gameObject.activeInHierarchy)
             {
@@ -110,21 +132,7 @@ public class CharacterSelectScreen : MonoBehaviour {
                 }
             }
         }
-        bool allSelected = cm.players.Count > 0;
-        for(int i = 0; i < cm.players.Count; i++)
-        {
-            if (!selectorInstances[i].hasSelected)
-            {
-                allSelected = false;
-                break;
-            }
-        }
-        if (allSelected)
-        {
-            FindObjectOfType<ControllerManager>().AcquirePlayers = false;
-            SceneNames.LoadScene(gameScene);
-        }
+        
 	}
-
 
 }
