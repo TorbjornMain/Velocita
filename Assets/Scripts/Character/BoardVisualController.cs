@@ -9,7 +9,6 @@ public class BoardVisualController : MonoBehaviour {
     public ParticleSystem sparkParticles;
     public ParticleSystem driftParticles;
     public Animator anim;
-    public Renderer mainModelRenderer;
     ParticleSystem driftInstance;
     ParticleSystem sparkInstance;
     public TrailRenderer outerTrail;
@@ -66,7 +65,6 @@ public class BoardVisualController : MonoBehaviour {
         {
             col = Color.grey * 1.5f;
         }
-        mainModelRenderer.material.color = col;
         outerTrail.startColor = outerTrail.endColor = col;
         if (cam)
             rse = cam.GetComponent<RenderScreenEffect>();

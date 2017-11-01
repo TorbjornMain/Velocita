@@ -9,7 +9,7 @@ public class PlayerSpawner : MonoBehaviour {
     [System.NonSerialized]
     public List<LapGateUser> playerLaps = new List<LapGateUser>();
     public Vector3[] spawnLocations;
-    public PlayerController playerPrefab;
+    public PlayerController[] playerPrefabs;
     public AIController aiPrefab;
     public HUDController HUDPrefab;
     List<HUDController> playerHUDs = new List<HUDController>();
@@ -30,7 +30,7 @@ public class PlayerSpawner : MonoBehaviour {
         {
             if(i < spawnLocations.Length)
             {
-                players.Add(Instantiate<PlayerController>(playerPrefab));
+                players.Add(Instantiate(playerPrefabs[(int)devices[i].col]));
                 players[players.Count - 1].id = devices[i].ind;
                 players[players.Count - 1].transform.position = transform.TransformPoint(spawnLocations[i]);
                 players[players.Count - 1].transform.rotation = this.transform.rotation;
@@ -101,7 +101,7 @@ public class PlayerSpawner : MonoBehaviour {
         }
         ps = new GameObject().AddComponent<PlayerStandings>();
         DontDestroyOnLoad(ps);
-        baseTopSpeed = playerPrefab.GetComponent<HoverboardController>().topSpeed;
+        baseTopSpeed = playerPrefabs[0].GetComponent<HoverboardController>().topSpeed;
     }
 
     private void Update()
