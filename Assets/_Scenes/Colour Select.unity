@@ -640,7 +640,7 @@ MonoBehaviour:
   gameScene: Jess Test
   navigateSound: {fileID: 8300000, guid: 04f743b6a5f6a0649b3a042d7a573f47, type: 3}
   selectSound: {fileID: 8300000, guid: d978472df2a529246a58338f61995376, type: 3}
-  cancelSound: {fileID: 0}
+  cancelSound: {fileID: 8300000, guid: b739468b56bc5f846a3574589afdcbc5, type: 3}
   invalidChoiceSound: {fileID: 8300000, guid: eea8a2f23cd3b3f4bb8983255e74ed45, type: 3}
   selectedBar: {fileID: 1966531732}
 --- !u!82 &398384069
@@ -3342,10 +3342,10 @@ MonoBehaviour:
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: PRESS A TO GOOO!
+  m_Text: READY?
 --- !u!222 &1448816730
 CanvasRenderer:
   m_ObjectHideFlags: 0
