@@ -11,7 +11,8 @@ public class HUDController : MonoBehaviour {
     public Image placeImage;
     public Image wrongWayImage;
     public Image fadeToBlack;
-    public Image powerUpImage;
+    public GameObject powerUpImage;
+    GameObject powerUpImageInstance;
     public GameObject racingHUD;
     public GameObject doneHUD;
     public GameObject rollingHUD;
@@ -36,8 +37,6 @@ public class HUDController : MonoBehaviour {
     {
         pum = player.GetComponent<PowerupManager>();
         cam = player.GetComponent<CameraController>();
-        if (pum == null)
-            powerUpImage.color = new Color(0, 0, 0, 0);
         playerPosImages = new Image[4];
         for (int i = 0; i < cam.racerOffsets.Length; i++)
         {
@@ -105,19 +104,31 @@ public class HUDController : MonoBehaviour {
             {
                 if(pum.currentPowerup != null)
                 {
-                    powerUpImage.color = Color.white;
                     if (pum.currentPowerup.matchColor == ((PlayerController)player.controller).colour)
                     {
-                        powerUpImage.sprite = pum.currentPowerup.matchBonusImage;
+                        if(powerUpImageInstance == null)
+                        {
+                            powerUpImageInstance = Instantiate(pum.currentPowerup.matchBonusImage);
+                            powerUpImageInstance.transform.position = powerUpImage.transform.position;
+                            powerUpImageInstance.transform.SetParent(powerUpImage.transform);
+                        }
                     }
                     else
                     {
-                        powerUpImage.sprite = pum.currentPowerup.powerupImage;
+                        if (powerUpImageInstance == null)
+                        {
+                            powerUpImageInstance = Instantiate(pum.currentPowerup.powerupImage);
+                            powerUpImageInstance.transform.position = powerUpImage.transform.position;
+                            powerUpImageInstance.transform.SetParent(powerUpImage.transform);
+                        }
                     }
                 }
                 else
                 {
-                    powerUpImage.color = new Color(0, 0, 0, 0);
+                    if(powerUpImageInstance != null)
+                    {
+                        Destroy(powerUpImageInstance);
+                    }
                 }
             }
 
