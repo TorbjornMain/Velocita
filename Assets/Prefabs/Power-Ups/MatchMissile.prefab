@@ -42,6 +42,7 @@ GameObject:
   - component: {fileID: 114495135350022340}
   - component: {fileID: 114848149557716468}
   - component: {fileID: 114799411873338220}
+  - component: {fileID: 65704942425435302}
   m_Layer: 12
   m_Name: MatchMissile
   m_TagString: Untagged
@@ -59,7 +60,6 @@ GameObject:
   - component: {fileID: 4903917987946742}
   - component: {fileID: 33180115561000636}
   - component: {fileID: 23056568159382172}
-  - component: {fileID: 64217596587081620}
   m_Layer: 12
   m_Name: Rocket
   m_TagString: Untagged
@@ -194,20 +194,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 2
---- !u!64 &64217596587081620
-MeshCollider:
+--- !u!65 &65704942425435302
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1532770899628782}
+  m_GameObject: {fileID: 1167149420109726}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 0
-  m_InflateMesh: 0
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: b1f7095b67b670f468aa6c68a657efca, type: 3}
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!96 &96837763710503474
 TrailRenderer:
   serializedVersion: 2
