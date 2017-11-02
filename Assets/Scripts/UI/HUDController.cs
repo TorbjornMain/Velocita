@@ -31,6 +31,7 @@ public class HUDController : MonoBehaviour {
     public Image playerCloseBarImage;
     public float playerCloseLeftRight = 500;
     public float ribbonPinScalar = 0.5f;
+    public Vector3 powerupImageScaleFactor = new Vector3(0.1f, 0.1f, 0.1f);
     Image[] playerPosImages;
     // Update is called once per frame
     void Start()
@@ -112,6 +113,7 @@ public class HUDController : MonoBehaviour {
                             powerUpImageInstance.transform.position = powerUpImage.transform.position;
                             powerUpImageInstance.transform.rotation = powerUpImage.transform.rotation;
                             powerUpImageInstance.transform.SetParent(powerUpImage.transform);
+                            powerUpImageInstance.transform.localScale = powerupImageScaleFactor;
                         }
                     }
                     else
@@ -122,6 +124,7 @@ public class HUDController : MonoBehaviour {
                             powerUpImageInstance.transform.position = powerUpImage.transform.position;
                             powerUpImageInstance.transform.rotation = powerUpImage.transform.rotation;
                             powerUpImageInstance.transform.SetParent(powerUpImage.transform);
+                            powerUpImageInstance.transform.localScale = powerupImageScaleFactor;
                         }
                     }
                 }
