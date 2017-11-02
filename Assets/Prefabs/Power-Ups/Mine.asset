@@ -16,5 +16,7 @@ MonoBehaviour:
   spawnMatchObject: {fileID: 114048428208422790, guid: c50a0b2c6749dfc40b33287523f2ae92,
     type: 2}
   matchColor: 3
-  powerupImage: {fileID: 21300000, guid: 821d12ef7324f1344a2c0afa768fda26, type: 3}
-  matchBonusImage: {fileID: 21300000, guid: b379e5ba7a6daa743a5f853e238d8c57, type: 3}
+  powerupImage: {fileID: 1550759616304910, guid: 24791c19d72a388499d5a1bda30cb4bf,
+    type: 2}
+  matchBonusImage: {fileID: 1332100038100318, guid: b349ce6db176e6b478b1b8a49b5cab0d,
+    type: 2}
