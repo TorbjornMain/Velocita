@@ -29,6 +29,7 @@ public class CharacterSelectScreen : MonoBehaviour {
 	void Start () {
         audioSource = GetComponent<AudioSource>();
         cm = FindObjectOfType<ControllerManager>();
+        cm.players.Clear();
         FindObjectOfType<ControllerManager>().AcquirePlayers = true;
         selected = new bool[selectorNodes.Count];
         for(int i = 0; i < 4; i++)
@@ -64,6 +65,11 @@ public class CharacterSelectScreen : MonoBehaviour {
         }
         selectedBar.SetActive(allSelected);
 
+        if (cm.players.Count == 0 && InControl.InputManager.ActiveDevice.Action2.WasPressed)
+        {
+            SceneNames.LoadScene(SceneNames.MainMenu);
+        }
+
         for (int i = 0; i < cm.players.Count; i++)
         {
             if (!selectorInstances[i].gameObject.activeInHierarchy)
@@ -74,6 +80,27 @@ public class CharacterSelectScreen : MonoBehaviour {
             else
             {
                 selectorInstances[i].transform.position = selectorNodes[selectorInstances[i].hoveredIndex * 4 + i].position;
+
+                if (cm.players[i].ind.Action2.WasPressed)
+                {
+                    if (!selected[selectorInstances[i].hoveredIndex])
+                    {
+                        SceneNames.LoadScene(SceneNames.MainMenu);
+                    }
+                    else
+                    {
+                        PControlData playerData = cm.players[i];
+                        playerData.col = RacerColor.White;
+                        playerZones[i].color = Color.white;
+
+                        cm.players[i] = playerData;
+                        selectorInstances[i].hasSelected = false;
+                        selected[selectorInstances[i].hoveredIndex] = false;
+                        audioSource.clip = cancelSound;
+                        audioSource.Play();
+                    }
+                }
+
                 if (!selectorInstances[i].hasSelected)
                 {
                     if (cm.players[i].ind.Action1.WasPressed)
@@ -97,24 +124,7 @@ public class CharacterSelectScreen : MonoBehaviour {
                         }
                     }
                     
-                    if(cm.players[i].ind.Action4.WasPressed)
-                    {
-                        if(!selected[selectorInstances[i].hoveredIndex])
-                        {
-                            SceneNames.LoadScene(SceneNames.MainMenu);
-                        }
-                        else
-                        {
-                            PControlData playerData = cm.players[i];
-                            playerData.col = RacerColor.White;
-                            playerZones[i].color = Color.white;
-
-                            cm.players[i] = playerData;
-                            selectorInstances[i].hasSelected = false;
-                            audioSource.clip = cancelSound;
-                            audioSource.Play();
-                        }
-                    }
+                    
 
                     if (cm.players[i].ind.LeftStick.Left.WasPressed)
                     {

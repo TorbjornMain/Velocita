@@ -74,7 +74,7 @@ public class PauseMenu : MonoBehaviour {
             }
 
         }
-        if(InputManager.ActiveDevice.Action4.WasPressed)
+        if(InputManager.ActiveDevice.Action2.WasPressed)
         {
             transform.parent.SendMessage("TogglePause");
         }

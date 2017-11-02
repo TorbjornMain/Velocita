@@ -29,6 +29,7 @@ public class HUDController : MonoBehaviour {
     public Image playerCloseImagePrefab;
     public Image playerCloseBarImage;
     public float playerCloseLeftRight = 500;
+    public float ribbonPinScalar = 0.5f;
     Image[] playerPosImages;
     // Update is called once per frame
     void Start()
@@ -75,7 +76,7 @@ public class HUDController : MonoBehaviour {
                 {
                     playerPosImages[i].enabled = true;
                     playerPosImages[i].rectTransform.localPosition = new Vector3(playerCloseLeftRight * cam.racerOffsets[i].leftRight, 0, 0);
-                    playerPosImages[i].transform.localScale = new Vector3(0.1f, (1-cam.racerOffsets[i].dist), 0.1f);
+                    playerPosImages[i].transform.localScale = new Vector3(0.1f, (1-cam.racerOffsets[i].dist) * ribbonPinScalar, 0.1f);
                 }
                 else
                 {
