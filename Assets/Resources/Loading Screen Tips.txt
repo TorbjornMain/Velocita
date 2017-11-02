@@ -1,5 +1,5 @@
 Match your racer and power-up colour for a stronger item!
-Red Missiles fire forwards and explodes on impact. Aim wisely!
+Red Missiles fire forwards and exploded on impact. Aim wisely!
 Blue Shields can protect you for a short while.
 Green Nitros give you a nifty boost of speed.
 Yellow Mines are thrown backwards. Careful not to hit one!

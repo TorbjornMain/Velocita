@@ -2731,7 +2731,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1302031616154756}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.021, y: 0.092, z: -0.547}
+  m_LocalPosition: {x: -0.021, y: 0.169, z: -0.547}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4738244947416550}
@@ -2906,7 +2906,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1017755139275196}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -15.76}
+  m_LocalPosition: {x: 0, y: 0, z: 3.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4136551346470342}
@@ -3238,7 +3238,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1490722121032998}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.136, z: -0.659}
+  m_LocalPosition: {x: 0, y: 0.169, z: -0.659}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4738244947416550}
@@ -3780,8 +3780,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 755d6f1e857a08244a95320ff3f6d930, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  backFoot: {x: 0.3, y: 0.2, z: 0}
-  frontFoot: {x: -0.65, y: 0.2, z: 0}
+  backFoot: {x: 0.3, y: 0.18, z: 0}
+  frontFoot: {x: -0.65, y: 0.18, z: 0}
   board: {fileID: 4703191929934242}
   backFootAngle: {x: 0, y: 0, z: 0}
   frontFootAngle: {x: 0, y: 0, z: 0}
@@ -3934,7 +3934,6 @@ MonoBehaviour:
   driftParticles: {fileID: 198891423667566310, guid: 38c78d7b61b1dcb429e0760aac2effa1,
     type: 2}
   anim: {fileID: 95366267778428018}
-  mainModelRenderer: {fileID: 137251374170197242}
   outerTrail: {fileID: 96890701567802762}
   innerTrail: {fileID: 96892240982712620}
   boostTrailWidth:
