@@ -2690,7 +2690,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1135081784650516}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.503, z: 0}
+  m_LocalPosition: {x: 0, y: -0.743, z: -0.109}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4074241149829400}
@@ -3226,7 +3226,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 8fa84bce3532d98469245bf1ba9fd962, type: 2}
+  - {fileID: 2100000, guid: 1de9045a1777a6a4a977cb394cde168a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3336,7 +3336,7 @@ Animator:
   m_GameObject: {fileID: 1135081784650516}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 3bf2fa370e45e2a4c82c529333208e1a, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fb802b64091df6743bd846dcab4da6a1, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -3685,8 +3685,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 755d6f1e857a08244a95320ff3f6d930, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  backFoot: {x: 0.57, y: 0.35, z: 0}
-  frontFoot: {x: -0.55, y: 0.35, z: 0}
+  backFoot: {x: 0.57, y: 0.35, z: -0.05}
+  frontFoot: {x: -0.56, y: 0.35, z: -0.05}
   board: {fileID: 4153329872887708}
   backFootAngle: {x: 0, y: 0, z: 0}
   frontFootAngle: {x: 0, y: 0, z: 0}
