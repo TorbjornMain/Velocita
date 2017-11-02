@@ -210,7 +210,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1348481281356084}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -17.92}
   m_LocalScale: {x: 1, y: 0.5, z: 2}
   m_Children:
   - {fileID: 4254967492338846}
@@ -745,7 +745,7 @@ MonoBehaviour:
     type: 2}
   driftParticles: {fileID: 198891423667566310, guid: 38c78d7b61b1dcb429e0760aac2effa1,
     type: 2}
-  anim: {fileID: 0}
+  anim: {fileID: 95859334509505380}
   outerTrail: {fileID: 96570348452891288}
   innerTrail: {fileID: 96155780736035348}
   boostTrailWidth:
