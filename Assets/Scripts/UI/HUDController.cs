@@ -110,6 +110,7 @@ public class HUDController : MonoBehaviour {
                         {
                             powerUpImageInstance = Instantiate(pum.currentPowerup.matchBonusImage);
                             powerUpImageInstance.transform.position = powerUpImage.transform.position;
+                            powerUpImageInstance.transform.rotation = powerUpImage.transform.rotation;
                             powerUpImageInstance.transform.SetParent(powerUpImage.transform);
                         }
                     }
@@ -119,6 +120,7 @@ public class HUDController : MonoBehaviour {
                         {
                             powerUpImageInstance = Instantiate(pum.currentPowerup.powerupImage);
                             powerUpImageInstance.transform.position = powerUpImage.transform.position;
+                            powerUpImageInstance.transform.rotation = powerUpImage.transform.rotation;
                             powerUpImageInstance.transform.SetParent(powerUpImage.transform);
                         }
                     }
