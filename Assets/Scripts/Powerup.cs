@@ -7,8 +7,8 @@ public class Powerup : ScriptableObject {
     public PowerupEntity spawnObject;
     public PowerupEntity spawnMatchObject;
     public RacerColor matchColor;
-    public Sprite powerupImage;
-    public Sprite matchBonusImage;
+    public GameObject powerupImage;
+    public GameObject matchBonusImage;
 
     public void Use(HoverboardController player)
     {
