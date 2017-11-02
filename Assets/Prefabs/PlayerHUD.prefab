@@ -877,7 +877,7 @@ MonoBehaviour:
   placeImage: {fileID: 114735769241994046}
   wrongWayImage: {fileID: 114976958493934114}
   fadeToBlack: {fileID: 114321055558271388}
-  powerUpImage: {fileID: 0}
+  powerUpImage: {fileID: 1189819738820750}
   racingHUD: {fileID: 1155920485306364}
   doneHUD: {fileID: 1596994271069504}
   rollingHUD: {fileID: 1392177445217076}
