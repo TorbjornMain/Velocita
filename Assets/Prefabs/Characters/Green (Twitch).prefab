@@ -3017,7 +3017,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1376586832221798}
-  m_LocalRotation: {x: -0.5402669, y: 0.021576207, z: 0.84054697, w: 0.03356826}
+  m_LocalRotation: {x: -0.54026693, y: 0.021576209, z: 0.8405471, w: 0.033568263}
   m_LocalPosition: {x: -0.012540509, y: 0.003603242, z: -0.06735779}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -3640,6 +3640,7 @@ MonoBehaviour:
   board: {fileID: 4632934107736624}
   backFootAngle: {x: 0, y: 0, z: 0}
   frontFootAngle: {x: 0, y: 0, z: 0}
+  cam: {fileID: 114856679338115170}
 --- !u!114 &114248060191572754
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3865,6 +3866,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 20408024484148804}
   camOffset: {x: 0, y: 2.8, z: -5.5}
+  lookAtOffset: {x: 0, y: 1, z: 5}
   turnSpeed: 5
   directionWeight: 0.7
   hitTargets:

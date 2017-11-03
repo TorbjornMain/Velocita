@@ -1772,7 +1772,7 @@ MonoBehaviour:
   - {fileID: 114668706477955788}
   - {fileID: 114740883878452210}
   - {fileID: 114886470778930686}
-  buttonSelectedScale: {x: 1, y: 1.2, z: 1}
+  buttonSelectedScale: {x: 1, y: 1.5, z: 1}
   audioSourceReference: {fileID: 82620135073131050}
   openSound: {fileID: 8300000, guid: c4900f41ef9fc72498a770aaccbeedf5, type: 3}
   closeSound: {fileID: 8300000, guid: b739468b56bc5f846a3574589afdcbc5, type: 3}

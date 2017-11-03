@@ -792,7 +792,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   active: 1
-  rayRange: 80
+  rayRange: 85
   steerWeight: 15
   accelWeight: 1
   accelChangeTime: 10
