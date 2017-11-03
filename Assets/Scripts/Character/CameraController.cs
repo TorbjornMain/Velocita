@@ -38,7 +38,7 @@ public class CameraController : MonoBehaviour {
         {
             racerOffsets[i].rc = (RacerColor)i;
         }
-        lookAt = Instantiate(gameObject);
+        lookAt = Instantiate(new GameObject());
 	}
 	
 	// Update is called once per frame
