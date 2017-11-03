@@ -3785,6 +3785,7 @@ MonoBehaviour:
   board: {fileID: 4703191929934242}
   backFootAngle: {x: 0, y: 0, z: 0}
   frontFootAngle: {x: 0, y: 0, z: 0}
+  cam: {fileID: 114222915939691520}
 --- !u!114 &114115192401116158
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3881,6 +3882,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 20131734393022058}
   camOffset: {x: 0, y: 2.8, z: -5.5}
+  lookAtOffset: {x: 0, y: 1, z: 5}
   turnSpeed: 5
   directionWeight: 0.7
   hitTargets:
