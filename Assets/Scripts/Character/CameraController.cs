@@ -14,6 +14,7 @@ public class CameraController : MonoBehaviour {
     public Camera cam;
     Rigidbody rb;
     public Vector3 camOffset;
+    public Vector3 lookAtOffset;
     Quaternion rotationDelta;
     [Range(0, 100)]
     public float turnSpeed = 0.5f;
@@ -23,6 +24,9 @@ public class CameraController : MonoBehaviour {
     public LayerMask hitTargets;
 
     public float warningDistance = 50;
+
+    [System.NonSerialized]
+    public GameObject lookAt;
 
     public RacerOffset[] racerOffsets;
 	// Use this for initialization
@@ -34,6 +38,7 @@ public class CameraController : MonoBehaviour {
         {
             racerOffsets[i].rc = (RacerColor)i;
         }
+        lookAt = Instantiate(new GameObject());
 	}
 	
 	// Update is called once per frame
@@ -43,6 +48,7 @@ public class CameraController : MonoBehaviour {
         rotationDelta = Quaternion.Euler(rotationDelta.eulerAngles.x, rotationDelta.eulerAngles.y, 0);
         cam.transform.position = transform.position + (rotationDelta * camOffset);
         cam.transform.rotation = rotationDelta;
+        lookAt.transform.position = transform.position + (rotationDelta *  lookAtOffset);
 
         for (int i = 0; i < racerOffsets.Length; i++)
         {
@@ -57,8 +63,6 @@ public class CameraController : MonoBehaviour {
                 onHit(item, (Quaternion.Inverse(rotationDelta) * Vector3.Project(item.transform.position - transform.position, rotationDelta * new Vector3(1, 0, 0))).x);
             }
         }
-
-
     }
 
     void onHit(Collider col, float leftRight)

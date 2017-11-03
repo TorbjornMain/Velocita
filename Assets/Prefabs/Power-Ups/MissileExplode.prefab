@@ -134,6 +134,7 @@ MonoBehaviour:
   radius: 50
   force: 4000
   time: 0.5
+  slowFactor: 0.5
   turnOnly: 1
 --- !u!114 &114325357208580262
 MonoBehaviour:

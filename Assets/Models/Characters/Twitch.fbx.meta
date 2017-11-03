@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 36e79d1b60634d24faa4353e374ff602
-timeCreated: 1505354649
+timeCreated: 1509672844
 licenseType: Pro
 ModelImporter:
   serializedVersion: 21
@@ -698,64 +698,84 @@ ModelImporter:
       position: {x: -0, y: -0.0030017851, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Hair
+    - name: Twitch
       parentName: Twitch(Clone)
+      position: {x: -0, y: -0.0030017851, z: 0}
+      rotation: {x: 6.123234e-17, y: 1, z: -6.123234e-17, w: -6.123234e-17}
+      scale: {x: 2.7, y: 2.7, z: 2.7}
+    - name: Hair
+      parentName: Twitch
       position: {x: -0, y: 0.0030017851, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Head
-      parentName: Twitch(Clone)
+      parentName: Twitch
       position: {x: -0, y: 0.0030017851, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Jacket
-      parentName: Twitch(Clone)
+      parentName: Twitch
       position: {x: -0, y: 0.0030017851, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Left_Boot
-      parentName: Twitch(Clone)
+      parentName: Twitch
       position: {x: -0, y: 0.0030017851, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Left_Eye
-      parentName: Twitch(Clone)
+      parentName: Twitch
       position: {x: -0, y: 0.0030017851, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Left_Hand
-      parentName: Twitch(Clone)
+      parentName: Twitch
       position: {x: -0, y: 0.0030017851, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Pants
-      parentName: Twitch(Clone)
+      parentName: Twitch
       position: {x: -0, y: 0.0030017851, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Right_Boot
-      parentName: Twitch(Clone)
+      parentName: Twitch
       position: {x: -0, y: 0.0030017851, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Right_Eye
-      parentName: Twitch(Clone)
+      parentName: Twitch
       position: {x: -0, y: 0.0030017851, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Right_Hand
-      parentName: Twitch(Clone)
+      parentName: Twitch
       position: {x: -0, y: 0.0030017851, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Twitch_Goggles
-      parentName: Twitch(Clone)
+      parentName: Twitch
       position: {x: -0, y: 0.0030017851, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Goggles_Band
       parentName: Twitch_Goggles
       position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Zipper
+      parentName: Twitch
+      position: {x: -0, y: 0.0030017851, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Zipper1
+      parentName: Twitch
+      position: {x: -0, y: 0.0030017851, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Zipper2
+      parentName: Twitch
+      position: {x: -0, y: 0.0030017851, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Twitch_Rig
@@ -828,21 +848,6 @@ ModelImporter:
       position: {x: -0.15130249, y: -2.9143353e-17, z: 2.933853e-18}
       rotation: {x: 0, y: -0, z: -0.038689375, w: 0.9992513}
       scale: {x: 1, y: 1, z: 1}
-    - name: Twitch_Neck_JNT_1
-      parentName: Twitch__Back_JNT_3
-      position: {x: -0.13711612, y: 1.498801e-16, z: 3.2022629e-18}
-      rotation: {x: 0, y: -0, z: -0.11744075, w: 0.9930799}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Twitch_Head_JNT_1
-      parentName: Twitch_Neck_JNT_1
-      position: {x: -0.094078526, y: 3.330669e-17, z: 3.2416433e-18}
-      rotation: {x: 0, y: 0, z: 0.04244539, w: 0.9990988}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Twitch_Head_END
-      parentName: Twitch_Head_JNT_1
-      position: {x: -0.20644578, y: -3.122502e-17, z: 6.3257645e-18}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
     - name: Twitch_Left_CollarBone_JNT
       parentName: Twitch__Back_JNT_3
       position: {x: -0.0125477165, y: 0.0036038188, z: 0.06735777}
@@ -856,52 +861,12 @@ ModelImporter:
     - name: Twitch_Left_Elbow_JNT
       parentName: Twitch_Left_Shoulder_JNT
       position: {x: -0.3185644, y: -0.018460996, z: -1.09954856e-16}
-      rotation: {x: -0.00054062146, y: -0.041885313, z: 0.02724646, w: 0.9987507}
+      rotation: {x: -0.00054062146, y: -0.041885316, z: 0.02724646, w: 0.99875075}
       scale: {x: 1, y: 1, z: 1}
     - name: Twitch_Left_Wrist_JNT
       parentName: Twitch_Left_Elbow_JNT
       position: {x: -0.3303016, y: 0.019546937, z: -4.949643e-16}
       rotation: {x: -0.6631849, y: -0.24532804, z: -0.24532804, w: 0.6631849}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Twitch_Left_Thumb_JNT_1
-      parentName: Twitch_Left_Wrist_JNT
-      position: {x: -0.03925511, y: -0.04085294, z: 0.04449223}
-      rotation: {x: 0.6355453, y: 0.21813394, z: -0.38012636, w: 0.6356129}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Twitch_Left_Thumb_JNT_2
-      parentName: Twitch_Left_Thumb_JNT_1
-      position: {x: -0.033894476, y: 0.0047933827, z: 0.028053725}
-      rotation: {x: -0.050824832, y: -0.012865941, z: 0.12398345, w: 0.9908983}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Twitch_Left_Thumb_JNT_3
-      parentName: Twitch_Left_Thumb_JNT_2
-      position: {x: -0.028643345, y: 0.0060616517, z: 0.027352775}
-      rotation: {x: 0.07244443, y: 0.02736081, z: -0.20672467, w: 0.97532976}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Twitch_Left_Thumb_END
-      parentName: Twitch_Left_Thumb_JNT_3
-      position: {x: -0.031085337, y: -6.791351e-17, z: 0.024062969}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Twitch_Left_Pointer_JNT_1
-      parentName: Twitch_Left_Wrist_JNT
-      position: {x: -0.106862955, y: -0.07461052, z: 0.041972533}
-      rotation: {x: 0.74606776, y: 0.030596051, z: -0.18481694, w: 0.63897544}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Twitch_Left_Pointer_JNT_2
-      parentName: Twitch_Left_Pointer_JNT_1
-      position: {x: -0.021408645, y: -0.001286283, z: 0.029443353}
-      rotation: {x: -0.008350249, y: 0.0881131, z: 0.013314859, w: 0.99598646}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Twitch_Left_Pointer_JNT_3
-      parentName: Twitch_Left_Pointer_JNT_2
-      position: {x: -0.030623864, y: -0.0014428905, z: 0.025284754}
-      rotation: {x: 0, y: -0, z: -0.0011329283, w: 0.99999934}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Twitch_Left_Pointer_JNT_END
-      parentName: Twitch_Left_Pointer_JNT_3
-      position: {x: -0.03039011, y: 0.00042798722, z: 0.025252271}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Twitch_Left_Middle_JNT_1
       parentName: Twitch_Left_Wrist_JNT
@@ -923,26 +888,6 @@ ModelImporter:
       position: {x: -0.035058584, y: 0.002200898, z: 0.020513408}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Twitch_Left_Ring_JNT_1
-      parentName: Twitch_Left_Wrist_JNT
-      position: {x: -0.11190234, y: -0.07205289, z: -0.036642}
-      rotation: {x: 0.6520814, y: -0.12199877, z: 0.099514, w: 0.7416221}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Twitch_Left_Ring_JNT_2
-      parentName: Twitch_Left_Ring_JNT_1
-      position: {x: -0.037647337, y: 1.7169465e-16, z: 0.028614508}
-      rotation: {x: 0, y: -0, z: -0.028912393, w: 0.99958193}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Twitch_Left_Ring_JNT_3
-      parentName: Twitch_Left_Ring_JNT_2
-      position: {x: -0.02660876, y: 7.890782e-17, z: 0.018989563}
-      rotation: {x: 0, y: 0, z: 0.00028216705, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Twitch_Left_Ring_END
-      parentName: Twitch_Left_Ring_JNT_3
-      position: {x: -0.033824053, y: -6.3168917e-16, z: 0.022394229}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
     - name: Twitch_Left_Pinky_JNT_1
       parentName: Twitch_Left_Wrist_JNT
       position: {x: -0.09073689, y: -0.05851958, z: -0.063854724}
@@ -961,6 +906,81 @@ ModelImporter:
     - name: Twitch_Left_Pinky_END
       parentName: Twitch_Left_Pinky_JNT_3
       position: {x: -0.028587176, y: -5.2744768e-17, z: 0.0155407125}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Twitch_Left_Pointer_JNT_1
+      parentName: Twitch_Left_Wrist_JNT
+      position: {x: -0.106862955, y: -0.07461052, z: 0.041972533}
+      rotation: {x: 0.74606776, y: 0.030596051, z: -0.18481694, w: 0.63897544}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Twitch_Left_Pointer_JNT_2
+      parentName: Twitch_Left_Pointer_JNT_1
+      position: {x: -0.021408645, y: -0.001286283, z: 0.029443353}
+      rotation: {x: -0.00835025, y: 0.08811311, z: 0.01331486, w: 0.9959865}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Twitch_Left_Pointer_JNT_3
+      parentName: Twitch_Left_Pointer_JNT_2
+      position: {x: -0.030623864, y: -0.0014428905, z: 0.025284754}
+      rotation: {x: 0, y: -0, z: -0.0011329283, w: 0.99999934}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Twitch_Left_Pointer_JNT_END
+      parentName: Twitch_Left_Pointer_JNT_3
+      position: {x: -0.03039011, y: 0.00042798722, z: 0.025252271}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Twitch_Left_Ring_JNT_1
+      parentName: Twitch_Left_Wrist_JNT
+      position: {x: -0.11190234, y: -0.07205289, z: -0.036642}
+      rotation: {x: 0.6520813, y: -0.12199876, z: 0.099513985, w: 0.74162203}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Twitch_Left_Ring_JNT_2
+      parentName: Twitch_Left_Ring_JNT_1
+      position: {x: -0.037647337, y: 1.7169465e-16, z: 0.028614508}
+      rotation: {x: 0, y: -0, z: -0.028912393, w: 0.99958193}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Twitch_Left_Ring_JNT_3
+      parentName: Twitch_Left_Ring_JNT_2
+      position: {x: -0.02660876, y: 7.890782e-17, z: 0.018989563}
+      rotation: {x: 0, y: 0, z: 0.00028216705, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Twitch_Left_Ring_END
+      parentName: Twitch_Left_Ring_JNT_3
+      position: {x: -0.033824053, y: -6.3168917e-16, z: 0.022394229}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Twitch_Left_Thumb_JNT_1
+      parentName: Twitch_Left_Wrist_JNT
+      position: {x: -0.03925511, y: -0.04085294, z: 0.04449223}
+      rotation: {x: 0.6355453, y: 0.21813394, z: -0.38012636, w: 0.6356129}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Twitch_Left_Thumb_JNT_2
+      parentName: Twitch_Left_Thumb_JNT_1
+      position: {x: -0.033894476, y: 0.0047933827, z: 0.028053725}
+      rotation: {x: -0.050824832, y: -0.012865941, z: 0.12398345, w: 0.9908983}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Twitch_Left_Thumb_JNT_3
+      parentName: Twitch_Left_Thumb_JNT_2
+      position: {x: -0.028643345, y: 0.0060616517, z: 0.027352775}
+      rotation: {x: 0.07244443, y: 0.02736081, z: -0.20672467, w: 0.97532976}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Twitch_Left_Thumb_END
+      parentName: Twitch_Left_Thumb_JNT_3
+      position: {x: -0.031085337, y: -6.791351e-17, z: 0.024062969}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Twitch_Neck_JNT_1
+      parentName: Twitch__Back_JNT_3
+      position: {x: -0.13711612, y: 1.498801e-16, z: 3.2022629e-18}
+      rotation: {x: 0, y: -0, z: -0.11744075, w: 0.9930799}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Twitch_Head_JNT_1
+      parentName: Twitch_Neck_JNT_1
+      position: {x: -0.094078526, y: 3.330669e-17, z: 3.2416433e-18}
+      rotation: {x: 0, y: 0, z: 0.04244539, w: 0.9990988}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Twitch_Head_END
+      parentName: Twitch_Head_JNT_1
+      position: {x: -0.20644578, y: -3.122502e-17, z: 6.3257645e-18}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Twitch_Right_CollarBone_JNT
@@ -1003,24 +1023,24 @@ ModelImporter:
       position: {x: 0.035057914, y: -0.0022008524, z: -0.020513998}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Twitch_Right_Thumb_JNT_1
+    - name: Twitch_Right_Pinky_JNT_1
       parentName: Twitch_Right_Wrist_JNT
-      position: {x: 0.039254997, y: 0.0408525, z: -0.044492293}
-      rotation: {x: 0.6355404, y: 0.218136, z: -0.38013214, w: 0.6356136}
+      position: {x: 0.090738, y: 0.058519498, z: 0.063854694}
+      rotation: {x: 0.56949836, y: -0.13604356, z: 0.15227391, w: 0.79622644}
       scale: {x: 1, y: 1, z: 1}
-    - name: Twitch_Right_Thumb_JNT_2
-      parentName: Twitch_Right_Thumb_JNT_1
-      position: {x: 0.033894945, y: -0.0047925604, z: -0.028054498}
-      rotation: {x: -0.050810102, y: -0.012864032, z: 0.123999625, w: 0.9908971}
+    - name: Twitch_Right_Pinky_JNT_2
+      parentName: Twitch_Right_Pinky_JNT_1
+      position: {x: 0.028970523, y: 0.0000005583664, z: -0.018264}
+      rotation: {x: 0.027937911, y: 0.0049411864, z: -0.062951505, w: 0.99761325}
       scale: {x: 1, y: 1, z: 1}
-    - name: Twitch_Right_Thumb_JNT_3
-      parentName: Twitch_Right_Thumb_JNT_2
-      position: {x: 0.028642736, y: -0.006062185, z: -0.027352497}
-      rotation: {x: 0.07244144, y: 0.027359432, z: -0.20672941, w: 0.975329}
+    - name: Twitch_Right_Pinky_JNT_3
+      parentName: Twitch_Right_Pinky_JNT_2
+      position: {x: 0.024795167, y: 0.00000040240909, z: -0.015043499}
+      rotation: {x: 0, y: 0, z: 0.027417907, w: 0.9996241}
       scale: {x: 1, y: 1, z: 1}
-    - name: Twitch_Right_Thumb_END
-      parentName: Twitch_Right_Thumb_JNT_3
-      position: {x: 0.031085195, y: -0.00000038471913, z: -0.024062999}
+    - name: Twitch_Right_Pinky_END
+      parentName: Twitch_Right_Pinky_JNT_3
+      position: {x: 0.028587818, y: -0.0000009545648, z: -0.0155414995}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Twitch_Right_Pointer_JNT_1
@@ -1063,24 +1083,24 @@ ModelImporter:
       position: {x: 0.033824645, y: -0.00000038439018, z: -0.022394998}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Twitch_Right_Pinky_JNT_1
+    - name: Twitch_Right_Thumb_JNT_1
       parentName: Twitch_Right_Wrist_JNT
-      position: {x: 0.090738, y: 0.058519498, z: 0.063854694}
-      rotation: {x: 0.5694983, y: -0.13604355, z: 0.1522739, w: 0.7962264}
+      position: {x: 0.039254997, y: 0.0408525, z: -0.044492293}
+      rotation: {x: 0.6355404, y: 0.218136, z: -0.38013214, w: 0.6356136}
       scale: {x: 1, y: 1, z: 1}
-    - name: Twitch_Right_Pinky_JNT_2
-      parentName: Twitch_Right_Pinky_JNT_1
-      position: {x: 0.028970523, y: 0.0000005583664, z: -0.018264}
-      rotation: {x: 0.027937911, y: 0.0049411864, z: -0.062951505, w: 0.99761325}
+    - name: Twitch_Right_Thumb_JNT_2
+      parentName: Twitch_Right_Thumb_JNT_1
+      position: {x: 0.033894945, y: -0.0047925604, z: -0.028054498}
+      rotation: {x: -0.050810102, y: -0.012864032, z: 0.123999625, w: 0.9908971}
       scale: {x: 1, y: 1, z: 1}
-    - name: Twitch_Right_Pinky_JNT_3
-      parentName: Twitch_Right_Pinky_JNT_2
-      position: {x: 0.024795167, y: 0.00000040240909, z: -0.015043499}
-      rotation: {x: 0, y: 0, z: 0.027417907, w: 0.9996241}
+    - name: Twitch_Right_Thumb_JNT_3
+      parentName: Twitch_Right_Thumb_JNT_2
+      position: {x: 0.028642736, y: -0.006062185, z: -0.027352497}
+      rotation: {x: 0.07244144, y: 0.027359432, z: -0.20672941, w: 0.975329}
       scale: {x: 1, y: 1, z: 1}
-    - name: Twitch_Right_Pinky_END
-      parentName: Twitch_Right_Pinky_JNT_3
-      position: {x: 0.028587818, y: -0.0000009545648, z: -0.0155414995}
+    - name: Twitch_Right_Thumb_END
+      parentName: Twitch_Right_Thumb_JNT_3
+      position: {x: 0.031085195, y: -0.00000038471913, z: -0.024062999}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Twitch_Left_Hip_JNT
@@ -1131,21 +1151,6 @@ ModelImporter:
     - name: Twitch_Right_Toe_JNT
       parentName: Twitch_Right_Ball_JNT
       position: {x: 0.13383058, y: 0.00000017015785, z: 0.011488501}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Zipper
-      parentName: Twitch(Clone)
-      position: {x: -0, y: 0.0030017851, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Zipper1
-      parentName: Twitch(Clone)
-      position: {x: -0, y: 0.0030017851, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Zipper2
-      parentName: Twitch(Clone)
-      position: {x: -0, y: 0.0030017851, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     armTwist: 0.5
