@@ -9,6 +9,8 @@ public class Explosion : MonoBehaviour {
     public float radius = 20;
     public float force = 100;
     public float time = 0.5f;
+    [Range(0,1)]
+    public float slowFactor = 0;
     public bool turnOnly;
     float totalTime = 0;
     // Use this for initialization
@@ -39,6 +41,7 @@ public class Explosion : MonoBehaviour {
                 Rigidbody cr = col.GetComponent<Rigidbody>();
                 if (cr != null)
                 {
+                    cr.velocity *= 1 - slowFactor;
                     cr.AddExplosionForce(force, transform.position, radius);
                     cr.AddTorque(0, force * 10, 0);
                 }
