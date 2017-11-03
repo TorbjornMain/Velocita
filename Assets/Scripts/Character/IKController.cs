@@ -8,6 +8,7 @@ public class IKController : MonoBehaviour {
     public Vector3 frontFoot;
     public Transform board;
     public Vector3 backFootAngle, frontFootAngle;
+    public CameraController cam;
     Animator anim;
 
     [System.NonSerialized]
@@ -29,6 +30,8 @@ public class IKController : MonoBehaviour {
         anim.SetIKRotationWeight(AvatarIKGoal.RightFoot, 1);
         anim.SetIKRotation(AvatarIKGoal.LeftFoot, Quaternion.Euler(backFootAngle) * transform.rotation);
         anim.SetIKRotation(AvatarIKGoal.RightFoot, Quaternion.Euler(frontFootAngle) * transform.rotation);
+        anim.SetLookAtWeight(1);
+        anim.SetLookAtPosition(cam.lookAt.transform.position);
     }
 
     void OnDrawGizmos()
