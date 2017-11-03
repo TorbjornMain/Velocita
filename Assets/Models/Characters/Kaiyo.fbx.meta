@@ -84,6 +84,16 @@ ModelImporter:
     100152: Right_Wrist_JNT_2
     100154: Root_JNT
     100156: Waist_JNT
+    100158: group1
+    100160: ikHandle4
+    100162: ikHandle5
+    100164: ikHandle6
+    100166: ikHandle7
+    100168: ikHandle8
+    100170: ikHandle9
+    100172: Kaiyo
+    100174: Left_Foot_CTRL
+    100176: Right_Foot_CTRL
     400000: Back_JNT_1
     400002: Back_JNT_2
     400004: Back_JNT_3
@@ -163,6 +173,16 @@ ModelImporter:
     400152: Right_Wrist_JNT_2
     400154: Root_JNT
     400156: Waist_JNT
+    400158: group1
+    400160: ikHandle4
+    400162: ikHandle5
+    400164: ikHandle6
+    400166: ikHandle7
+    400168: ikHandle8
+    400170: ikHandle9
+    400172: Kaiyo
+    400174: Left_Foot_CTRL
+    400176: Right_Foot_CTRL
     4300000: BlueGoggles_low
     4300002: BlueLowPoly_v2_BlueBrace_low
     4300004: BlueLowPoly_v2_BlueEyes_low
@@ -171,6 +191,7 @@ ModelImporter:
     4300010: BlueLowPoly_v2_BlueJacket_low
     4300012: BlueLowPoly_v2_BlueHair_low
     4300014: BlueLowPoly_v2_BlueHead_low
+    4300016: Kaiyo
     7400000: Take 001
     9500000: //RootNode
     13700000: BlueGoggles_low
@@ -181,6 +202,7 @@ ModelImporter:
     13700010: BlueLowPoly_v2_BlueHair_low
     13700012: BlueLowPoly_v2_BlueHead_low
     13700014: BlueLowPoly_v2_BlueJacket_low
+    13700016: Kaiyo
   materials:
     importMaterials: 1
     materialName: 0
@@ -191,7 +213,7 @@ ModelImporter:
     resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
-    rigImportErrors: 
+    rigImportErrors: "Avatar creation failed:\n\tTransform 'group1' not found in HumanDescription.\n"
     rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 

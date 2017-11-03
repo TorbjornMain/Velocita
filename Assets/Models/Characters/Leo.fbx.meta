@@ -96,6 +96,14 @@ ModelImporter:
     100176: Leo_Thigh_Band
     100178: Leo_Thigh_Guard
     100180: Leo_Waist_JNT
+    100182: ikHandle16
+    100184: ikHandle17
+    100186: ikHandle18
+    100188: ikHandle19
+    100190: ikHandle20
+    100192: ikHandle21
+    100194: Leo_Left_Foot_CTRL
+    100196: Leo_Right_Foot_CTRL
     400000: //RootNode
     400002: Leo
     400004: Leo__Back_JNT_1
@@ -187,6 +195,14 @@ ModelImporter:
     400176: Leo_Thigh_Band
     400178: Leo_Thigh_Guard
     400180: Leo_Waist_JNT
+    400182: ikHandle16
+    400184: ikHandle17
+    400186: ikHandle18
+    400188: ikHandle19
+    400190: ikHandle20
+    400192: ikHandle21
+    400194: Leo_Left_Foot_CTRL
+    400196: Leo_Right_Foot_CTRL
     4300000: Leo_Tank_Top
     4300002: Leo_Shoulder_Guard
     4300004: Leo_Thigh_Band
@@ -209,6 +225,7 @@ ModelImporter:
     4300038: Leo_Missle_Holder2
     4300040: Leo_Eyes
     4300042: Leo_Chest
+    4300044: Leo
     7400000: Take 001
     9500000: //RootNode
     13700000: Leo_Belt
@@ -233,6 +250,7 @@ ModelImporter:
     13700038: Leo_Tank_Top
     13700040: Leo_Thigh_Band
     13700042: Leo_Thigh_Guard
+    13700044: Leo
   materials:
     importMaterials: 1
     materialName: 0

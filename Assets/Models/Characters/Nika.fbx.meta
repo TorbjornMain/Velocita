@@ -108,6 +108,8 @@ ModelImporter:
     100200: ikHandle15
     100202: Left_Foot_CTRL
     100204: Right_Foot_CTRL
+    100206: Nika
+    100208: Nika_Goggles
     400000: Back_JNT_1
     400002: Back_JNT_2
     400004: Back_JNT_3
@@ -211,6 +213,8 @@ ModelImporter:
     400200: ikHandle15
     400202: Left_Foot_CTRL
     400204: Right_Foot_CTRL
+    400206: Nika
+    400208: Nika_Goggles
     4300000: YellowHairPiece_low
     4300002: YellowGlasses_low
     4300004: YellowLashes_low
@@ -233,6 +237,8 @@ ModelImporter:
     4300038: YellowShorts_low
     4300040: YellowHead_low
     4300042: YellowMine_low
+    4300044: Nika
+    4300046: Nika_Goggles
     7400000: Take 001
     9500000: //RootNode
     13700000: YellowArmHolo_low
@@ -257,6 +263,8 @@ ModelImporter:
     13700038: YellowShorts_low
     13700040: YellowTails_low
     13700042: YellowThighStrap_low
+    13700044: Nika
+    13700046: Nika_Goggles
   materials:
     importMaterials: 1
     materialName: 0

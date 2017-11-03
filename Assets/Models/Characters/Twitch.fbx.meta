@@ -97,6 +97,7 @@ ModelImporter:
     100178: Zipper1
     100180: Zipper2
     100182: Twitch
+    100184: Twitch1
     400000: Goggles_Band
     400002: Hair
     400004: Head
@@ -189,6 +190,7 @@ ModelImporter:
     400178: Zipper1
     400180: Zipper2
     400182: Twitch
+    400184: Twitch1
     4300000: Left_Hand
     4300002: Left_Boot
     4300004: Jacket
@@ -204,6 +206,7 @@ ModelImporter:
     4300024: Hair
     4300026: Zipper1
     4300028: Zipper2
+    4300030: Twitch1
     7400000: Take 001
     9500000: //RootNode
     13700000: Goggles_Band
@@ -221,6 +224,7 @@ ModelImporter:
     13700024: Zipper
     13700026: Zipper1
     13700028: Zipper2
+    13700030: Twitch1
   materials:
     importMaterials: 1
     materialName: 0
