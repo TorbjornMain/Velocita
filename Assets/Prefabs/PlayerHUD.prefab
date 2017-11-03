@@ -899,7 +899,7 @@ MonoBehaviour:
   playerCloseBarImage: {fileID: 114302343224987248}
   playerCloseLeftRight: 400
   ribbonPinScalar: 0.5
-  powerupImageScaleFactor: {x: 1, y: 1, z: 1}
+  powerupImageScaleFactor: {x: 0.7, y: 0.7, z: 0.7}
 --- !u!114 &114449822051062076
 MonoBehaviour:
   m_ObjectHideFlags: 1
