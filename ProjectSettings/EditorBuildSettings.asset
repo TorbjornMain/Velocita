@@ -24,14 +24,17 @@ EditorBuildSettings:
     path: Assets/_Scenes/MainMenuTest.unity
     guid: 10f3deb6f9d4a6c4e88c8f3332ba98e3
   - enabled: 1
+    path: Assets/_Scenes/Colour Select.unity
+    guid: d83df153f279dd74da62dcd1e0a31c11
+  - enabled: 1
+    path: Assets/_Scenes/TutorialScreen.unity
+    guid: feef67dc812fb3844b9dbcbccb35b687
+  - enabled: 1
+    path: Assets/_Scenes/LoadingScreen.unity
+    guid: 0dc232d8506a73b4b81d25d6c9451125
+  - enabled: 1
     path: Assets/_Scenes/Jess Test.unity
     guid: df772dc2c4a93af4bbe7e9157cc00316
   - enabled: 0
     path: 
     guid: 6d25f4a9e08fbc249af97f86aef89fdd
-  - enabled: 1
-    path: Assets/_Scenes/Colour Select.unity
-    guid: d83df153f279dd74da62dcd1e0a31c11
-  - enabled: 1
-    path: Assets/_Scenes/LoadingScreen.unity
-    guid: 0dc232d8506a73b4b81d25d6c9451125
