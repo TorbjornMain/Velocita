@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 3230
   materialsAndUVRects:
-  - material: {fileID: 2100000, guid: 4bd4ea39481280d47a4901b6827f2318, type: 2}
+  - material: {fileID: 2100000, guid: dc2c5f63964aef442aa845163fcf87c3, type: 2}
     atlasRect:
       serializedVersion: 2
       x: 0
@@ -25,27 +25,27 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 20
-      height: 20
+      width: 5
+      height: 5
     sourceMaterialTiling:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 20
-      height: 20
+      width: 5
+      height: 5
     samplingEncapsulatinRect:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 20
-      height: 20
+      width: 5
+      height: 5
   resultMaterials:
   - combinedMaterial: {fileID: 2100000, guid: acd4d534384c3be448504b2c9343c236, type: 2}
     considerMeshUVs: 0
     sourceMaterials:
-    - {fileID: 2100000, guid: 4bd4ea39481280d47a4901b6827f2318, type: 2}
+    - {fileID: 2100000, guid: dc2c5f63964aef442aa845163fcf87c3, type: 2}
   doMultiMaterial: 0
   materials:
-  - {fileID: 2100000, guid: 4bd4ea39481280d47a4901b6827f2318, type: 2}
+  - {fileID: 2100000, guid: dc2c5f63964aef442aa845163fcf87c3, type: 2}
   fixOutOfBoundsUVs: 0
   resultMaterial: {fileID: 0}
