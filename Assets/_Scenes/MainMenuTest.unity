@@ -806,9 +806,12 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1645863798358084, guid: d7bc72f265bef8245af5bd315346d5dc, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114297244865854296, guid: d7bc72f265bef8245af5bd315346d5dc, type: 2}
+    - {fileID: 114587610472242802, guid: d7bc72f265bef8245af5bd315346d5dc, type: 2}
+    - {fileID: 223634632664249318, guid: d7bc72f265bef8245af5bd315346d5dc, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: d7bc72f265bef8245af5bd315346d5dc, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &629412605
