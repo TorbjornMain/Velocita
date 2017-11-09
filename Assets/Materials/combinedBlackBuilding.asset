@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 499468296, guid: 0f20771f34eefe549a7337a23c679743, type: 3}
+  m_Name: combinedBlackBuilding
+  m_EditorClassIdentifier: 
+  version: 3230
+  materialsAndUVRects:
+  - material: {fileID: 2100000, guid: 365bb269a47e2ec49bd88155b0427628, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.25073242
+      y: 0.00048828125
+      width: 0.25
+      height: 0.5
+    srcObjName: Floor2
+    samplingRectMatAndUVTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 10
+      height: 1
+    sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 10
+      height: 1
+    samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 10
+      height: 1
+  - material: {fileID: 2100000, guid: c42d57af092928b4493bf0f331b5a94c, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.00024414062
+      y: 0.00048828125
+      width: 0.25
+      height: 0.5
+    srcObjName: Floor3
+    samplingRectMatAndUVTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 10
+      height: 1
+    sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 10
+      height: 1
+    samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 10
+      height: 1
+  resultMaterials:
+  - combinedMaterial: {fileID: 2100000, guid: 459d671e33ef0aa4894cf6461528acc7, type: 2}
+    considerMeshUVs: 0
+    sourceMaterials:
+    - {fileID: 2100000, guid: 365bb269a47e2ec49bd88155b0427628, type: 2}
+    - {fileID: 2100000, guid: c42d57af092928b4493bf0f331b5a94c, type: 2}
+  doMultiMaterial: 0
+  materials:
+  - {fileID: 2100000, guid: 365bb269a47e2ec49bd88155b0427628, type: 2}
+  - {fileID: 2100000, guid: c42d57af092928b4493bf0f331b5a94c, type: 2}
+  fixOutOfBoundsUVs: 0
+  resultMaterial: {fileID: 0}

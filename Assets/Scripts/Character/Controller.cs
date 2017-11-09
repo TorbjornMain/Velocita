@@ -67,6 +67,14 @@ public class Controller : MonoBehaviour {
         }
     }
 
+    public bool ResetPressed
+    {
+        get
+        {
+            return _resetPressed;
+        }
+    }
+
     public bool active = true;
     protected Vector3 _steerInput;
     protected float _accelInput;
@@ -76,5 +84,6 @@ public class Controller : MonoBehaviour {
     protected bool _hopPressed;
     protected bool _hopHeld;
     protected bool _hopReleased;
+    protected bool _resetPressed;
 
 }

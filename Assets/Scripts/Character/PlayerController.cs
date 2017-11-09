@@ -28,6 +28,7 @@ public class PlayerController : Controller {
                 _hopPressed = id.LeftBumper.WasPressed;
                 _hopReleased = id.LeftBumper.WasReleased;
                 _steerInput = new Vector3(id.LeftStick.Y, 0, id.LeftStick.X);
+                _resetPressed = id.Action2.WasPressed;
             }
             else
             {
