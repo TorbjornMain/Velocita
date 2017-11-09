@@ -15,6 +15,9 @@ public class PauseMenu : MonoBehaviour {
     public AudioClip closeSound;
     public AudioClip navigateSound;
     public AudioClip choiceSound;
+    public GameObject quitContainer;
+    public Image[] quitButtons;
+    bool quitMode = false;
 
 	void OnEnable()
     {
@@ -31,52 +34,121 @@ public class PauseMenu : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		for(int i = 0; i < buttonImages.Length; i++)
+        if (quitMode == false)
         {
-            if (i == selectedIndex)
+            for (int i = 0; i < buttonImages.Length; i++)
             {
-                buttonImages[i].rectTransform.localScale = buttonSelectedScale;
+                if (i == selectedIndex)
+                {
+                    buttonImages[i].rectTransform.localScale = buttonSelectedScale;
+                }
+                else
+                {
+                    buttonImages[i].rectTransform.localScale = Vector3.one;
+                }
             }
-            else
+            if (InputManager.ActiveDevice.LeftStick.Up.WasPressed || InputManager.ActiveDevice.DPadUp.WasPressed)
             {
-                buttonImages[i].rectTransform.localScale = Vector3.one;
+                selectedIndex = (selectedIndex - 1) < 0 ? (buttonImages.Length - 1) : (selectedIndex - 1);
+                audioSourceReference.clip = navigateSound;
+                audioSourceReference.Play();
+            }
+            if (InputManager.ActiveDevice.LeftStick.Down.WasPressed || InputManager.ActiveDevice.DPadDown.WasPressed)
+            {
+                selectedIndex = (selectedIndex + 1) >= buttonImages.Length ? 0 : (selectedIndex + 1);
+                audioSourceReference.clip = navigateSound;
+                audioSourceReference.Play();
+            }
+            if (InputManager.ActiveDevice.Action1.WasPressed)
+            {
+                switch (selectedIndex)
+                {
+                    case 0:
+                        transform.parent.SendMessage("TogglePause");
+                        break;
+                    case 1:
+                        audioSourceReference.clip = choiceSound;
+                        audioSourceReference.Play();
+                        break;
+                    case 2:
+                        quitMode = true;
+
+                        selectedIndex = 1;
+                        foreach (var item in buttonImages)
+                        {
+                            item.gameObject.SetActive(false);
+                        }
+                        quitContainer.SetActive(true);
+
+                        break;
+                    default:
+                        break;
+                }
+
+            }
+            if (InputManager.ActiveDevice.Action2.WasPressed)
+            {
+                transform.parent.SendMessage("TogglePause");
             }
         }
-        if (InputManager.ActiveDevice.LeftStick.Up.WasPressed)
+        else
         {
-            selectedIndex = (selectedIndex - 1) < 0 ? (buttonImages.Length - 1) : (selectedIndex - 1);
-            audioSourceReference.clip = navigateSound;
-            audioSourceReference.Play();
-        }
-        if (InputManager.ActiveDevice.LeftStick.Down.WasPressed)
-        {
-            selectedIndex = (selectedIndex + 1) >= buttonImages.Length ? 0 : (selectedIndex + 1);
-            audioSourceReference.clip = navigateSound;
-            audioSourceReference.Play();
-        }
-        if(InputManager.ActiveDevice.Action1.WasPressed)
-        {
-            switch (selectedIndex)
+
+            if (InputManager.ActiveDevice.LeftStick.Left.WasPressed || InputManager.ActiveDevice.DPadLeft.WasPressed)
             {
-                case 0:
-                    transform.parent.SendMessage("TogglePause");
-                    break;
-                case 1:
-                    audioSourceReference.clip = choiceSound;
-                    audioSourceReference.Play();
-                    break;
-                case 2:
-                    transform.parent.SendMessage("TogglePause");
-                    SceneNames.LoadScene(SceneNames.MainMenu);
-                    break;
-                default:
-                    break;
+                selectedIndex = (selectedIndex - 1) < 0 ? (quitButtons.Length - 1) : (selectedIndex - 1);
+                audioSourceReference.clip = navigateSound;
+                audioSourceReference.Play();
+            }
+            if (InputManager.ActiveDevice.LeftStick.Right.WasPressed || InputManager.ActiveDevice.DPadRight.WasPressed)
+            {
+                selectedIndex = (selectedIndex + 1) >= quitButtons.Length ? 0 : (selectedIndex + 1);
+                audioSourceReference.clip = navigateSound;
+                audioSourceReference.Play();
             }
 
-        }
-        if(InputManager.ActiveDevice.Action2.WasPressed)
-        {
-            transform.parent.SendMessage("TogglePause");
+            if (InputManager.ActiveDevice.Action1.WasPressed)
+            {
+                switch (selectedIndex)
+                {
+                    case 0:
+                        transform.parent.SendMessage("TogglePause");
+                        SceneNames.LoadScene(SceneNames.MainMenu);
+                        break;
+                    case 1:
+                        foreach(var item in buttonImages)
+                        {
+                            item.gameObject.SetActive(true);
+                        }
+                        quitContainer.SetActive(false);
+                        quitMode = false;
+                        break;
+                    default:
+                        break;
+                }
+
+            }
+            if (InputManager.ActiveDevice.Action2.WasPressed)
+            {
+                selectedIndex = 2;
+                foreach (var item in buttonImages)
+                {
+                    item.gameObject.SetActive(true);
+                }
+                quitContainer.SetActive(false);
+                quitMode = false;
+            }
+            for (int i = 0; i < quitButtons.Length; i++)
+            {
+                if (i == selectedIndex)
+                {
+                    quitButtons[i].color = Color.red;
+                }
+                else
+                {
+                    quitButtons[i].color = Color.black;
+                }
+            } 
         }
     }
 }

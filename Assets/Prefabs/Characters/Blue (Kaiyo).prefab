@@ -2831,7 +2831,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 509f1066aedfcf641b43ca1291ae7d8c, type: 2}
+  - {fileID: 2100000, guid: 40cb30f2c267e814e8dde36c51070108, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2980,7 +2980,7 @@ Animator:
   m_GameObject: {fileID: 1853177988447096}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 9306e21842640414584c3caaa6c2617b, type: 3}
-  m_Controller: {fileID: 9100000, guid: fb802b64091df6743bd846dcab4da6a1, type: 2}
+  m_Controller: {fileID: 9100000, guid: db64e8619919d6447a8828d8abc8d418, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -3507,6 +3507,7 @@ MonoBehaviour:
   minFOV: 60
   baseFOV: 90
   animLerpSpeed: 5
+  headTurnChance: 0.05
   scrapeSoundPrefab: {fileID: 114137354118615038, guid: d0839b26962a0454f80e839236251c40,
     type: 2}
   collideSoundPrefab: {fileID: 114137354118615038, guid: 6410e0a5679f79b45b1070150e272be4,

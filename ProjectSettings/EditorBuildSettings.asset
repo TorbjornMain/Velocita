@@ -26,8 +26,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/Jess Test.unity
     guid: df772dc2c4a93af4bbe7e9157cc00316
-  - enabled: 1
-    path: Assets/_Scenes/RaceResults.unity
+  - enabled: 0
+    path: 
     guid: 6d25f4a9e08fbc249af97f86aef89fdd
   - enabled: 1
     path: Assets/_Scenes/Colour Select.unity

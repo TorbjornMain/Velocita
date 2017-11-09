@@ -34,6 +34,7 @@ public class IKController : MonoBehaviour {
         anim.SetLookAtPosition(cam.lookAt.transform.position);
     }
 
+
     void OnDrawGizmos()
     {
         Gizmos.color = Color.cyan;

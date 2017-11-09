@@ -1220,7 +1220,7 @@ MonoBehaviour:
   - {fileID: 312040252}
   mainMenuContainer: {fileID: 501150424}
   controllerAllocationContainer: {fileID: 1019760576}
-  buttonSelectedScale: {x: 1, y: 1.1, z: 1}
+  buttonSelectedScale: {x: 1, y: 1.3, z: 1}
   selectedClip: {fileID: 8300000, guid: d978472df2a529246a58338f61995376, type: 3}
   navigateClip: {fileID: 8300000, guid: 04f743b6a5f6a0649b3a042d7a573f47, type: 3}
 --- !u!82 &802688585

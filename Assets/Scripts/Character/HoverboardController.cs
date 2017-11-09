@@ -42,6 +42,8 @@ public class HoverboardController : MonoBehaviour
     AudioSource driftSoundInstance;
     public AudioSource boostSoundPrefab;
     bool drifting = false;
+    [System.NonSerialized]
+    public bool reset = false;
 
     public float speed
     {
@@ -115,9 +117,9 @@ public class HoverboardController : MonoBehaviour
                 float pitch = ((transform.eulerAngles.x + 180) % 360 - 180);
                 float roll = ((transform.eulerAngles.z + 180) % 360 - 180);
 
-                if (c.HopPressed)
+                if (c.ResetPressed)
                 {
-                    Jump();
+                    reset = true;
                 }
 
                 if (c.DriftPressed)
