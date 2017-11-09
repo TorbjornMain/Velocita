@@ -3507,6 +3507,7 @@ MonoBehaviour:
   minFOV: 60
   baseFOV: 90
   animLerpSpeed: 5
+  headTurnChance: 0.05
   scrapeSoundPrefab: {fileID: 114137354118615038, guid: d0839b26962a0454f80e839236251c40,
     type: 2}
   collideSoundPrefab: {fileID: 114137354118615038, guid: 6410e0a5679f79b45b1070150e272be4,

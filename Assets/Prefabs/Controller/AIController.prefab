@@ -1518,7 +1518,7 @@ MonoBehaviour:
     type: 2}
   driftParticles: {fileID: 198891423667566310, guid: 38c78d7b61b1dcb429e0760aac2effa1,
     type: 2}
-  anim: {fileID: 0}
+  anim: {fileID: 95655188013936036}
   outerTrail: {fileID: 96570348452891288}
   innerTrail: {fileID: 96155780736035348}
   boostTrailWidth:

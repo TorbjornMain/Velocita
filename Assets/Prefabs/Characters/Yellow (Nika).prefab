@@ -2678,7 +2678,7 @@ Animator:
   m_GameObject: {fileID: 1029249311078140}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: c6484a86a5616b54f956a8a0227eb0f0, type: 3}
-  m_Controller: {fileID: 9100000, guid: fb802b64091df6743bd846dcab4da6a1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ba82e289809a64547b708d507ad14c47, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -3088,6 +3088,7 @@ MonoBehaviour:
   minFOV: 60
   baseFOV: 90
   animLerpSpeed: 5
+  headTurnChance: 0.05
   scrapeSoundPrefab: {fileID: 114137354118615038, guid: d0839b26962a0454f80e839236251c40,
     type: 2}
   collideSoundPrefab: {fileID: 114137354118615038, guid: 6410e0a5679f79b45b1070150e272be4,
