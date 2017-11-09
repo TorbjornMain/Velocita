@@ -34,11 +34,6 @@ public class IKController : MonoBehaviour {
         anim.SetLookAtPosition(cam.lookAt.transform.position);
     }
 
-    void Update()
-    {
-        if (Input.GetButtonDown("Fire1")) anim.SetTrigger("Pass");
-        if (Input.GetButtonDown("Fire2")) anim.SetTrigger("FinishRace");
-    }
 
     void OnDrawGizmos()
     {
