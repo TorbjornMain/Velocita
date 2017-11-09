@@ -11,7 +11,7 @@ public class TutorialScreen : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (currentScreen > tutorialScreens.Length) SceneNames.LoadScene("Jess Test");
+        if (currentScreen >= tutorialScreens.Length) SceneNames.LoadScene("Jess Test");
 		for(int i = 0; i < tutorialScreens.Length; i++)
         {
             if (i == currentScreen)
