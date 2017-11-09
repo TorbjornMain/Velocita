@@ -46,13 +46,13 @@ public class MainMenuController : MonoBehaviour {
                 }
             }
 
-            if (InputManager.ActiveDevice.LeftStick.Up.WasPressed)
+            if (InputManager.ActiveDevice.LeftStick.Up.WasPressed || InputManager.ActiveDevice.DPadUp.WasPressed)
             {
                 selectedOption = (MenuOptions)(((int)selectedOption - 1) < 0 ? 3 : ((int)selectedOption - 1));
                 audioSource.clip = navigateClip;
                 audioSource.Play();
             }
-            if (InputManager.ActiveDevice.LeftStick.Down.WasPressed)
+            if (InputManager.ActiveDevice.LeftStick.Down.WasPressed || InputManager.ActiveDevice.DPadDown.WasPressed)
             {
                 selectedOption = (MenuOptions)(((int)selectedOption + 1) > 3 ? 0 : ((int)selectedOption + 1));
                 audioSource.clip = navigateClip;

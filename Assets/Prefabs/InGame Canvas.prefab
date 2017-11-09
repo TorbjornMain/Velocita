@@ -1955,6 +1955,10 @@ MonoBehaviour:
   closeSound: {fileID: 8300000, guid: b739468b56bc5f846a3574589afdcbc5, type: 3}
   navigateSound: {fileID: 8300000, guid: 04f743b6a5f6a0649b3a042d7a573f47, type: 3}
   choiceSound: {fileID: 8300000, guid: d978472df2a529246a58338f61995376, type: 3}
+  quitContainer: {fileID: 1308734309152064}
+  quitButtons:
+  - {fileID: 114869617982053450}
+  - {fileID: 114105485410229154}
 --- !u!114 &114105485410229154
 MonoBehaviour:
   m_ObjectHideFlags: 1

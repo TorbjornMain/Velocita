@@ -83,7 +83,7 @@ public class CharacterSelectScreen : MonoBehaviour {
 
                 if (cm.players[i].ind.Action2.WasPressed)
                 {
-                    if (!selected[selectorInstances[i].hoveredIndex])
+                    if (!selected[selectorInstances[i].hoveredIndex] && selectorInstances[i].hasSelected)
                     {
                         SceneNames.LoadScene(SceneNames.MainMenu);
                     }
@@ -123,21 +123,23 @@ public class CharacterSelectScreen : MonoBehaviour {
                             audioSource.Play();
                         }
                     }
-                    
-                    
 
-                    if (cm.players[i].ind.LeftStick.Left.WasPressed)
-                    {
-                        selectorInstances[i].hoveredIndex = selectorInstances[i].hoveredIndex - 1 < 0 ? 3 : selectorInstances[i].hoveredIndex - 1;
-                        audioSource.clip = navigateSound;
-                        audioSource.Play();
-                    }
 
-                    if (cm.players[i].ind.LeftStick.Right.WasPressed)
+                    if (!selectorInstances[i].hasSelected)
                     {
-                        selectorInstances[i].hoveredIndex = selectorInstances[i].hoveredIndex + 1 > 3 ? 0 : selectorInstances[i].hoveredIndex + 1;
-                        audioSource.clip = navigateSound;
-                        audioSource.Play();
+                        if (cm.players[i].ind.LeftStick.Left.WasPressed || cm.players[i].ind.DPadLeft.WasPressed)
+                        {
+                            selectorInstances[i].hoveredIndex = selectorInstances[i].hoveredIndex - 1 < 0 ? 3 : selectorInstances[i].hoveredIndex - 1;
+                            audioSource.clip = navigateSound;
+                            audioSource.Play();
+                        }
+
+                        if (cm.players[i].ind.LeftStick.Right.WasPressed || cm.players[i].ind.DPadRight.WasPressed)
+                        {
+                            selectorInstances[i].hoveredIndex = selectorInstances[i].hoveredIndex + 1 > 3 ? 0 : selectorInstances[i].hoveredIndex + 1;
+                            audioSource.clip = navigateSound;
+                            audioSource.Play();
+                        }
                     }
                 }
             }
