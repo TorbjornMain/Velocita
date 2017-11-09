@@ -12,9 +12,40 @@ MonoBehaviour:
   m_Name: combinedShrubs
   m_EditorClassIdentifier: 
   version: 3230
-  materialsAndUVRects: []
-  resultMaterials: []
+  materialsAndUVRects:
+  - material: {fileID: 2100000, guid: 6e25fa420afe52b4eb37b2bb446ac981, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    srcObjName: Grass_Tall (5)
+    samplingRectMatAndUVTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+  resultMaterials:
+  - combinedMaterial: {fileID: 2100000, guid: d7a0e8e8ec94fa642a92445a800e8075, type: 2}
+    considerMeshUVs: 0
+    sourceMaterials:
+    - {fileID: 2100000, guid: 6e25fa420afe52b4eb37b2bb446ac981, type: 2}
   doMultiMaterial: 0
-  materials: []
+  materials:
+  - {fileID: 2100000, guid: 6e25fa420afe52b4eb37b2bb446ac981, type: 2}
   fixOutOfBoundsUVs: 0
   resultMaterial: {fileID: 0}
