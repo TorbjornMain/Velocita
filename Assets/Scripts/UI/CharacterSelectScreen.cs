@@ -12,6 +12,7 @@ public class CharacterSelectScreen : MonoBehaviour {
 
     [Tooltip("Laid out as P1Red P2Red P3Red P4Red P1Blue P2Blue...")]
     public List<Transform> selectorNodes;
+    public Image[] characterPortraits;
     public Image[] playerZones;
     public Color[] playerColors;
     public Text[] playerJoinText;
@@ -92,6 +93,7 @@ public class CharacterSelectScreen : MonoBehaviour {
                         PControlData playerData = cm.players[i];
                         playerData.col = RacerColor.White;
                         playerZones[i].color = Color.white;
+                        characterPortraits[i].color = Color.white;
 
                         cm.players[i] = playerData;
                         selectorInstances[i].hasSelected = false;
@@ -111,6 +113,7 @@ public class CharacterSelectScreen : MonoBehaviour {
                             PControlData playerData = cm.players[i];
                             playerData.col = ((RacerColor)selectorInstances[i].hoveredIndex);
                             playerZones[i].color = playerColors[selectorInstances[i].hoveredIndex];
+                            characterPortraits[i].color = Color.grey;
 
                             cm.players[i] = playerData;
                             selectorInstances[i].hasSelected = true;
