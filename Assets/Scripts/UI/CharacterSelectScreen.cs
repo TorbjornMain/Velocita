@@ -84,22 +84,25 @@ public class CharacterSelectScreen : MonoBehaviour {
 
                 if (cm.players[i].ind.Action2.WasPressed)
                 {
-                    if (!selected[selectorInstances[i].hoveredIndex] && selectorInstances[i].hasSelected)
+                    if (!selected[selectorInstances[i].hoveredIndex])
                     {
                         SceneNames.LoadScene(SceneNames.MainMenu);
                     }
                     else
                     {
-                        PControlData playerData = cm.players[i];
-                        playerData.col = RacerColor.White;
-                        playerZones[i].color = Color.white;
-                        characterPortraits[i].color = Color.white;
+                        if (selectorInstances[i].hasSelected)
+                        {
+                            PControlData playerData = cm.players[i];
+                            playerData.col = RacerColor.White;
+                            playerZones[i].color = Color.white;
+                            characterPortraits[selectorInstances[i].hoveredIndex].color = Color.white;
 
-                        cm.players[i] = playerData;
-                        selectorInstances[i].hasSelected = false;
-                        selected[selectorInstances[i].hoveredIndex] = false;
-                        audioSource.clip = cancelSound;
-                        audioSource.Play();
+                            cm.players[i] = playerData;
+                            selectorInstances[i].hasSelected = false;
+                            selected[selectorInstances[i].hoveredIndex] = false;
+                            audioSource.clip = cancelSound;
+                            audioSource.Play();
+                        }
                     }
                 }
 
@@ -113,7 +116,7 @@ public class CharacterSelectScreen : MonoBehaviour {
                             PControlData playerData = cm.players[i];
                             playerData.col = ((RacerColor)selectorInstances[i].hoveredIndex);
                             playerZones[i].color = playerColors[selectorInstances[i].hoveredIndex];
-                            characterPortraits[i].color = Color.grey;
+                            characterPortraits[selectorInstances[i].hoveredIndex].color = Color.grey;
 
                             cm.players[i] = playerData;
                             selectorInstances[i].hasSelected = true;
