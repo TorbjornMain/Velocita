@@ -25,6 +25,7 @@ public class BoardVisualController : MonoBehaviour {
     Color col;
     Vector3 animIn = Vector3.zero;
     IKController ik;
+    public float headTurnChance = 0.05f;
     public SoundZone scrapeSoundPrefab;
     public SoundZone collideSoundPrefab;
     SoundZone scrapeSoundInstance;
@@ -72,6 +73,10 @@ public class BoardVisualController : MonoBehaviour {
 
     void Update()
     {
+        if(Random.value < headTurnChance * Time.deltaTime)
+        {
+            anim.SetTrigger("TurnHead");
+        }
         animIn = Vector3.Lerp(animIn, hc.controller.SteerInput, 10 * Time.deltaTime);
         anim.SetFloat("Pitch", animIn.x);
         anim.SetFloat("Roll", animIn.z);
@@ -161,5 +166,20 @@ public class BoardVisualController : MonoBehaviour {
         em.rateOverTime = em.rateOverDistance = 0;
         yield return new WaitForSeconds(p.main.startLifetime.constantMax);
         Destroy(p.gameObject);        
+    }
+
+    void FinishRace()
+    {
+        anim.SetTrigger("FinishRace");
+    }
+
+    void Overtake()
+    {
+        anim.SetTrigger("Pass");
+    }
+
+    void Overtaken()
+    {
+        anim.SetTrigger("Overtaken");
     }
 }
