@@ -33,6 +33,7 @@ public class HUDController : MonoBehaviour {
     public float ribbonPinScalar = 0.5f;
     public Vector3 powerupImageScaleFactor = new Vector3(0.1f, 0.1f, 0.1f);
     Image[] playerPosImages;
+    int position = 0;
     // Update is called once per frame
     void Start()
     {
@@ -86,7 +87,7 @@ public class HUDController : MonoBehaviour {
             speedText.text = "Speed: " + Mathf.RoundToInt(player.speed * 3.6f).ToString() + "km/h";
             lapText.text = playerLapGateUser.lap.ToString();
             maxLapText.text = numLaps.ToString();
-            int position = 0;
+
             wrongWayImage.enabled = Vector3.Dot(player.velocity, playerLapGateUser.trackDir) < 0 && player.velocity.magnitude > 10;
             if(player.reset)
             {
@@ -142,7 +143,14 @@ public class HUDController : MonoBehaviour {
                     }
                 }
             }
-
+            if(position < ps.playerLaps.IndexOf(playerLapGateUser))
+            {
+                player.SendMessage("Overtaken");
+            }
+            else if(position > ps.playerLaps.IndexOf(playerLapGateUser))
+            {
+                player.SendMessage("Overtake");
+            }
             position = ps.playerLaps.IndexOf(playerLapGateUser);
             placeImage.sprite = placeIcons[position];
         }

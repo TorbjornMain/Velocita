@@ -162,4 +162,19 @@ public class BoardVisualController : MonoBehaviour {
         yield return new WaitForSeconds(p.main.startLifetime.constantMax);
         Destroy(p.gameObject);        
     }
+
+    void FinishGame()
+    {
+        anim.SetTrigger("FinishRace");
+    }
+
+    void Overtake()
+    {
+        anim.SetTrigger("Pass");
+    }
+
+    void Overtaken()
+    {
+        anim.SetTrigger("Overtaken");
+    }
 }
