@@ -181,6 +181,8 @@ ModelImporter:
     7400000: Take 001
     9500000: //RootNode
     13700000: Kaiyo_LOD0
+    13700002: Kaiyo_LOD1
+    13700004: Kaiyo_LOD2
     20500000: //RootNode
   materials:
     importMaterials: 1
