@@ -621,6 +621,11 @@ MonoBehaviour:
   - {fileID: 1425129197}
   - {fileID: 1564847350}
   - {fileID: 1749194574}
+  characterPortraits:
+  - {fileID: 1639884281}
+  - {fileID: 536705186}
+  - {fileID: 1290776539}
+  - {fileID: 1807444262}
   playerZones:
   - {fileID: 1546937197}
   - {fileID: 485230451}
