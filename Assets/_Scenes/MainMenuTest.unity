@@ -209,7 +209,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 147.30002, y: -321.2}
+  m_AnchoredPosition: {x: 147.30005, y: -321.2}
   m_SizeDelta: {x: 100, y: 99}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &31753788
@@ -1331,20 +1331,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad5bb2d606b5f37429541569234bd880, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mainCursor: {fileID: 889490}
+  settingsCursor: {fileID: 1384829484}
   selectorNodes:
-  - {fileID: 732381744}
-  - {fileID: 1933542646}
-  - {fileID: 395292784}
-  - {fileID: 312040252}
+  - {fileID: 1917245184}
+  - {fileID: 1081914899}
+  - {fileID: 31753786}
+  - {fileID: 1943448046}
   mainMenuContainer: {fileID: 501150424}
   controllerAllocationContainer: {fileID: 1019760576}
   buttonSelectedScale: {x: 1, y: 1.3, z: 1}
   selectedClip: {fileID: 8300000, guid: d978472df2a529246a58338f61995376, type: 3}
   navigateClip: {fileID: 8300000, guid: 04f743b6a5f6a0649b3a042d7a573f47, type: 3}
   settingsContainer: {fileID: 1517811218}
-  settingsImages:
-  - {fileID: 0}
-  - {fileID: 0}
+  settingsNodes:
+  - {fileID: 1384829483}
+  - {fileID: 1384829482}
   settingsSliders:
   - {fileID: 1517811215}
   - {fileID: 1517811214}
@@ -1516,7 +1518,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 147.30002, y: -283}
+  m_AnchoredPosition: {x: 147.30005, y: -283}
   m_SizeDelta: {x: 100, y: 99}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1081914901
@@ -1807,6 +1809,21 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d7bc72f265bef8245af5bd315346d5dc, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1384829482 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1394072567254852, guid: d7bc72f265bef8245af5bd315346d5dc,
+    type: 2}
+  m_PrefabInternal: {fileID: 1384829481}
+--- !u!1 &1384829483 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1273603472858344, guid: d7bc72f265bef8245af5bd315346d5dc,
+    type: 2}
+  m_PrefabInternal: {fileID: 1384829481}
+--- !u!1 &1384829484 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1211082451113126, guid: d7bc72f265bef8245af5bd315346d5dc,
+    type: 2}
+  m_PrefabInternal: {fileID: 1384829481}
 --- !u!114 &1517811214 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114441572386177378, guid: d7bc72f265bef8245af5bd315346d5dc,
@@ -1994,6 +2011,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AcquirePlayers: 0
+  TimeTrial: 0
 --- !u!4 &1611076172
 Transform:
   m_ObjectHideFlags: 0
@@ -2268,7 +2286,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 147.3, y: -245.4}
+  m_AnchoredPosition: {x: 147.29999, y: -245.4}
   m_SizeDelta: {x: 100, y: 99}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1917245186
@@ -2397,7 +2415,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 147.30002, y: -359.4}
+  m_AnchoredPosition: {x: 147.30005, y: -359.4}
   m_SizeDelta: {x: 100, y: 99}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1943448048

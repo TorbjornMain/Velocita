@@ -1,0 +1,218 @@
+fileFormatVersion: 2
+guid: 5927a95cade565246914c4adfb891817
+timeCreated: 1510276631
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: Leo__Back_JNT_1
+    100002: Leo_Back_JNT_2
+    100004: Leo_Back_JNT_3
+    100006: Leo_Head_END
+    100008: Leo_Head_JNT_1
+    100010: Leo_Left_Ankle_JNT
+    100012: Leo_Left_Ball_JNT
+    100014: Leo_Left_CollarBone_JNT
+    100016: Leo_Left_Elbow_JNT
+    100018: Leo_Left_Hip_JNT
+    100020: Leo_Left_Knee_JNT
+    100022: Leo_Left_Middle_END
+    100024: Leo_Left_Middle_JNT_1
+    100026: Leo_Left_Middle_JNT_2
+    100028: Leo_Left_Middle_JNT_3
+    100030: Leo_Left_Pinky_END
+    100032: Leo_Left_Pinky_JNT_1
+    100034: Leo_Left_Pinky_JNT_2
+    100036: Leo_Left_Pinky_JNT_3
+    100038: Leo_Left_Pointer_JNT_1
+    100040: Leo_Left_Pointer_JNT_2
+    100042: Leo_Left_Pointer_JNT_3
+    100044: Leo_Left_Pointer_JNT_END
+    100046: Leo_Left_Ring_END
+    100048: Leo_Left_Ring_JNT_1
+    100050: Leo_Left_Ring_JNT_2
+    100052: Leo_Left_Ring_JNT_3
+    100054: Leo_Left_Shoulder_JNT
+    100056: Leo_Left_Thumb_END
+    100058: Leo_Left_Thumb_JNT_1
+    100060: Leo_Left_Thumb_JNT_2
+    100062: Leo_Left_Thumb_JNT_3
+    100064: Leo_Left_Toe_JNT
+    100066: Leo_Left_Wrist_JNT
+    100068: Leo_Neck_JNT_1
+    100070: Leo_Right_Ankle_JNT
+    100072: Leo_Right_Ball_JNT
+    100074: Leo_Right_CollarBone_JNT
+    100076: Leo_Right_Elbow_JNT
+    100078: Leo_Right_Hip_JNT
+    100080: Leo_Right_Knee_JNT
+    100082: Leo_Right_Middle_END
+    100084: Leo_Right_Middle_JNT_1
+    100086: Leo_Right_Middle_JNT_2
+    100088: Leo_Right_Middle_JNT_3
+    100090: Leo_Right_Pinky_END
+    100092: Leo_Right_Pinky_JNT_1
+    100094: Leo_Right_Pinky_JNT_2
+    100096: Leo_Right_Pinky_JNT_3
+    100098: Leo_Right_Pointer_JNT_1
+    100100: Leo_Right_Pointer_JNT_2
+    100102: Leo_Right_Pointer_JNT_3
+    100104: Leo_Right_Pointer_JNT_END
+    100106: Leo_Right_Ring_END
+    100108: Leo_Right_Ring_JNT_1
+    100110: Leo_Right_Ring_JNT_2
+    100112: Leo_Right_Ring_JNT_3
+    100114: Leo_Right_Shoulder_JNT
+    100116: Leo_Right_Thumb_END
+    100118: Leo_Right_Thumb_JNT_1
+    100120: Leo_Right_Thumb_JNT_2
+    100122: Leo_Right_Thumb_JNT_3
+    100124: Leo_Right_Toe_JNT
+    100126: Leo_Right_Wrist_JNT
+    100128: Leo_Root_JNT
+    100130: //RootNode
+    100132: Leo_Waist_JNT
+    400000: Leo__Back_JNT_1
+    400002: Leo_Back_JNT_2
+    400004: Leo_Back_JNT_3
+    400006: Leo_Head_END
+    400008: Leo_Head_JNT_1
+    400010: Leo_Left_Ankle_JNT
+    400012: Leo_Left_Ball_JNT
+    400014: Leo_Left_CollarBone_JNT
+    400016: Leo_Left_Elbow_JNT
+    400018: Leo_Left_Hip_JNT
+    400020: Leo_Left_Knee_JNT
+    400022: Leo_Left_Middle_END
+    400024: Leo_Left_Middle_JNT_1
+    400026: Leo_Left_Middle_JNT_2
+    400028: Leo_Left_Middle_JNT_3
+    400030: Leo_Left_Pinky_END
+    400032: Leo_Left_Pinky_JNT_1
+    400034: Leo_Left_Pinky_JNT_2
+    400036: Leo_Left_Pinky_JNT_3
+    400038: Leo_Left_Pointer_JNT_1
+    400040: Leo_Left_Pointer_JNT_2
+    400042: Leo_Left_Pointer_JNT_3
+    400044: Leo_Left_Pointer_JNT_END
+    400046: Leo_Left_Ring_END
+    400048: Leo_Left_Ring_JNT_1
+    400050: Leo_Left_Ring_JNT_2
+    400052: Leo_Left_Ring_JNT_3
+    400054: Leo_Left_Shoulder_JNT
+    400056: Leo_Left_Thumb_END
+    400058: Leo_Left_Thumb_JNT_1
+    400060: Leo_Left_Thumb_JNT_2
+    400062: Leo_Left_Thumb_JNT_3
+    400064: Leo_Left_Toe_JNT
+    400066: Leo_Left_Wrist_JNT
+    400068: Leo_Neck_JNT_1
+    400070: Leo_Right_Ankle_JNT
+    400072: Leo_Right_Ball_JNT
+    400074: Leo_Right_CollarBone_JNT
+    400076: Leo_Right_Elbow_JNT
+    400078: Leo_Right_Hip_JNT
+    400080: Leo_Right_Knee_JNT
+    400082: Leo_Right_Middle_END
+    400084: Leo_Right_Middle_JNT_1
+    400086: Leo_Right_Middle_JNT_2
+    400088: Leo_Right_Middle_JNT_3
+    400090: Leo_Right_Pinky_END
+    400092: Leo_Right_Pinky_JNT_1
+    400094: Leo_Right_Pinky_JNT_2
+    400096: Leo_Right_Pinky_JNT_3
+    400098: Leo_Right_Pointer_JNT_1
+    400100: Leo_Right_Pointer_JNT_2
+    400102: Leo_Right_Pointer_JNT_3
+    400104: Leo_Right_Pointer_JNT_END
+    400106: Leo_Right_Ring_END
+    400108: Leo_Right_Ring_JNT_1
+    400110: Leo_Right_Ring_JNT_2
+    400112: Leo_Right_Ring_JNT_3
+    400114: Leo_Right_Shoulder_JNT
+    400116: Leo_Right_Thumb_END
+    400118: Leo_Right_Thumb_JNT_1
+    400120: Leo_Right_Thumb_JNT_2
+    400122: Leo_Right_Thumb_JNT_3
+    400124: Leo_Right_Toe_JNT
+    400126: Leo_Right_Wrist_JNT
+    400128: Leo_Root_JNT
+    400130: //RootNode
+    400132: Leo_Waist_JNT
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
