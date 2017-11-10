@@ -7,6 +7,7 @@ public class HUDController : MonoBehaviour {
 
     public Text speedText;
     public Text lapText;
+    public Text lapLabelText;
     public Text maxLapText;
     public Image placeImage;
     public Image wrongWayImage;
@@ -31,12 +32,16 @@ public class HUDController : MonoBehaviour {
     public Image playerCloseBarImage;
     public float playerCloseLeftRight = 500;
     public float ribbonPinScalar = 0.5f;
+    public bool timeTrialMode = false;
     public Vector3 powerupImageScaleFactor = new Vector3(0.1f, 0.1f, 0.1f);
     Image[] playerPosImages;
     int position = 0;
     // Update is called once per frame
     void Start()
     {
+        ControllerManager cm = FindObjectOfType<ControllerManager>();
+        if(cm != null)
+            timeTrialMode = cm.TimeTrial;
         pum = player.GetComponent<PowerupManager>();
         cam = player.GetComponent<CameraController>();
         playerPosImages = new Image[4];
@@ -85,9 +90,18 @@ public class HUDController : MonoBehaviour {
                 }
             }
             speedText.text = "Speed: " + Mathf.RoundToInt(player.speed * 3.6f).ToString() + "km/h";
-            lapText.text = playerLapGateUser.lap.ToString();
-            maxLapText.text = numLaps.ToString();
-
+            if (!timeTrialMode)
+            {
+                lapText.text = playerLapGateUser.lap.ToString();
+                maxLapText.text = numLaps.ToString();
+            }
+            else
+            {
+                lapText.text = "";
+                maxLapText.text = "";
+                playerLapGateUser.data.lapTimes.Sort();
+                lapLabelText.text = playerLapGateUser.lapTime.ToString() + "\n" + ((playerLapGateUser.data.lapTimes.Count > 0) ? playerLapGateUser.data.lapTimes[0].ToString() : "0");
+            }
             wrongWayImage.enabled = Vector3.Dot(player.velocity, playerLapGateUser.trackDir) < 0 && player.velocity.magnitude > 10;
             if(player.reset)
             {

@@ -82,7 +82,7 @@ public class ControllerManager : MonoBehaviour {
         if (p != null)
         {
             if (TimeTrial)
-                p.AI = false;
+                p.AI = p.timeTrial = false;
             p.SpawnPlayers(players);
         }
     }

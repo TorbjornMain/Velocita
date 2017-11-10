@@ -15,6 +15,7 @@ public class PlayerSpawner : MonoBehaviour {
     List<HUDController> playerHUDs = new List<HUDController>();
     public int laps;
     public bool AI;
+    public bool timeTrial;
     PlayerStandings ps;
     public string endRaceScene;
     public bool rollingStart = false;
@@ -106,41 +107,44 @@ public class PlayerSpawner : MonoBehaviour {
 
     private void Update()
     {
-        for(int i = 0; i < playerLaps.Count; i++)
+        if (!timeTrial)
         {
-            if(playerLaps[i].lap > laps)
+            for (int i = 0; i < playerLaps.Count; i++)
             {
-                bool found = false;
-                for(int j = 0; j < ps.standings.Count; j++)
+                if (playerLaps[i].lap > laps)
                 {
-                    if (ps.standings[j].name == playerLaps[i].data.name)
-                        found = true;
-                }
-                if (!found)
-                {
-                    ps.standings.Add(playerLaps[i].data);
-                    playerLaps[i].gameObject.SendMessage("FinishRace", SendMessageOptions.DontRequireReceiver);
-                    playerHUDs[players.IndexOf(playerLaps[i].GetComponent<PlayerController>())].SendMessage("FinishRace");
+                    bool found = false;
+                    for (int j = 0; j < ps.standings.Count; j++)
+                    {
+                        if (ps.standings[j].name == playerLaps[i].data.name)
+                            found = true;
+                    }
+                    if (!found)
+                    {
+                        ps.standings.Add(playerLaps[i].data);
+                        playerLaps[i].gameObject.SendMessage("FinishRace", SendMessageOptions.DontRequireReceiver);
+                        playerHUDs[players.IndexOf(playerLaps[i].GetComponent<PlayerController>())].SendMessage("FinishRace");
+                    }
                 }
             }
-        }
-        int fin = 0;
-        for(int i = 0; i < players.Count; i++)
-        {
-            if (players[i].finished)
-                fin++;
-        }
-        if (fin == players.Count)
-        {
-            FindObjectOfType<InGameGlobalUIManager>().SendMessage("DisplayResults");
-        }
-        playerLaps.Sort();
-        //lg.Sort();
-        for (int i = 0; i < playerLaps.Count; i++)
-        {
-            HoverboardController hc = playerLaps[i].GetComponent<HoverboardController>();
-            hc.topSpeed = Mathf.Lerp(hc.topSpeed, baseTopSpeed + (baseTopSpeed * rubberbanding * ((float)i /(float)playerLaps.Count)), 0.1f);
+            int fin = 0;
+            for (int i = 0; i < players.Count; i++)
+            {
+                if (players[i].finished)
+                    fin++;
+            }
+            if (fin == players.Count)
+            {
+                FindObjectOfType<InGameGlobalUIManager>().SendMessage("DisplayResults");
+            }
+            playerLaps.Sort();
+            //lg.Sort();
+            for (int i = 0; i < playerLaps.Count; i++)
+            {
+                HoverboardController hc = playerLaps[i].GetComponent<HoverboardController>();
+                hc.topSpeed = Mathf.Lerp(hc.topSpeed, baseTopSpeed + (baseTopSpeed * rubberbanding * ((float)i / (float)playerLaps.Count)), 0.1f);
 
+            }
         }
     }
 

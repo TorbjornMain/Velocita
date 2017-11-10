@@ -69,6 +69,12 @@ public class MainMenuController : MonoBehaviour {
                         case MenuOptions.Multiplayer:
                             SceneNames.LoadScene(SceneNames.CharacterSelect);
                             break;
+                        case MenuOptions.TimeTrial:
+                            ControllerManager cm = FindObjectOfType<ControllerManager>();
+                            if (cm != null)
+                                cm.TimeTrial = true;
+                            SceneNames.LoadScene(SceneNames.CharacterSelect);
+                            break;
                         case MenuOptions.Settings:
                             settingsMode = true;
                             selectedIndex = 0;
