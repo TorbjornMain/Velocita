@@ -29,51 +29,8 @@ public class ResultScreen : MonoBehaviour {
             time += data.lapTimes[i];
         }
 
-        float seconds = time - (Mathf.Floor(time / 60) * 60);
-        float minutes = Mathf.Floor(time / 60);
-        string secondString = "";
-        string minuteString = "";
-        float milliseconds = (Mathf.Round(seconds * 100));
-        if (seconds < 10)
-        {
-            if(milliseconds % 100 == 0)
-            {
-                secondString = "0" + (milliseconds / 100).ToString() + ".00";
-            }
-            else if(milliseconds % 10 == 0)
-            {
-                secondString = "0" + (milliseconds/100).ToString() + "0";
-            }
-            else
-            {
-                secondString = "0" + (milliseconds / 100).ToString();
-            }
-        }
-        else
-        {
-            if (milliseconds % 100 == 0)
-            {
-                secondString = (milliseconds / 100).ToString() + ".00";
-            }
-            else if (milliseconds % 10 == 0)
-            {
-                secondString = (milliseconds / 100).ToString() + "0";
-            }
-            else
-            {
-                secondString = (milliseconds / 100).ToString();
-            }
-        }
-             
-        
-
-        if (minutes < 10)
-        {
-            minuteString = "0" + minutes.ToString();
-        }
-
         scoreObjectInstance.nameText.text = data.name;
-        scoreObjectInstance.timeText.text = minuteString + ":" + secondString;
+        scoreObjectInstance.timeText.text = ToMinuteSeconds(time);
         scoreObjectInstance.transform.SetParent(transform);
         scoreObjectInstance.transform.localPosition = new Vector3(startList.x - spawnOffset, startList.y - yOffset * position, 0);
         iTween.MoveTo(scoreObjectInstance.gameObject, iTween.Hash( "position", transform.TransformPoint(new Vector3(startList.x, startList.y - yOffset * position, 0)), "time", timeDelay, "easeType", iTween.EaseType.easeOutExpo));
@@ -103,5 +60,14 @@ public class ResultScreen : MonoBehaviour {
         {
             SceneNames.LoadScene(SceneNames.MainMenu);
         }
+    }
+
+    string ToMinuteSeconds(float time)
+    {
+        float minutes = Mathf.Round(time / 60);
+        float seconds = time - minutes * 60;
+        seconds = Mathf.Round(seconds * 100);
+        seconds /= 100;
+        return minutes.ToString() + ":" + (seconds < 10 ? "0" : "") + seconds.ToString();
     }
 }

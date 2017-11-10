@@ -100,7 +100,13 @@ public class HUDController : MonoBehaviour {
                 lapText.text = "";
                 maxLapText.text = "";
                 playerLapGateUser.data.lapTimes.Sort();
-                lapLabelText.text = playerLapGateUser.lapTime.ToString() + "\n" + ((playerLapGateUser.data.lapTimes.Count > 0) ? playerLapGateUser.data.lapTimes[0].ToString() : "0");
+                float bestLapTime = PlayerPrefs.GetFloat("bestLap");
+                bestLapTime = bestLapTime == 0 ? Mathf.Infinity : bestLapTime;
+                bestLapTime = Mathf.Min(bestLapTime, playerLapGateUser.data.lapTimes.Count > 0 ? playerLapGateUser.data.lapTimes[0] : Mathf.Infinity);
+                if (bestLapTime == Mathf.Infinity) bestLapTime = 0;
+
+                lapLabelText.text = ToMinuteSeconds(playerLapGateUser.lapTime) + "\n" + ToMinuteSeconds(bestLapTime);
+                PlayerPrefs.SetFloat("bestLap", bestLapTime == 0 ? Mathf.Infinity : bestLapTime);
             }
             wrongWayImage.enabled = Vector3.Dot(player.velocity, playerLapGateUser.trackDir) < 0 && player.velocity.magnitude > 10;
             if(player.reset)
@@ -199,5 +205,14 @@ public class HUDController : MonoBehaviour {
         racingHUD.SetActive(false);
         doneHUD.SetActive(true);
         racing = false;
+    }
+
+    string ToMinuteSeconds(float time)
+    {
+        float minutes = Mathf.Round(time / 60);
+        float seconds = time - minutes * 60;
+        seconds = Mathf.Round(seconds * 100);
+        seconds /= 100;
+        return minutes.ToString() + ":" + (seconds < 10 ? "0" : "") + seconds.ToString();
     }
 }

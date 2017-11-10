@@ -35,6 +35,7 @@ public class MainMenuController : MonoBehaviour {
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
+        PlayerPrefs.Save();
     }
 
 	// Update is called once per frame
