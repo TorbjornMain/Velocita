@@ -12,6 +12,7 @@ public class HUDController : MonoBehaviour {
     public Image placeImage;
     public Image wrongWayImage;
     public Image fadeToBlack;
+    public Image timeTrialClockSprite;
     public GameObject powerUpImage;
     GameObject powerUpImageInstance;
     public GameObject racingHUD;
@@ -45,6 +46,8 @@ public class HUDController : MonoBehaviour {
         pum = player.GetComponent<PowerupManager>();
         cam = player.GetComponent<CameraController>();
         playerPosImages = new Image[4];
+        if (timeTrialMode)
+            timeTrialClockSprite.gameObject.SetActive(true);
         for (int i = 0; i < cam.racerOffsets.Length; i++)
         {
             playerPosImages[i] = Instantiate(playerCloseImagePrefab);
@@ -102,9 +105,10 @@ public class HUDController : MonoBehaviour {
                 playerLapGateUser.data.lapTimes.Sort();
                 float bestLapTime = PlayerPrefs.GetFloat("bestLap");
                 bestLapTime = bestLapTime == 0 ? Mathf.Infinity : bestLapTime;
+                if (Mathf.Min(bestLapTime, playerLapGateUser.data.lapTimes.Count > 0 ? playerLapGateUser.data.lapTimes[0] : Mathf.Infinity) < bestLapTime)
+                    StartCoroutine(flashClock());
                 bestLapTime = Mathf.Min(bestLapTime, playerLapGateUser.data.lapTimes.Count > 0 ? playerLapGateUser.data.lapTimes[0] : Mathf.Infinity);
                 if (bestLapTime == Mathf.Infinity) bestLapTime = 0;
-
                 lapLabelText.text = ToMinuteSeconds(playerLapGateUser.lapTime) + "\n" + ToMinuteSeconds(bestLapTime);
                 PlayerPrefs.SetFloat("bestLap", bestLapTime == 0 ? Mathf.Infinity : bestLapTime);
             }
@@ -214,5 +218,16 @@ public class HUDController : MonoBehaviour {
         seconds = Mathf.Round(seconds * 100);
         seconds /= 100;
         return minutes.ToString() + ":" + (seconds < 10 ? "0" : "") + seconds.ToString();
+    }
+
+    IEnumerator flashClock()
+    {
+        for(int i = 0; i < 3; i++)
+        {
+            timeTrialClockSprite.gameObject.SetActive(false);
+            yield return new WaitForSeconds(0.2f);
+            timeTrialClockSprite.gameObject.SetActive(true);
+            yield return new WaitForSeconds(0.2f);
+        }
     }
 }
