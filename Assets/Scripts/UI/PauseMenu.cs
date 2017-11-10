@@ -26,6 +26,8 @@ public class PauseMenu : MonoBehaviour {
 	void OnEnable()
     {
         selectedIndex = 0;
+        quitMode = false;
+        settingsMode = false;
         audioSourceReference.clip = openSound;
         audioSourceReference.Play();
     }
