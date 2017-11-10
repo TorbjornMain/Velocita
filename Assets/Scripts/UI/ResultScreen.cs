@@ -92,7 +92,7 @@ public class ResultScreen : MonoBehaviour {
         ps.standings.Sort();
 	    for(int i = 0; i < ps.standings.Count; i++)
         {
-                StartCoroutine(delaySpawn(i, ps.standings[i]));
+            StartCoroutine(delaySpawn(i, ps.standings[i]));
         }
         Destroy(ps.gameObject);
 	}
