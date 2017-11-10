@@ -8,8 +8,8 @@ public class InGameGlobalUIManager : MonoBehaviour {
     bool canPause = true;
     public GameObject pauseUIContainer;
     public GameObject resultsUIContainer;
-    public float pausedMusicVolume = 0.6f;
-    public float playMusicVolume = 1.0f;
+    public float pausedMusicVolume = 1.2f;
+    public float playMusicVolume = 2.0f;
 	// Use this for initialization
 	void Start () {
 		
