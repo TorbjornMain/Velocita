@@ -16,6 +16,15 @@ public class PowerupItem : MonoBehaviour {
 
     void Start()
     {
+        ControllerManager cm = FindObjectOfType<ControllerManager>();
+        if (cm != null)
+        {
+            if(cm.TimeTrial)
+            {
+                gameObject.SetActive(false);
+                return;
+            }
+        }
         l = GetComponent<Light>();
         StartCoroutine(resetPickup(0));
     }
