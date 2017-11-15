@@ -29,6 +29,7 @@ public class PauseMenu : MonoBehaviour {
         selectedIndex = 0;
         quitMode = false;
         settingsMode = false;
+        settingsContainer.SetActive(false);
         audioSourceReference.clip = openSound;
         audioSourceReference.Play();
         PlayerPrefs.Save();
