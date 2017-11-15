@@ -3354,6 +3354,7 @@ MonoBehaviour:
   mat:
   - {fileID: 2100000, guid: 04775171b85b8e34c94c616a1dc93c11, type: 2}
   - {fileID: 2100000, guid: 59f29658dbb2aff4c80fff574cd2accd, type: 2}
+  - {fileID: 2100000, guid: d79fa5bb7f9522a429d97d3d8575bc53, type: 2}
   targetRes: {x: 0, y: 0}
   textureFilterMode: 2
 --- !u!114 &114090519890545464
@@ -3589,6 +3590,7 @@ MonoBehaviour:
     type: 2}
   collideSoundPrefab: {fileID: 114137354118615038, guid: 6410e0a5679f79b45b1070150e272be4,
     type: 2}
+  strengthDecay: 0.99
 --- !u!114 &114775767168015126
 MonoBehaviour:
   m_ObjectHideFlags: 1
