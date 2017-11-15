@@ -8,8 +8,7 @@ public class PauseMenu : MonoBehaviour {
 
     int selectedIndex = 0;
 
-    public RawImage[] buttonImages;
-    public Vector3 buttonSelectedScale = new Vector3(1, 1.2f, 1);
+    public GameObject[] selectorNodes;
     public AudioSource audioSourceReference;
     public AudioClip openSound;
     public AudioClip closeSound;
@@ -18,8 +17,10 @@ public class PauseMenu : MonoBehaviour {
     public GameObject quitContainer;
     public Image[] quitButtons;
     public GameObject settingsContainer;
-    public Image[] settingsImages;
+    public GameObject[] settingsNodes;
     public Slider[] settingsSliders;
+    public GameObject menuCursor;
+    public GameObject settingsCursor;
     bool quitMode = false;
     bool settingsMode = false;
 
@@ -51,26 +52,17 @@ public class PauseMenu : MonoBehaviour {
         }
         else
         {
-            for (int i = 0; i < buttonImages.Length; i++)
-            {
-                if (i == selectedIndex)
-                {
-                    buttonImages[i].rectTransform.localScale = buttonSelectedScale;
-                }
-                else
-                {
-                    buttonImages[i].rectTransform.localScale = Vector3.one;
-                }
-            }
+
+            menuCursor.transform.position = selectorNodes[selectedIndex].transform.position;
             if (InputManager.ActiveDevice.LeftStick.Up.WasPressed || InputManager.ActiveDevice.DPadUp.WasPressed)
             {
-                selectedIndex = (selectedIndex - 1) < 0 ? (buttonImages.Length - 1) : (selectedIndex - 1);
+                selectedIndex = (selectedIndex - 1) < 0 ? (selectorNodes.Length - 1) : (selectedIndex - 1);
                 audioSourceReference.clip = navigateSound;
                 audioSourceReference.Play();
             }
             if (InputManager.ActiveDevice.LeftStick.Down.WasPressed || InputManager.ActiveDevice.DPadDown.WasPressed)
             {
-                selectedIndex = (selectedIndex + 1) >= buttonImages.Length ? 0 : (selectedIndex + 1);
+                selectedIndex = (selectedIndex + 1) >= selectorNodes.Length ? 0 : (selectedIndex + 1);
                 audioSourceReference.clip = navigateSound;
                 audioSourceReference.Play();
             }
@@ -95,10 +87,6 @@ public class PauseMenu : MonoBehaviour {
                         quitMode = true;
 
                         selectedIndex = 1;
-                        foreach (var item in buttonImages)
-                        {
-                            item.gameObject.SetActive(false);
-                        }
                         quitContainer.SetActive(true);
 
                         break;
@@ -118,29 +106,18 @@ public class PauseMenu : MonoBehaviour {
 
     void SettingsMode()
     {
-        for (int i = 0; i < settingsImages.Length; i++)
-        {
-            if (i == selectedIndex)
-            {
-                settingsImages[i].rectTransform.localScale = buttonSelectedScale;
-            }
-            else
-            {
-                settingsImages[i].rectTransform.localScale = Vector3.one;
-            }
-            
-        }
+        settingsCursor.transform.position = settingsNodes[selectedIndex].transform.position;
         settingsSliders[0].value = MainMusic.musicSetting;
         settingsSliders[1].value = MainMusic.soundSetting;
         if (InputManager.ActiveDevice.LeftStick.Up.Value > 0.5f || InputManager.ActiveDevice.DPadUp.WasPressed)
         {
-            selectedIndex = (selectedIndex - 1) < 0 ? (settingsImages.Length - 1) : (selectedIndex - 1);
+            selectedIndex = (selectedIndex - 1) < 0 ? (settingsNodes.Length - 1) : (selectedIndex - 1);
             audioSourceReference.clip = navigateSound;
             audioSourceReference.Play();
         }
         if (InputManager.ActiveDevice.LeftStick.Down.Value > 0.5f || InputManager.ActiveDevice.DPadDown.WasPressed)
         {
-            selectedIndex = (selectedIndex + 1) >= settingsImages.Length ? 0 : (selectedIndex + 1);
+            selectedIndex = (selectedIndex + 1) >= settingsNodes.Length ? 0 : (selectedIndex + 1);
             audioSourceReference.clip = navigateSound;
             audioSourceReference.Play();
         }
@@ -211,10 +188,6 @@ public class PauseMenu : MonoBehaviour {
                     SceneNames.LoadScene(SceneNames.MainMenu);
                     break;
                 case 1:
-                    foreach (var item in buttonImages)
-                    {
-                        item.gameObject.SetActive(true);
-                    }
                     quitContainer.SetActive(false);
                     quitMode = false;
                     break;
@@ -226,10 +199,6 @@ public class PauseMenu : MonoBehaviour {
         if (InputManager.ActiveDevice.Action2.WasPressed)
         {
             selectedIndex = 2;
-            foreach (var item in buttonImages)
-            {
-                item.gameObject.SetActive(true);
-            }
             quitContainer.SetActive(false);
             quitMode = false;
         }
