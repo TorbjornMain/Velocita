@@ -13,6 +13,7 @@ public class HUDController : MonoBehaviour {
     public Image wrongWayImage;
     public Image fadeToBlack;
     public Image timeTrialClockSprite;
+    public Image finalLap;
     public GameObject powerUpImage;
     GameObject powerUpImageInstance;
     public GameObject racingHUD;
@@ -26,6 +27,7 @@ public class HUDController : MonoBehaviour {
     public PlayerSpawner ps;
     public LapGateUser playerLapGateUser;
     float wrongWayTime;
+    int lap = 0;
     public int numLaps; 
     public float resetTime = 2;
     PowerupManager pum;
@@ -95,6 +97,14 @@ public class HUDController : MonoBehaviour {
             speedText.text = "Speed: " + Mathf.RoundToInt(player.speed * 3.6f).ToString() + "km/h";
             if (!timeTrialMode)
             {
+                if(lap != playerLapGateUser.lap)
+                {
+                    lap = playerLapGateUser.lap;
+                    if (lap == numLaps)
+                    {
+                        finalLap.gameObject.SetActive(true);
+                    }
+                }
                 lapText.text = playerLapGateUser.lap.ToString();
                 maxLapText.text = numLaps.ToString();
             }

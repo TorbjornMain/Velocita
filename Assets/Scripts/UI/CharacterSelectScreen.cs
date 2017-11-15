@@ -24,6 +24,7 @@ public class CharacterSelectScreen : MonoBehaviour {
     public AudioClip selectSound;
     public AudioClip cancelSound;
     public AudioClip invalidChoiceSound;
+    public AudioClip voiceOver;
     public GameObject selectedBar;
 
 	// Use this for initialization
@@ -41,6 +42,8 @@ public class CharacterSelectScreen : MonoBehaviour {
             si.gameObject.SetActive(false);
             selectorInstances.Add(si);
         }
+        audioSource.clip = voiceOver;
+        audioSource.Play();
 	}
 	
 	// Update is called once per frame
