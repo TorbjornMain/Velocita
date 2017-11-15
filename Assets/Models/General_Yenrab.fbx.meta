@@ -28,6 +28,7 @@ ModelImporter:
     2300008: L_Eye
     2300010: Medal
     2300012: R_Eye
+    2300014: //RootNode
     3300000: Barney 1
     3300002: Cigar
     3300004: Helmet
@@ -35,6 +36,7 @@ ModelImporter:
     3300008: L_Eye
     3300010: Medal
     3300012: R_Eye
+    3300014: //RootNode
     4300000: R_Eye
     4300002: L_Eye
     4300004: Cigar
@@ -42,6 +44,7 @@ ModelImporter:
     4300008: Medal
     4300010: Barney
     4300012: Jacket
+    4300014: General_Yenrab1
     9500000: //RootNode
   materials:
     importMaterials: 1

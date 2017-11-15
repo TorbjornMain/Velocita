@@ -16,7 +16,9 @@ public enum MenuOptions
 public class MainMenuController : MonoBehaviour {
 
     MenuOptions selectedOption = MenuOptions.Multiplayer;
-    public Image[] selectorNodes;
+    public GameObject mainCursor;
+    public GameObject settingsCursor;
+    public GameObject[] selectorNodes;
     public GameObject mainMenuContainer;
     public GameObject controllerAllocationContainer;
     public Vector3 buttonSelectedScale;
@@ -26,13 +28,14 @@ public class MainMenuController : MonoBehaviour {
 
     int selectedIndex = 0;
     public GameObject settingsContainer;
-    public Image[] settingsImages;
+    public GameObject[] settingsNodes;
     public Slider[] settingsSliders;
      bool settingsMode;
 
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
+        PlayerPrefs.Save();
     }
 
 	// Update is called once per frame
@@ -44,17 +47,7 @@ public class MainMenuController : MonoBehaviour {
                 SettingsMode();
             else
             {
-                for (int i = 0; i < selectorNodes.Length; i++)
-                {
-                    if (i == (int)selectedOption)
-                    {
-                        selectorNodes[i].rectTransform.localScale = buttonSelectedScale;
-                    }
-                    else
-                    {
-                        selectorNodes[i].rectTransform.localScale = Vector3.one;
-                    }
-                }
+                mainCursor.transform.position = selectorNodes[(int)selectedOption].transform.position;
 
                 if (InputManager.ActiveDevice.LeftStick.Up.WasPressed || InputManager.ActiveDevice.DPadUp.WasPressed)
                 {
@@ -77,6 +70,12 @@ public class MainMenuController : MonoBehaviour {
                         case MenuOptions.Multiplayer:
                             SceneNames.LoadScene(SceneNames.CharacterSelect);
                             break;
+                        case MenuOptions.TimeTrial:
+                            ControllerManager cm = FindObjectOfType<ControllerManager>();
+                            if (cm != null)
+                                cm.TimeTrial = true;
+                            SceneNames.LoadScene(SceneNames.CharacterSelect);
+                            break;
                         case MenuOptions.Settings:
                             settingsMode = true;
                             selectedIndex = 0;
@@ -96,29 +95,18 @@ public class MainMenuController : MonoBehaviour {
 
     void SettingsMode()
     {
-        for (int i = 0; i < settingsImages.Length; i++)
-        {
-            if (i == selectedIndex)
-            {
-                settingsImages[i].rectTransform.localScale = buttonSelectedScale;
-            }
-            else
-            {
-                settingsImages[i].rectTransform.localScale = Vector3.one;
-            }
-
-        }
+        settingsCursor.transform.position = settingsNodes[selectedIndex].transform.position;
         settingsSliders[0].value = MainMusic.musicSetting;
         settingsSliders[1].value = MainMusic.soundSetting;
         if (InputManager.ActiveDevice.LeftStick.Up.Value > 0.5f || InputManager.ActiveDevice.DPadUp.WasPressed)
         {
-            selectedIndex = (selectedIndex - 1) < 0 ? (settingsImages.Length - 1) : (selectedIndex - 1);
+            selectedIndex = (selectedIndex - 1) < 0 ? (settingsNodes.Length - 1) : (selectedIndex - 1);
             audioSource.clip = navigateClip;
             audioSource.Play();
         }
         if (InputManager.ActiveDevice.LeftStick.Down.Value > 0.5f || InputManager.ActiveDevice.DPadDown.WasPressed)
         {
-            selectedIndex = (selectedIndex + 1) >= settingsImages.Length ? 0 : (selectedIndex + 1);
+            selectedIndex = (selectedIndex + 1) >= settingsNodes.Length ? 0 : (selectedIndex + 1);
             audioSource.clip = navigateClip;
             audioSource.Play();
         }

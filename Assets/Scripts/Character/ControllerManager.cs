@@ -11,6 +11,7 @@ public struct PControlData
 public class ControllerManager : MonoBehaviour {
 
     public bool AcquirePlayers = false;
+    public bool TimeTrial = false;
     public List<PControlData> players = new List<PControlData>();
     private static ControllerManager refer;
     InGameGlobalUIManager igguim;
@@ -80,6 +81,8 @@ public class ControllerManager : MonoBehaviour {
         igguim = FindObjectOfType<InGameGlobalUIManager>();
         if (p != null)
         {
+            if (TimeTrial)
+                p.AI = p.timeTrial = false;
             p.SpawnPlayers(players);
         }
     }

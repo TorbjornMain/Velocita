@@ -7,10 +7,12 @@ public class HUDController : MonoBehaviour {
 
     public Text speedText;
     public Text lapText;
+    public Text lapLabelText;
     public Text maxLapText;
     public Image placeImage;
     public Image wrongWayImage;
     public Image fadeToBlack;
+    public Image timeTrialClockSprite;
     public GameObject powerUpImage;
     GameObject powerUpImageInstance;
     public GameObject racingHUD;
@@ -31,15 +33,21 @@ public class HUDController : MonoBehaviour {
     public Image playerCloseBarImage;
     public float playerCloseLeftRight = 500;
     public float ribbonPinScalar = 0.5f;
+    public bool timeTrialMode = false;
     public Vector3 powerupImageScaleFactor = new Vector3(0.1f, 0.1f, 0.1f);
     Image[] playerPosImages;
     int position = 0;
     // Update is called once per frame
     void Start()
     {
+        ControllerManager cm = FindObjectOfType<ControllerManager>();
+        if(cm != null)
+            timeTrialMode = cm.TimeTrial;
         pum = player.GetComponent<PowerupManager>();
         cam = player.GetComponent<CameraController>();
         playerPosImages = new Image[4];
+        if (timeTrialMode)
+            timeTrialClockSprite.gameObject.SetActive(true);
         for (int i = 0; i < cam.racerOffsets.Length; i++)
         {
             playerPosImages[i] = Instantiate(playerCloseImagePrefab);
@@ -85,9 +93,25 @@ public class HUDController : MonoBehaviour {
                 }
             }
             speedText.text = "Speed: " + Mathf.RoundToInt(player.speed * 3.6f).ToString() + "km/h";
-            lapText.text = playerLapGateUser.lap.ToString();
-            maxLapText.text = numLaps.ToString();
-
+            if (!timeTrialMode)
+            {
+                lapText.text = playerLapGateUser.lap.ToString();
+                maxLapText.text = numLaps.ToString();
+            }
+            else
+            {
+                lapText.text = "";
+                maxLapText.text = "";
+                playerLapGateUser.data.lapTimes.Sort();
+                float bestLapTime = PlayerPrefs.GetFloat("bestLap");
+                bestLapTime = bestLapTime == 0 ? Mathf.Infinity : bestLapTime;
+                if (Mathf.Min(bestLapTime, playerLapGateUser.data.lapTimes.Count > 0 ? playerLapGateUser.data.lapTimes[0] : Mathf.Infinity) < bestLapTime)
+                    StartCoroutine(flashClock());
+                bestLapTime = Mathf.Min(bestLapTime, playerLapGateUser.data.lapTimes.Count > 0 ? playerLapGateUser.data.lapTimes[0] : Mathf.Infinity);
+                if (bestLapTime == Mathf.Infinity) bestLapTime = 0;
+                lapLabelText.text = ToMinuteSeconds(playerLapGateUser.lapTime) + "\n" + ToMinuteSeconds(bestLapTime);
+                PlayerPrefs.SetFloat("bestLap", bestLapTime == 0 ? Mathf.Infinity : bestLapTime);
+            }
             wrongWayImage.enabled = Vector3.Dot(player.velocity, playerLapGateUser.trackDir) < 0 && player.velocity.magnitude > 10;
             if(player.reset)
             {
@@ -185,5 +209,25 @@ public class HUDController : MonoBehaviour {
         racingHUD.SetActive(false);
         doneHUD.SetActive(true);
         racing = false;
+    }
+
+    string ToMinuteSeconds(float time)
+    {
+        float minutes = Mathf.Round(time / 60);
+        float seconds = time - minutes * 60;
+        seconds = Mathf.Round(seconds * 100);
+        seconds /= 100;
+        return minutes.ToString() + ":" + (seconds < 10 ? "0" : "") + seconds.ToString();
+    }
+
+    IEnumerator flashClock()
+    {
+        for(int i = 0; i < 3; i++)
+        {
+            timeTrialClockSprite.gameObject.SetActive(false);
+            yield return new WaitForSeconds(0.2f);
+            timeTrialClockSprite.gameObject.SetActive(true);
+            yield return new WaitForSeconds(0.2f);
+        }
     }
 }
