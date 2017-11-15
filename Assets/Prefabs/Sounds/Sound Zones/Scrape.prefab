@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4146055418192236}
   - component: {fileID: 135068009494624462}
   - component: {fileID: 114137354118615038}
+  - component: {fileID: 114045077769763052}
   m_Layer: 15
   m_Name: Scrape
   m_TagString: Untagged
@@ -41,6 +42,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114045077769763052
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1402433248412310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35aca824e4cad4b47bc99c5e752e7b05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114137354118615038
 MonoBehaviour:
   m_ObjectHideFlags: 1

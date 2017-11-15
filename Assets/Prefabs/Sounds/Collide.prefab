@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4003071378698650}
   - component: {fileID: 82958477640306452}
+  - component: {fileID: 114679671584079536}
   m_Layer: 0
   m_Name: Collide
   m_TagString: Untagged
@@ -120,3 +121,14 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &114679671584079536
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1018911835964216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35aca824e4cad4b47bc99c5e752e7b05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
