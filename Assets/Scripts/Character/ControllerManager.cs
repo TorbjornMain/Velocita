@@ -22,6 +22,7 @@ public class ControllerManager : MonoBehaviour {
         if(refer != null)
         {
             refer.AcquirePlayers = this.AcquirePlayers;
+            refer.TimeTrial = this.TimeTrial;
             DestroyImmediate(gameObject);
             return;
         }
