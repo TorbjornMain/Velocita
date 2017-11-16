@@ -157,7 +157,7 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -195,8 +195,759 @@ ModelImporter:
   copyAvatar: 0
   humanDescription:
     serializedVersion: 2
-    human: []
-    skeleton: []
+    human:
+    - boneName: Leo_Waist_JNT
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Leo_Left_Hip_JNT
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Leo_Right_Hip_JNT
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Leo_Left_Knee_JNT
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Leo_Right_Knee_JNT
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Leo_Left_Ankle_JNT
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Leo_Right_Ankle_JNT
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Leo__Back_JNT_1
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Leo_Back_JNT_2
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Leo_Neck_JNT_1
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Leo_Head_JNT_1
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Leo_Left_CollarBone_JNT
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Leo_Right_CollarBone_JNT
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Leo_Left_Shoulder_JNT
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Leo_Right_Shoulder_JNT
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Leo_Left_Elbow_JNT
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Leo_Right_Elbow_JNT
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Leo_Left_Wrist_JNT
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Leo_Right_Wrist_JNT
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Leo_Left_Toe_JNT
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Leo_Right_Toe_JNT
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Leo_Left_Thumb_JNT_1
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Leo_Left_Thumb_JNT_2
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Leo_Left_Thumb_JNT_3
+      humanName: Left Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Leo_Left_Pointer_JNT_1
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Leo_Left_Pointer_JNT_2
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Leo_Left_Pointer_JNT_3
+      humanName: Left Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Leo_Left_Middle_JNT_1
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Leo_Left_Middle_JNT_2
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Leo_Left_Middle_JNT_3
+      humanName: Left Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Leo_Left_Ring_JNT_1
+      humanName: Left Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Leo_Left_Ring_JNT_2
+      humanName: Left Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Leo_Left_Ring_JNT_3
+      humanName: Left Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Leo_Left_Pinky_JNT_1
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Leo_Left_Pinky_JNT_2
+      humanName: Left Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Leo_Left_Pinky_JNT_3
+      humanName: Left Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Leo_Right_Thumb_JNT_1
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Leo_Right_Thumb_JNT_2
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Leo_Right_Thumb_JNT_3
+      humanName: Right Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Leo_Right_Pointer_JNT_1
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Leo_Right_Pointer_JNT_2
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Leo_Right_Pointer_JNT_3
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Leo_Right_Middle_JNT_1
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Leo_Right_Middle_JNT_2
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Leo_Right_Middle_JNT_3
+      humanName: Right Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Leo_Right_Ring_JNT_1
+      humanName: Right Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Leo_Right_Ring_JNT_2
+      humanName: Right Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Leo_Right_Ring_JNT_3
+      humanName: Right Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Leo_Right_Pinky_JNT_1
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Leo_Right_Pinky_JNT_2
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Leo_Right_Pinky_JNT_3
+      humanName: Right Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Leo_Back_JNT_3
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: Leo_Select(Clone)
+      parentName: 
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leo_Root_JNT
+      parentName: Leo_Select(Clone)
+      position: {x: -0, y: 0.08053269, z: 0.0057803676}
+      rotation: {x: -0.6873823, y: 0.6873823, z: -0.16584828, w: -0.16584828}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leo_Waist_JNT
+      parentName: Leo_Root_JNT
+      position: {x: -0.014426619, y: -0.0000000027939677, z: -0.00083928695}
+      rotation: {x: 0, y: -0.2884315, z: -0, w: 0.9575006}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leo__Back_JNT_1
+      parentName: Leo_Waist_JNT
+      position: {x: -0.011991863, y: 3.8988794e-19, z: -1.7347234e-20}
+      rotation: {x: 0, y: 0.052033994, z: -0, w: 0.9986453}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leo_Back_JNT_2
+      parentName: Leo__Back_JNT_1
+      position: {x: -0.016068542, y: 4.417107e-19, z: 9.911776e-18}
+      rotation: {x: 0, y: 0.11189982, z: -0, w: 0.9937195}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leo_Back_JNT_3
+      parentName: Leo_Back_JNT_2
+      position: {x: -0.0073455265, y: 1.2427233e-19, z: 5.4645764e-18}
+      rotation: {x: 0, y: -0.07206181, z: -0, w: 0.9974002}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leo_Left_CollarBone_JNT
+      parentName: Leo_Back_JNT_3
+      position: {x: -0.0009251503, y: 0.009008707, z: -0.00024038974}
+      rotation: {x: -0.2988037, y: 0.4131786, z: -0.50409794, w: 0.69705456}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leo_Left_Shoulder_JNT
+      parentName: Leo_Left_CollarBone_JNT
+      position: {x: -0.0076226094, y: 7.5041505e-19, z: 2.6592744e-18}
+      rotation: {x: -0.7683854, y: 0.17838718, z: -0.14671817, w: 0.5968548}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leo_Left_Elbow_JNT
+      parentName: Leo_Left_Shoulder_JNT
+      position: {x: -0.022821259, y: 0.000030646435, z: -0.0033786343}
+      rotation: {x: 0.17911339, y: -0.12413365, z: -0.018209694, w: 0.9757959}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leo_Left_Wrist_JNT
+      parentName: Leo_Left_Elbow_JNT
+      position: {x: -0.02221681, y: -0.00013327455, z: 0.003580276}
+      rotation: {x: -0.14989361, y: 0.31565687, z: 0.1560059, w: 0.92388034}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leo_Left_Middle_JNT_1
+      parentName: Leo_Left_Wrist_JNT
+      position: {x: -0.0073520076, y: 0.004369829, z: -0.004631847}
+      rotation: {x: 0.1101486, y: -0.25409546, z: -0.13139199, w: 0.9518608}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leo_Left_Middle_JNT_2
+      parentName: Leo_Left_Middle_JNT_1
+      position: {x: -0.003143774, y: -5.7119936e-18, z: -6.8042686e-18}
+      rotation: {x: -0.015468081, y: 0.011326381, z: 0.03632328, w: 0.99915624}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leo_Left_Middle_JNT_3
+      parentName: Leo_Left_Middle_JNT_2
+      position: {x: -0.0031809926, y: 2.9328586e-18, z: -1.6513893e-18}
+      rotation: {x: 0.0034799057, y: -0.009433845, z: -0.02385293, w: 0.9996649}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leo_Left_Middle_END
+      parentName: Leo_Left_Middle_JNT_3
+      position: {x: -0.0031223672, y: -1.115524e-17, z: 6.3791056e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leo_Left_Pinky_JNT_1
+      parentName: Leo_Left_Wrist_JNT
+      position: {x: -0.004743893, y: 0.0020750342, z: -0.007930003}
+      rotation: {x: 0.1949438, y: -0.3468071, z: -0.12162908, w: 0.90935594}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leo_Left_Pinky_JNT_2
+      parentName: Leo_Left_Pinky_JNT_1
+      position: {x: -0.002799663, y: -5.0332596e-18, z: 7.576945e-18}
+      rotation: {x: -0.0022471831, y: 0.009885246, z: 0.037459254, w: 0.9992467}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leo_Left_Pinky_JNT_3
+      parentName: Leo_Left_Pinky_JNT_2
+      position: {x: -0.0024240506, y: 4.6873575e-19, z: 8.0607105e-18}
+      rotation: {x: 0.0020252087, y: 0.03730761, z: 0.014569538, w: 0.9991956}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leo_Left_Pinky_END
+      parentName: Leo_Left_Pinky_JNT_3
+      position: {x: -0.0037007737, y: -1.6400932e-17, z: 1.2184053e-18}
+      rotation: {x: -5.2180482e-15, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leo_Left_Pointer_JNT_1
+      parentName: Leo_Left_Wrist_JNT
+      position: {x: -0.008650924, y: 0.0035832357, z: -0.0024414642}
+      rotation: {x: 0.025092771, y: -0.18405461, z: -0.22296487, w: 0.9569644}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leo_Left_Pointer_JNT_2
+      parentName: Leo_Left_Pointer_JNT_1
+      position: {x: -0.0034132553, y: -8.109391e-18, z: 6.392006e-18}
+      rotation: {x: 0.039108206, y: -0.041003626, z: 0.003986007, w: 0.99838537}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leo_Left_Pointer_JNT_3
+      parentName: Leo_Left_Pointer_JNT_2
+      position: {x: -0.003018273, y: -2.924339e-17, z: -1.0047797e-17}
+      rotation: {x: 0.002308196, y: -0.0029987488, z: 0.01984496, w: 0.9997959}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leo_Left_Pointer_JNT_END
+      parentName: Leo_Left_Pointer_JNT_3
+      position: {x: -0.0031037005, y: 7.599271e-18, z: -7.56103e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leo_Left_Ring_JNT_1
+      parentName: Leo_Left_Wrist_JNT
+      position: {x: -0.0058627147, y: 0.004271621, z: -0.0063903215}
+      rotation: {x: 0.1525321, y: -0.3200769, z: -0.12228546, w: 0.9270012}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leo_Left_Ring_JNT_2
+      parentName: Leo_Left_Ring_JNT_1
+      position: {x: -0.003187987, y: 1.5616439e-18, z: 4.1779794e-21}
+      rotation: {x: 0.0009535714, y: -0.0039146296, z: -0.042251017, w: 0.9990989}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leo_Left_Ring_JNT_3
+      parentName: Leo_Left_Ring_JNT_2
+      position: {x: -0.0028754536, y: 7.725841e-18, z: -3.91521e-19}
+      rotation: {x: -0.0033307946, y: 0.008431654, z: 0.038996223, w: 0.9991983}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leo_Left_Ring_END
+      parentName: Leo_Left_Ring_JNT_3
+      position: {x: -0.0030769014, y: -3.4483793e-18, z: 1.0154797e-18}
+      rotation: {x: -3.6082248e-16, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leo_Left_Thumb_JNT_1
+      parentName: Leo_Left_Wrist_JNT
+      position: {x: -0.0043831333, y: 7.431841e-18, z: 1.0604769e-17}
+      rotation: {x: -0.2305936, y: 0.2677005, z: -0.18186188, w: 0.91765434}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leo_Left_Thumb_JNT_2
+      parentName: Leo_Left_Thumb_JNT_1
+      position: {x: -0.0021040775, y: -1.2367688e-17, z: -8.892477e-18}
+      rotation: {x: 0.13905169, y: -0.02263235, z: -0.0009408775, w: 0.99002606}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leo_Left_Thumb_JNT_3
+      parentName: Leo_Left_Thumb_JNT_2
+      position: {x: -0.0023668532, y: 8.0014116e-19, z: 2.6922907e-17}
+      rotation: {x: 0.001363058, y: -0.0039944844, z: -0.0075982683, w: 0.9999623}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leo_Left_Thumb_END
+      parentName: Leo_Left_Thumb_JNT_3
+      position: {x: -0.005040487, y: 2.5448394e-17, z: -1.3461454e-17}
+      rotation: {x: -0.032140072, y: 0.086158685, z: -0.020513173, w: 0.9955516}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leo_Neck_JNT_1
+      parentName: Leo_Back_JNT_3
+      position: {x: -0.010068974, y: 2.8831933e-19, z: -4.5035216e-18}
+      rotation: {x: 0, y: -0.106715076, z: -0, w: 0.99428964}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leo_Head_JNT_1
+      parentName: Leo_Neck_JNT_1
+      position: {x: -0.006897756, y: 2.1160794e-19, z: 1.6479873e-18}
+      rotation: {x: 0, y: 0.04499002, z: -0, w: 0.99898744}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leo_Head_END
+      parentName: Leo_Head_JNT_1
+      position: {x: -0.018929804, y: 4.4125676e-19, z: -3.0159832e-18}
+      rotation: {x: -0.70707387, y: -0.0068274946, z: -0.0068274946, w: 0.70707387}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leo_Right_CollarBone_JNT
+      parentName: Leo_Back_JNT_3
+      position: {x: -0.00092480524, y: -0.009008709, z: -0.00024036468}
+      rotation: {x: -0.50409794, y: 0.69705456, z: 0.2988037, w: -0.4131786}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leo_Right_Shoulder_JNT
+      parentName: Leo_Right_CollarBone_JNT
+      position: {x: 0.0076226997, y: 0.000000261838, z: 0.0000006114897}
+      rotation: {x: -0.76838714, y: 0.17838228, z: -0.14671987, w: 0.59685355}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leo_Right_Elbow_JNT
+      parentName: Leo_Right_Shoulder_JNT
+      position: {x: 0.022821683, y: -0.00003041836, z: 0.0033786031}
+      rotation: {x: 0.17911448, y: -0.12413156, z: -0.018203955, w: 0.9757961}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leo_Right_Wrist_JNT
+      parentName: Leo_Right_Elbow_JNT
+      position: {x: 0.022216653, y: 0.0001332133, z: -0.0035802892}
+      rotation: {x: -0.14989361, y: 0.31565687, z: 0.1560059, w: 0.92388034}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leo_Right_Middle_JNT_1
+      parentName: Leo_Right_Wrist_JNT
+      position: {x: 0.007351999, y: -0.004369877, z: 0.0046318257}
+      rotation: {x: 0.11014974, y: -0.2540973, z: -0.13139752, w: 0.9518594}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leo_Right_Middle_JNT_2
+      parentName: Leo_Right_Middle_JNT_1
+      position: {x: 0.0031437895, y: 0.00000003593336, z: 0.000000008653314}
+      rotation: {x: -0.015467888, y: 0.011325622, z: 0.03632921, w: 0.99915606}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leo_Right_Middle_JNT_3
+      parentName: Leo_Right_Middle_JNT_2
+      position: {x: 0.0031810214, y: -0.000000017908924, z: 0.00000000691466}
+      rotation: {x: 0.0034799057, y: -0.009433845, z: -0.02385293, w: 0.9996649}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leo_Right_Middle_END
+      parentName: Leo_Right_Middle_JNT_3
+      position: {x: 0.0031223355, y: 0.000000052033986, z: -0.0000000029143106}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leo_Right_Pinky_JNT_1
+      parentName: Leo_Right_Wrist_JNT
+      position: {x: 0.0047439123, y: -0.0020750556, z: 0.007930023}
+      rotation: {x: 0.19494598, y: -0.34680519, z: -0.1216346, w: 0.90935546}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leo_Right_Pinky_JNT_2
+      parentName: Leo_Right_Pinky_JNT_1
+      position: {x: 0.0027996257, y: 0.000000016387379, z: 0.0000000073123454}
+      rotation: {x: -0.002247243, y: 0.009890283, z: 0.037478063, w: 0.999246}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leo_Right_Pinky_JNT_3
+      parentName: Leo_Right_Pinky_JNT_2
+      position: {x: 0.002424031, y: -0.000000049071186, z: 0.0000000043297814}
+      rotation: {x: 0.0020251062, y: 0.03729267, z: 0.014553991, w: 0.99919635}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leo_Right_Pinky_END
+      parentName: Leo_Right_Pinky_JNT_3
+      position: {x: 0.003700804, y: 0.000000049364175, z: -0.000000007305495}
+      rotation: {x: -2.220446e-16, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leo_Right_Pointer_JNT_1
+      parentName: Leo_Right_Wrist_JNT
+      position: {x: 0.008650913, y: -0.0035832594, z: 0.0024414563}
+      rotation: {x: 0.025094096, y: -0.18404977, z: -0.2229658, w: 0.9569651}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leo_Right_Pointer_JNT_2
+      parentName: Leo_Right_Pointer_JNT_1
+      position: {x: 0.0034133333, y: 8.1457496e-10, z: 0.00000003071689}
+      rotation: {x: 0.039108325, y: -0.041007508, z: 0.003986064, w: 0.99838525}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leo_Right_Pointer_JNT_3
+      parentName: Leo_Right_Pointer_JNT_2
+      position: {x: 0.0030182644, y: 0.0000000069655, z: 0.0000000015917868}
+      rotation: {x: 0.002308196, y: -0.0029987488, z: 0.01984496, w: 0.9997959}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leo_Right_Pointer_JNT_END
+      parentName: Leo_Right_Pointer_JNT_3
+      position: {x: 0.0031036749, y: 0.000000022566718, z: -0.0000000025667701}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leo_Right_Ring_JNT_1
+      parentName: Leo_Right_Wrist_JNT
+      position: {x: 0.0058627673, y: -0.0042716656, z: 0.0063903597}
+      rotation: {x: 0.15253632, y: -0.32007298, z: -0.12229607, w: 0.9270004}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leo_Right_Ring_JNT_2
+      parentName: Leo_Right_Ring_JNT_1
+      position: {x: 0.003187887, y: 0.000000042333436, z: 0.0000000041220076}
+      rotation: {x: 0.0009535714, y: -0.0039146296, z: -0.042251017, w: 0.9990989}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leo_Right_Ring_JNT_3
+      parentName: Leo_Right_Ring_JNT_2
+      position: {x: 0.0028754708, y: -0.000000026606472, z: -0.0000000049813105}
+      rotation: {x: -0.0033307667, y: 0.008434673, z: 0.03900178, w: 0.99919796}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leo_Right_Ring_END
+      parentName: Leo_Right_Ring_JNT_3
+      position: {x: 0.003076919, y: -0.000000026049378, z: 0.0000000025389064}
+      rotation: {x: 1.8873791e-15, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leo_Right_Thumb_JNT_1
+      parentName: Leo_Right_Wrist_JNT
+      position: {x: 0.0043831533, y: -0.000000020305704, z: 0.000000015768899}
+      rotation: {x: -0.2305896, y: 0.26771286, z: -0.18184742, w: 0.91765445}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leo_Right_Thumb_JNT_2
+      parentName: Leo_Right_Thumb_JNT_1
+      position: {x: 0.002104081, y: -0.000000042008732, z: 0.00000001728258}
+      rotation: {x: 0.13905385, y: -0.02264112, z: -0.00096178416, w: 0.9900255}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leo_Right_Thumb_JNT_3
+      parentName: Leo_Right_Thumb_JNT_2
+      position: {x: 0.0023668327, y: 0.000000028254316, z: -0.000000025014677}
+      rotation: {x: 0.001363058, y: -0.0039944844, z: -0.0075982683, w: 0.9999623}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leo_Right_Thumb_END
+      parentName: Leo_Right_Thumb_JNT_3
+      position: {x: 0.0050404523, y: 0.000000016115614, z: -0.000000021629832}
+      rotation: {x: -0.032140072, y: 0.086158685, z: -0.020513173, w: 0.9955516}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leo_Left_Hip_JNT
+      parentName: Leo_Waist_JNT
+      position: {x: 0.004701403, y: 0.009376836, z: 0.00057306216}
+      rotation: {x: -0.04248675, y: 0.98317975, z: 0.0042996043, w: -0.17757832}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leo_Left_Knee_JNT
+      parentName: Leo_Left_Hip_JNT
+      position: {x: -0.029390693, y: -1.5612511e-18, z: -1.6653345e-18}
+      rotation: {x: 0.011830638, y: -0.24596171, z: 0.018594204, w: 0.96902895}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leo_Left_Ankle_JNT
+      parentName: Leo_Left_Knee_JNT
+      position: {x: -0.050010126, y: 3.491131e-19, z: 3.6082247e-18}
+      rotation: {x: -0.0626724, y: 0.5183782, z: -0.062976375, w: 0.8505235}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leo_Left_Ball_JNT
+      parentName: Leo_Left_Ankle_JNT
+      position: {x: -0.013397442, y: -9.376415e-19, z: -3.358932e-18}
+      rotation: {x: -0.04191423, y: 0.29443493, z: 0.053323187, w: 0.95326173}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leo_Left_Toe_JNT
+      parentName: Leo_Left_Ball_JNT
+      position: {x: -0.01192899, y: -0.00025402, z: 0.0003591612}
+      rotation: {x: 0.7062826, y: 0.03413055, z: 0.026327394, w: 0.7066165}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leo_Right_Hip_JNT
+      parentName: Leo_Waist_JNT
+      position: {x: 0.004701405, y: -0.00937684, z: 0.00057305774}
+      rotation: {x: -0.0042995713, y: 0.17757837, z: -0.04248667, w: 0.9831797}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leo_Right_Knee_JNT
+      parentName: Leo_Right_Hip_JNT
+      position: {x: 0.029390683, y: 0.00000003424607, z: 0.0000000056544716}
+      rotation: {x: 0.011830623, y: -0.2459618, z: 0.01859374, w: 0.96902895}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leo_Right_Ankle_JNT
+      parentName: Leo_Right_Knee_JNT
+      position: {x: 0.05001013, y: -0.000000033135397, z: 7.834237e-10}
+      rotation: {x: -0.06267254, y: 0.5183783, z: -0.062976025, w: 0.8505234}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leo_Right_Ball_JNT
+      parentName: Leo_Right_Ankle_JNT
+      position: {x: 0.013397436, y: 0.000000030152904, z: 5.0884e-10}
+      rotation: {x: -0.041914225, y: 0.29443493, z: 0.053323187, w: 0.95326173}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leo_Right_Toe_JNT
+      parentName: Leo_Right_Ball_JNT
+      position: {x: 0.011928995, y: 0.00025394582, z: -0.0003591607}
+      rotation: {x: 0.7062826, y: 0.03413055, z: 0.026327394, w: 0.7066165}
+      scale: {x: 1, y: 1, z: 1}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -210,7 +961,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 3
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
