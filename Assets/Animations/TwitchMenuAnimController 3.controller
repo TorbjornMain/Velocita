@@ -146,7 +146,7 @@ AnimatorState:
   m_SpeedParameterActive: 0
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: adf0c969cd6899e4999b01bb6348602e, type: 3}
+  m_Motion: {fileID: 7400002, guid: 6c4d6707a4b0a574f830f1c714fd366b, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -170,7 +170,7 @@ AnimatorState:
   m_SpeedParameterActive: 0
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
-  m_Motion: {fileID: 0}
+  m_Motion: {fileID: 7400004, guid: 6c4d6707a4b0a574f830f1c714fd366b, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -181,7 +181,7 @@ AnimatorState:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: KaiyoSelectPose
+  m_Name: TwitchSelectPose
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -194,7 +194,7 @@ AnimatorState:
   m_SpeedParameterActive: 0
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
-  m_Motion: {fileID: 7400002, guid: adf0c969cd6899e4999b01bb6348602e, type: 3}
+  m_Motion: {fileID: 7400000, guid: 6c4d6707a4b0a574f830f1c714fd366b, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

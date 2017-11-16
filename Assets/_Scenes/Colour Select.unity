@@ -1638,13 +1638,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 707466370}
-  m_LocalRotation: {x: 0.97695255, y: 0, z: 0, w: 0.2134567}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -23.88}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 155.35, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &712367683
 GameObject:
   m_ObjectHideFlags: 0
@@ -3004,6 +3004,10 @@ Prefab:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 8be4f477c6e8a0e47b9106c4346b17b5, type: 2}
+    - target: {fileID: 9500000, guid: 012c1f9680bfa7946a74ca56b257c84a, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 012c1f9680bfa7946a74ca56b257c84a, type: 3}
   m_IsPrefabParent: 0
@@ -4561,6 +4565,10 @@ Prefab:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 85519ca57aa4ed945b88f957c6926434, type: 2}
+    - target: {fileID: 9500000, guid: 39e2ed56f17366944aeba5294feeabfb, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 39e2ed56f17366944aeba5294feeabfb, type: 3}
   m_IsPrefabParent: 0
@@ -4781,6 +4789,10 @@ Prefab:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 72c7b1023c7c24f448e79a4a31d8620c, type: 2}
+    - target: {fileID: 9500000, guid: 0d43a773f808a854aaf5eee1c0c43509, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0d43a773f808a854aaf5eee1c0c43509, type: 3}
   m_IsPrefabParent: 0
@@ -6514,6 +6526,10 @@ Prefab:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 8d4f1938f16002749b72aa8ac0a184fd, type: 2}
+    - target: {fileID: 9500000, guid: 82c525963edf1734c871a71a1909d979, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 82c525963edf1734c871a71a1909d979, type: 3}
   m_IsPrefabParent: 0
