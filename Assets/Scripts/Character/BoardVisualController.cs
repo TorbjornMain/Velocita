@@ -187,9 +187,13 @@ public class BoardVisualController : MonoBehaviour {
         anim.SetTrigger("Overtaken");
     }
 
+    void MatchBonus()
+    {
+        anim.SetTrigger("MatchBonus");
+    }
+
     void PowerupHit(Color scol)
     {
-        print("WE'VE BEEN HIT BOYS");
         for (int i = 0; i < rse.mat.Length; i++)
         {
             rse.mat[i].SetColor("_Color", scol);
