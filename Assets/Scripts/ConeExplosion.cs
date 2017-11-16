@@ -55,16 +55,16 @@ public class ConeExplosion : MonoBehaviour {
                 Rigidbody cr = col.GetComponent<Rigidbody>();
                 if (cr != null)
                     cr.velocity = cr.velocity * slowFactor;
+                col.SendMessage("PowerupHit", hitColor);
             }
         }
         else
         {
             Rigidbody cr = col.GetComponent<Rigidbody>();
             if (cr != null)
-            {
                 cr.velocity = cr.velocity * slowFactor;
-                col.SendMessage("PowerupHit", hitColor);
-            }
+            col.SendMessage("PowerupHit", hitColor);
+            
         }
         col.SendMessage("Explode", SendMessageOptions.DontRequireReceiver);
     }

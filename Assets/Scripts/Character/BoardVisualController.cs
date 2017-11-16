@@ -29,7 +29,7 @@ public class BoardVisualController : MonoBehaviour {
     public SoundZone scrapeSoundPrefab;
     public SoundZone collideSoundPrefab;
     SoundZone scrapeSoundInstance;
-    float strength = 0;
+    public float strength = 0;
     [Range(0, 1)]
     public float strengthDecay = 0.99f;
 
@@ -189,6 +189,7 @@ public class BoardVisualController : MonoBehaviour {
 
     void PowerupHit(Color scol)
     {
+        print("WE'VE BEEN HIT BOYS");
         for (int i = 0; i < rse.mat.Length; i++)
         {
             rse.mat[i].SetColor("_Color", scol);
