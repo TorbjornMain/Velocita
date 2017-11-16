@@ -3154,7 +3154,8 @@ MonoBehaviour:
     type: 2}
   collideSoundPrefab: {fileID: 114137354118615038, guid: 6410e0a5679f79b45b1070150e272be4,
     type: 2}
-  strengthDecay: 1
+  strength: 0
+  strengthDecay: 0.99
 --- !u!114 &114462604562675394
 MonoBehaviour:
   m_ObjectHideFlags: 1
