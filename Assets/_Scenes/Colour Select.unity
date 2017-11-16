@@ -566,8 +566,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -341.193, y: 0.000030517578}
-  m_SizeDelta: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &342756707
 MonoBehaviour:
@@ -588,7 +588,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Texture: {fileID: 0}
+  m_Texture: {fileID: 2800000, guid: aeb3e3fb2cda57840aa56354b369fdf2, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -782,10 +782,10 @@ MonoBehaviour:
   - {fileID: 246111647}
   - {fileID: 1441656364}
   playerMenuAnims:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 685787132}
+  - {fileID: 1052359359}
+  - {fileID: 1923211124}
+  - {fileID: 342756707}
   playerRenderTextures:
   - {fileID: 8400000, guid: f889ea3561ab2cc41a28bff8f6d92757, type: 2}
   - {fileID: 8400000, guid: 6956053a43d621e48a028c16729e6d09, type: 2}
@@ -801,7 +801,7 @@ MonoBehaviour:
   - {r: 0.21568628, g: 0.26666668, b: 0.7882353, a: 1}
   - {r: 0.043137256, g: 0.7294118, b: 0.047058824, a: 1}
   - {r: 1, g: 0.972549, b: 0, a: 1}
-  transparent: {fileID: 0}
+  transparent: {fileID: 2800000, guid: aeb3e3fb2cda57840aa56354b369fdf2, type: 3}
   playerJoinText:
   - {fileID: 1874930734}
   - {fileID: 1053313317}
@@ -1520,7 +1520,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Texture: {fileID: 0}
+  m_Texture: {fileID: 2800000, guid: aeb3e3fb2cda57840aa56354b369fdf2, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -2483,8 +2483,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -114.37497, y: 0.000015258789}
-  m_SizeDelta: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1052359359
 MonoBehaviour:
@@ -2505,7 +2505,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Texture: {fileID: 0}
+  m_Texture: {fileID: 2800000, guid: aeb3e3fb2cda57840aa56354b369fdf2, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -5904,8 +5904,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -228.01129, y: 0.000030517578}
-  m_SizeDelta: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1923211124
 MonoBehaviour:
@@ -5926,7 +5926,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Texture: {fileID: 0}
+  m_Texture: {fileID: 2800000, guid: aeb3e3fb2cda57840aa56354b369fdf2, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
