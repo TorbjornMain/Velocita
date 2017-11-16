@@ -11,18 +11,21 @@ public class PowerupManager : MonoBehaviour {
     public Powerup currentPowerup;
 
     Controller c;
+    HoverboardController hc;
 
 	// Use this for initialization
 	void Start () {
         c = GetComponent<Controller>();
-	}
+        hc = GetComponent<HoverboardController>();
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
 
-	    if(c.HopPressed && currentPowerup != null)
+	    if(c.HopPressed && currentPowerup != null && Time.timeScale != 0)
         {
-            currentPowerup.Use(GetComponent<HoverboardController>());
+            currentPowerup.Use(hc);
             currentPowerup = null;
         }
 	}

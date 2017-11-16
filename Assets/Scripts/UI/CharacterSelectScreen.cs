@@ -14,7 +14,11 @@ public class CharacterSelectScreen : MonoBehaviour {
     public List<Transform> selectorNodes;
     public Image[] characterPortraits;
     public Image[] playerZones;
+    public RawImage[] playerMenuAnims;
+    public RenderTexture[] playerRenderTextures;
+    public Animator[] playerAnimators;
     public Color[] playerColors;
+    public Texture transparent;
     public Text[] playerJoinText;
     bool[] selected;
     public float playerXOffset = 40;
@@ -99,7 +103,8 @@ public class CharacterSelectScreen : MonoBehaviour {
                             playerData.col = RacerColor.White;
                             playerZones[i].color = Color.white;
                             characterPortraits[selectorInstances[i].hoveredIndex].color = Color.white;
-
+                            playerAnimators[selectorInstances[i].hoveredIndex].SetTrigger("Deselected");
+                            playerMenuAnims[i].texture = transparent;
                             cm.players[i] = playerData;
                             selectorInstances[i].hasSelected = false;
                             selected[selectorInstances[i].hoveredIndex] = false;
@@ -120,7 +125,8 @@ public class CharacterSelectScreen : MonoBehaviour {
                             playerData.col = ((RacerColor)selectorInstances[i].hoveredIndex);
                             playerZones[i].color = playerColors[selectorInstances[i].hoveredIndex];
                             characterPortraits[selectorInstances[i].hoveredIndex].color = Color.grey;
-
+                            playerAnimators[selectorInstances[i].hoveredIndex].SetTrigger("Selected");
+                            playerMenuAnims[i].texture = playerRenderTextures[selectorInstances[i].hoveredIndex];
                             cm.players[i] = playerData;
                             selectorInstances[i].hasSelected = true;
                             audioSource.clip = selectSound;
