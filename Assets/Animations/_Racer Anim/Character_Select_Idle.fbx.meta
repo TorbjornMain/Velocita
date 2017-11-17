@@ -179,8 +179,8 @@ ModelImporter:
     - serializedVersion: 16
       name: IdleCharacterSelect
       takeName: Take 001
-      firstFrame: 1
-      lastFrame: 40
+      firstFrame: 0
+      lastFrame: 5
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
