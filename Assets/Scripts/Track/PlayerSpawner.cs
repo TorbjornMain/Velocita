@@ -24,6 +24,7 @@ public class PlayerSpawner : MonoBehaviour {
     [Range(0,1)]
     public float rubberbanding;
     float baseTopSpeed;
+    bool raceFinished = false;
     
     void Start()
     {
@@ -142,11 +143,12 @@ public class PlayerSpawner : MonoBehaviour {
                 if (players[i].finished)
                     fin++;
             }
-            if (fin == players.Count)
+            if (fin == players.Count && !raceFinished)
             {
                 FindObjectOfType<InGameGlobalUIManager>().SendMessage("DisplayResults");
                 AS.clip = resultsBGM;
                 AS.Play();
+                raceFinished = true;
             }
             playerLaps.Sort();
             //lg.Sort();
