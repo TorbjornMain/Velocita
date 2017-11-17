@@ -12,6 +12,8 @@ public class PlayerSpawner : MonoBehaviour {
     public PlayerController[] playerPrefabs;
     public AIController aiPrefab;
     public HUDController HUDPrefab;
+    public AudioClip racingBGM, resultsBGM;
+    AudioSource AS;
     List<HUDController> playerHUDs = new List<HUDController>();
     public int laps;
     public bool AI;
@@ -22,6 +24,13 @@ public class PlayerSpawner : MonoBehaviour {
     [Range(0,1)]
     public float rubberbanding;
     float baseTopSpeed;
+    
+    void Start()
+    {
+        AS = GetComponent<AudioSource>();
+        AS.clip = racingBGM;
+        AS.Play();
+    }
     public void SpawnPlayers(List<PControlData> devices)
     {
         RollingStartGate rs = null;
@@ -136,6 +145,8 @@ public class PlayerSpawner : MonoBehaviour {
             if (fin == players.Count)
             {
                 FindObjectOfType<InGameGlobalUIManager>().SendMessage("DisplayResults");
+                AS.clip = resultsBGM;
+                AS.Play();
             }
             playerLaps.Sort();
             //lg.Sort();

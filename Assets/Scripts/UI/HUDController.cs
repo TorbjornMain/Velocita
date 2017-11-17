@@ -225,9 +225,7 @@ public class HUDController : MonoBehaviour {
     {
         float minutes = Mathf.Floor(time / 60);
         float seconds = time - minutes * 60;
-        seconds = Mathf.Round(seconds * 100);
-        seconds /= 100;
-        return minutes.ToString() + ":" + (seconds < 10 ? "0" : "") + seconds.ToString();
+        return minutes.ToString() + ":" + seconds.ToString("00.00");
     }
 
     IEnumerator flashClock()

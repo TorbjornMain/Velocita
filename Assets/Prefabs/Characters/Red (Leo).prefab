@@ -356,6 +356,7 @@ GameObject:
   - component: {fileID: 124429896553170180}
   - component: {fileID: 114127826862466372}
   - component: {fileID: 114363881493048458}
+  - component: {fileID: 114128158928531074}
   m_Layer: 8
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2810,7 +2811,7 @@ Camera:
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
   m_TargetEye: 3
-  m_HDR: 0
+  m_HDR: 1
   m_AllowMSAA: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
@@ -3239,6 +3240,18 @@ MonoBehaviour:
   - {fileID: 2100000, guid: d79fa5bb7f9522a429d97d3d8575bc53, type: 2}
   targetRes: {x: 0, y: 0}
   textureFilterMode: 2
+--- !u!114 &114128158928531074
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1208895924546796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  profile: {fileID: 11400000, guid: 704d1c33c10d266458a3e4b91ba24cf4, type: 2}
 --- !u!114 &114130187237642842
 MonoBehaviour:
   m_ObjectHideFlags: 1
