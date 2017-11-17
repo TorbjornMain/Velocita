@@ -25,7 +25,7 @@ public class MainMenuController : MonoBehaviour {
     AudioSource audioSource;
     public AudioClip selectedClip;
     public AudioClip navigateClip;
-
+    float mainCursorEnableDelay = 1;
     int selectedIndex = 0;
     public GameObject settingsContainer;
     public GameObject[] settingsNodes;
@@ -148,6 +148,12 @@ public class MainMenuController : MonoBehaviour {
             selectedIndex = 0;
             settingsContainer.SetActive(false);
         }
+    }
+
+    IEnumerator cursorEnable()
+    {
+        yield return new WaitForSeconds(mainCursorEnableDelay);
+        mainCursor.SetActive(true);
     }
 
 }
