@@ -124,7 +124,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &889491
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1344,6 +1344,7 @@ MonoBehaviour:
   buttonSelectedScale: {x: 1, y: 1.3, z: 1}
   selectedClip: {fileID: 8300000, guid: d978472df2a529246a58338f61995376, type: 3}
   navigateClip: {fileID: 8300000, guid: 04f743b6a5f6a0649b3a042d7a573f47, type: 3}
+  mainCursorEnableDelay: 2
   settingsContainer: {fileID: 1517811218}
   settingsNodes:
   - {fileID: 1384829483}

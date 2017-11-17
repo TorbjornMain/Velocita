@@ -1,0 +1,270 @@
+fileFormatVersion: 2
+guid: fafd44a596e1e9342a0aab10d0f1cf88
+timeCreated: 1510888801
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: Back_JNT_1
+    100002: Back_JNT_2
+    100004: Back_JNT_3
+    100006: Head_END
+    100008: ikHandle10
+    100010: ikHandle11
+    100012: ikHandle12
+    100014: ikHandle13
+    100016: ikHandle14
+    100018: ikHandle15
+    100020: Left_Ankle_JNT
+    100022: Left_Ball_JNT
+    100024: Left_CollarBone_JNT
+    100026: Left_Elbow_JNT2
+    100028: Left_Elbow_JNT_1
+    100030: Left_Foot_CTRL
+    100032: Left_Hip_JNT
+    100034: Left_Knee_JNT
+    100036: Left_Middle_END
+    100038: Left_Middle_JNT_1
+    100040: Left_Middle_JNT_2
+    100042: Left_Middle_JNT_3
+    100044: Left_Pinky_END
+    100046: Left_Pinky_JNT_1
+    100048: Left_Pinky_JNT_2
+    100050: Left_Pinky_JNT_3
+    100052: Left_Pointer_END
+    100054: Left_Pointer_JNT_1
+    100056: Left_Pointer_JNT_3
+    100058: Left_Poitner_JNT_2
+    100060: Left_Ring_END
+    100062: Left_Ring_JNT_1
+    100064: Left_Ring_JNT_2
+    100066: Left_Ring_JNT_3
+    100068: Left_Shoulder_JNT
+    100070: Left_Thumb_End
+    100072: Left_Thumb_JNT_1
+    100074: Left_Thumb_JNT_2
+    100076: Left_Thumb_JNT_3
+    100078: Left_Toe_JNT
+    100080: Left_Wrist_JNT_1
+    100082: Left_Wrist_JNT_2
+    100084: Neck_JNT_1
+    100086: Neck_JNT_2
+    100088: //RootNode
+    100090: Right_Ankle_JNT
+    100092: Right_Ball_JNT
+    100094: Right_CollarBone_JNT
+    100096: Right_Elbow_JNT2
+    100098: Right_Elbow_JNT_1
+    100100: Right_Foot_CTRL
+    100102: Right_Hip_JNT
+    100104: Right_Knee_JNT
+    100106: Right_Middle_END
+    100108: Right_Middle_JNT_1
+    100110: Right_Middle_JNT_2
+    100112: Right_Middle_JNT_3
+    100114: Right_Pinky_END
+    100116: Right_Pinky_JNT_1
+    100118: Right_Pinky_JNT_2
+    100120: Right_Pinky_JNT_3
+    100122: Right_Pointer_END
+    100124: Right_Pointer_JNT_1
+    100126: Right_Pointer_JNT_3
+    100128: Right_Poitner_JNT_2
+    100130: Right_Ring_END
+    100132: Right_Ring_JNT_1
+    100134: Right_Ring_JNT_2
+    100136: Right_Ring_JNT_3
+    100138: Right_Shoulder_JNT
+    100140: Right_Thumb_End
+    100142: Right_Thumb_JNT_1
+    100144: Right_Thumb_JNT_2
+    100146: Right_Thumb_JNT_3
+    100148: Right_Toe_JNT
+    100150: Right_Wrist_JNT_1
+    100152: Right_Wrist_JNT_2
+    100154: Root_JNT
+    100156: Waist_JNT
+    400000: Back_JNT_1
+    400002: Back_JNT_2
+    400004: Back_JNT_3
+    400006: Head_END
+    400008: ikHandle10
+    400010: ikHandle11
+    400012: ikHandle12
+    400014: ikHandle13
+    400016: ikHandle14
+    400018: ikHandle15
+    400020: Left_Ankle_JNT
+    400022: Left_Ball_JNT
+    400024: Left_CollarBone_JNT
+    400026: Left_Elbow_JNT2
+    400028: Left_Elbow_JNT_1
+    400030: Left_Foot_CTRL
+    400032: Left_Hip_JNT
+    400034: Left_Knee_JNT
+    400036: Left_Middle_END
+    400038: Left_Middle_JNT_1
+    400040: Left_Middle_JNT_2
+    400042: Left_Middle_JNT_3
+    400044: Left_Pinky_END
+    400046: Left_Pinky_JNT_1
+    400048: Left_Pinky_JNT_2
+    400050: Left_Pinky_JNT_3
+    400052: Left_Pointer_END
+    400054: Left_Pointer_JNT_1
+    400056: Left_Pointer_JNT_3
+    400058: Left_Poitner_JNT_2
+    400060: Left_Ring_END
+    400062: Left_Ring_JNT_1
+    400064: Left_Ring_JNT_2
+    400066: Left_Ring_JNT_3
+    400068: Left_Shoulder_JNT
+    400070: Left_Thumb_End
+    400072: Left_Thumb_JNT_1
+    400074: Left_Thumb_JNT_2
+    400076: Left_Thumb_JNT_3
+    400078: Left_Toe_JNT
+    400080: Left_Wrist_JNT_1
+    400082: Left_Wrist_JNT_2
+    400084: Neck_JNT_1
+    400086: Neck_JNT_2
+    400088: //RootNode
+    400090: Right_Ankle_JNT
+    400092: Right_Ball_JNT
+    400094: Right_CollarBone_JNT
+    400096: Right_Elbow_JNT2
+    400098: Right_Elbow_JNT_1
+    400100: Right_Foot_CTRL
+    400102: Right_Hip_JNT
+    400104: Right_Knee_JNT
+    400106: Right_Middle_END
+    400108: Right_Middle_JNT_1
+    400110: Right_Middle_JNT_2
+    400112: Right_Middle_JNT_3
+    400114: Right_Pinky_END
+    400116: Right_Pinky_JNT_1
+    400118: Right_Pinky_JNT_2
+    400120: Right_Pinky_JNT_3
+    400122: Right_Pointer_END
+    400124: Right_Pointer_JNT_1
+    400126: Right_Pointer_JNT_3
+    400128: Right_Poitner_JNT_2
+    400130: Right_Ring_END
+    400132: Right_Ring_JNT_1
+    400134: Right_Ring_JNT_2
+    400136: Right_Ring_JNT_3
+    400138: Right_Shoulder_JNT
+    400140: Right_Thumb_End
+    400142: Right_Thumb_JNT_1
+    400144: Right_Thumb_JNT_2
+    400146: Right_Thumb_JNT_3
+    400148: Right_Toe_JNT
+    400150: Right_Wrist_JNT_1
+    400152: Right_Wrist_JNT_2
+    400154: Root_JNT
+    400156: Waist_JNT
+    7400000: NikaSelectFixed
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: NikaSelectFixed
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

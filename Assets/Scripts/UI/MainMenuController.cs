@@ -25,7 +25,7 @@ public class MainMenuController : MonoBehaviour {
     AudioSource audioSource;
     public AudioClip selectedClip;
     public AudioClip navigateClip;
-    float mainCursorEnableDelay = 1;
+    public float mainCursorEnableDelay = 1;
     int selectedIndex = 0;
     public GameObject settingsContainer;
     public GameObject[] settingsNodes;
@@ -35,6 +35,7 @@ public class MainMenuController : MonoBehaviour {
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
+        StartCoroutine(cursorEnable());
         PlayerPrefs.Save();
     }
 
@@ -153,7 +154,7 @@ public class MainMenuController : MonoBehaviour {
     IEnumerator cursorEnable()
     {
         yield return new WaitForSeconds(mainCursorEnableDelay);
-        mainCursor.SetActive(true);
+        mainCursor.gameObject.SetActive(true);
     }
 
 }
