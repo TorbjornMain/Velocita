@@ -60,7 +60,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: b88f8412bfb411f49b0d3fb640059768, type: 3}
+  m_audioClip: {fileID: 8300000, guid: b29e96c540f28b548ad59ff0f7f00d5c, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.5
   m_Pitch: 1
@@ -170,7 +170,7 @@ MonoBehaviour:
   aiPrefab: {fileID: 114968011317280492, guid: 2674895ea26b9254db1361a9116f2d11, type: 2}
   HUDPrefab: {fileID: 114371160398304120, guid: f6a868bc815f78d4596edbf1823f8118,
     type: 2}
-  racingBGM: {fileID: 8300000, guid: b88f8412bfb411f49b0d3fb640059768, type: 3}
+  racingBGM: {fileID: 8300000, guid: b29e96c540f28b548ad59ff0f7f00d5c, type: 3}
   resultsBGM: {fileID: 8300000, guid: e63a08a211ad89547a8e4b142cee9c80, type: 3}
   laps: 5
   AI: 1
