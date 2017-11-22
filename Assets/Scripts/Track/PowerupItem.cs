@@ -13,9 +13,11 @@ public class PowerupItem : MonoBehaviour {
     public Color[] beaconColours;
     public GameObject powerupImage;
     GameObject powerupImageInstance;
+    AudioSource AS;
 
     void Start()
     {
+        AS = GetComponent<AudioSource>();
         ControllerManager cm = FindObjectOfType<ControllerManager>();
         if (cm != null)
         {
@@ -43,6 +45,7 @@ public class PowerupItem : MonoBehaviour {
                     beacon.gameObject.SetActive(false);
                     Destroy(powerupImageInstance);
                     StartCoroutine(resetPickup(respawnTime));
+                    AS.Play();
                 }
             }
         }
