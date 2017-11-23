@@ -64,10 +64,8 @@ public class ResultScreen : MonoBehaviour {
 
     string ToMinuteSeconds(float time)
     {
-        float minutes = Mathf.Round(time / 60);
+        float minutes = Mathf.Floor(time / 60);
         float seconds = time - minutes * 60;
-        seconds = Mathf.Round(seconds * 100);
-        seconds /= 100;
-        return minutes.ToString() + ":" + (seconds < 10 ? "0" : "") + seconds.ToString();
+        return minutes.ToString() + ":" + seconds.ToString("00.00");
     }
 }

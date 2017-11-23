@@ -760,7 +760,7 @@ Transform:
   m_GameObject: {fileID: 1272634945807958}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 60, y: 0.1, z: 30}
+  m_LocalScale: {x: 60, y: 0.1, z: 60}
   m_Children: []
   m_Father: {fileID: 4195741341173698}
   m_RootOrder: 3
@@ -1549,10 +1549,13 @@ MonoBehaviour:
   minFOV: 60
   baseFOV: 90
   animLerpSpeed: 5
+  headTurnChance: 0.05
   scrapeSoundPrefab: {fileID: 114137354118615038, guid: 6410e0a5679f79b45b1070150e272be4,
     type: 2}
   collideSoundPrefab: {fileID: 114137354118615038, guid: 6410e0a5679f79b45b1070150e272be4,
     type: 2}
+  strength: 0
+  strengthDecay: 0.99
 --- !u!114 &114831423700031504
 MonoBehaviour:
   m_ObjectHideFlags: 1

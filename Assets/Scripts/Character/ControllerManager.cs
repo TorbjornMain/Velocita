@@ -22,6 +22,7 @@ public class ControllerManager : MonoBehaviour {
         if(refer != null)
         {
             refer.AcquirePlayers = this.AcquirePlayers;
+            refer.TimeTrial = this.TimeTrial;
             DestroyImmediate(gameObject);
             return;
         }
@@ -82,7 +83,10 @@ public class ControllerManager : MonoBehaviour {
         if (p != null)
         {
             if (TimeTrial)
-                p.AI = p.timeTrial = false;
+            {
+                p.AI = false;
+                p.timeTrial = true;
+            }
             p.SpawnPlayers(players);
         }
     }

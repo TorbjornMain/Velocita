@@ -29,6 +29,9 @@ public class BoardVisualController : MonoBehaviour {
     public SoundZone scrapeSoundPrefab;
     public SoundZone collideSoundPrefab;
     SoundZone scrapeSoundInstance;
+    public float strength = 0;
+    [Range(0, 1)]
+    public float strengthDecay = 0.99f;
 
     void Start()
     {
@@ -106,9 +109,10 @@ public class BoardVisualController : MonoBehaviour {
             {
                 rse.mat[i].SetFloat("_Speed", hc.speed / hc.topSpeed);
                 rse.mat[i].SetColor("_RacerColor", col);
+                rse.mat[i].SetFloat("_Strength", strength);
             }
         }
-
+        strength *= strengthDecay;
     }
 
     void OnCollisionEnter(Collision c)
@@ -181,5 +185,19 @@ public class BoardVisualController : MonoBehaviour {
     void Overtaken()
     {
         anim.SetTrigger("Overtaken");
+    }
+
+    void MatchBonus()
+    {
+        anim.SetTrigger("MatchBonus");
+    }
+
+    void PowerupHit(Color scol)
+    {
+        for (int i = 0; i < rse.mat.Length; i++)
+        {
+            rse.mat[i].SetColor("_Color", scol);
+            strength = 1;
+        }
     }
 }

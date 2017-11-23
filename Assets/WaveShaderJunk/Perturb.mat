@@ -75,11 +75,11 @@ Material:
     - _SrcBlend: 1
     - _UVSec: 0
     - _WaveGradient: 8
-    - _XScale: 1
-    - _YScale: 1
+    - _XScale: 10
+    - _YScale: 0.5
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 0.134}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _MinimapColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-    - _Position: {r: 0.17149718, g: 0.08327398, b: 0, a: 0}
+    - _Position: {r: 0.8566607, g: 0.05860033, b: 0, a: 0}

@@ -16,7 +16,10 @@ public class Powerup : ScriptableObject {
         if (player.GetComponent<PlayerController>().colour != matchColor)
             g = Instantiate(spawnObject);
         else
+        {
             g = Instantiate(spawnMatchObject);
+            player.SendMessage("MatchBonus");
+        }
         g.p = player;
         g.transform.position = player.transform.position;
         g.transform.rotation = player.transform.rotation;

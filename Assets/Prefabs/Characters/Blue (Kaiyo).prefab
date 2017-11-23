@@ -983,6 +983,7 @@ GameObject:
   - component: {fileID: 124894621242988976}
   - component: {fileID: 114040739272947736}
   - component: {fileID: 114461938990227580}
+  - component: {fileID: 114853511998657754}
   m_Layer: 8
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2842,7 +2843,7 @@ Camera:
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
   m_TargetEye: 3
-  m_HDR: 0
+  m_HDR: 1
   m_AllowMSAA: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
@@ -3354,6 +3355,7 @@ MonoBehaviour:
   mat:
   - {fileID: 2100000, guid: 04775171b85b8e34c94c616a1dc93c11, type: 2}
   - {fileID: 2100000, guid: 59f29658dbb2aff4c80fff574cd2accd, type: 2}
+  - {fileID: 2100000, guid: d79fa5bb7f9522a429d97d3d8575bc53, type: 2}
   targetRes: {x: 0, y: 0}
   textureFilterMode: 2
 --- !u!114 &114090519890545464
@@ -3589,6 +3591,8 @@ MonoBehaviour:
     type: 2}
   collideSoundPrefab: {fileID: 114137354118615038, guid: 6410e0a5679f79b45b1070150e272be4,
     type: 2}
+  strength: 0
+  strengthDecay: 0.99
 --- !u!114 &114775767168015126
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3602,6 +3606,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soundEffectPrefab: {fileID: 82958477640306452, guid: 70e6da6c00e2cc24ab828a470d4d9e17,
     type: 2}
+--- !u!114 &114853511998657754
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1583818859062134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  profile: {fileID: 11400000, guid: 704d1c33c10d266458a3e4b91ba24cf4, type: 2}
 --- !u!114 &114856679338115170
 MonoBehaviour:
   m_ObjectHideFlags: 1

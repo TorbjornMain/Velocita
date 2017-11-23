@@ -13,6 +13,7 @@ public class ConeExplosion : MonoBehaviour {
     float time = 0;
     public LayerMask hitTargets;
 
+    public Color hitColor;
 	// Use this for initialization
 	void Start () {
 		
@@ -54,6 +55,7 @@ public class ConeExplosion : MonoBehaviour {
                 Rigidbody cr = col.GetComponent<Rigidbody>();
                 if (cr != null)
                     cr.velocity = cr.velocity * slowFactor;
+                col.SendMessage("PowerupHit", hitColor);
             }
         }
         else
@@ -61,6 +63,8 @@ public class ConeExplosion : MonoBehaviour {
             Rigidbody cr = col.GetComponent<Rigidbody>();
             if (cr != null)
                 cr.velocity = cr.velocity * slowFactor;
+            col.SendMessage("PowerupHit", hitColor);
+            
         }
         col.SendMessage("Explode", SendMessageOptions.DontRequireReceiver);
     }
